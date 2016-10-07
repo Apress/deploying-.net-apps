@@ -1,0 +1,130 @@
+
+	''' <summary>
+	''' Summary description for ${dao}Test.
+	''' </summary> 
+	<TestFixture>	public class ${dao}Test
+
+		dim dao as $dao = nothing
+		dim total as integer = 0
+
+#if($tableschema.PrimaryKeyCount > 0)		
+		dim inserted as boolean = false
+#end
+
+		<TestFixtureSetUp>	public sub TestFixtureSetup()
+			dao = new ${dao}()
+			total = dao.GetCount()
+		end sub
+
+#if($tableschema.PrimaryKeyCount > 0)
+		<Test,Ignore("Only use this on a development database.")>public sub Insert()
+			me.inserted = false
+			dim count as integer= dao.GetCount()
+
+			dim e as Mock${entity} = new Mock${entity}()
+			dao.Save(e)
+			
+			Console.WriteLine("Inserted record: " + Environment.NewLine + e.ToString())
+
+			dim count2 as integer= dao.GetCount()
+			Assert.IsTrue(count = (count2 - 1), "Record was not inserted.")
+			me.inserted = true
+		end sub
+#end
+
+		<Test()>public sub SelectAll()
+			dim c as ICollection  = dao.SelectAll()
+			if(total > 0) then
+				Assert.IsTrue(c.Count > 0, "No records returned.")
+				''foreach($entity e in c)
+				''	Console.WriteLine(e.ToString())
+				''next
+			end if
+		end sub
+			
+	
+
+		<Test(),Ignore("")>	public sub TestToString()
+			dim al as ArrayList= new ArrayList(dao.SelectAllWithLimit(1))
+			dim s as $entity = directcast(al(0),${entity})
+			Console.WriteLine(s.ToString())
+		end sub
+
+		<Test,Ignore("")>public sub TestSerialize()
+			dim al as ArrayList = new ArrayList(dao.SelectAllWithLimit(1))
+			dim s as $entity = directcast(al(0),${entity})
+			Console.WriteLine(Serializer.SerializeToXml(s))
+		end sub
+
+		#foreach($fk in $tableschema.ForeignKeys.Values)
+
+		<Test,Ignore("You must first enter a valid FK parameter for this test.")>public sub SelectAllBy${fk.Alias}()
+			''*************************************************
+			''
+			'' Before this test can be run, you must replace the  
+			'' === fill in === section with a valid parameter.
+			''
+			'' *************************************************
+			
+			''ArrayList al = new ArrayList(dao.SelectAllBy${fk.Alias}(=== fill in ===))
+			''Assert.IsTrue(al.Count > 0, "No records were returned.")
+			''foreach(e as $entity in al)
+			''
+			''	Console.WriteLine(e.ToString())
+			''next
+		end sub
+
+		#end
+
+#if($tableschema.PrimaryKeyCount > 0)
+		<Test,Ignore("Only use this on a development database.")>public sub Update()
+			if(me.inserted)
+				dim al as ArrayList = new ArrayList(dao.SelectAllWithLimit(1, Adapdev.Data.Sql.OrderBy.DESCENDING, new string(){${dao}.TABLE_PRIMARYKEY}))
+				dim s as $entity = directcast(al(0),${entity})
+
+				Console.WriteLine("Record to be updated: ")
+				Console.WriteLine(s.ToString())
+
+		#foreach($column in $tableschema.SortedColumns.Values) 
+			#if( !$column.IsKey && !$column.IsAutoIncrement )
+				s.${column.Alias} = $providerinfo.GetTestDefaultById( $databaseschema.DatabaseProviderType , $column.DataTypeId )
+			#end 
+		#end
+
+				dao.Update(s)
+
+				Console.WriteLine("Updated record:")
+				Console.WriteLine(s.ToString())
+
+				dim s2 as $entity = directcast(dao.SelectOne(s.${pk.Alias}),${entity})
+
+		#foreach($column in $tableschema.SortedColumns.Values)
+				Assert.AreEqual( s.${column.Alias}.ToString().Trim() , s2.${column.Alias}.ToString().Trim(), "Objects should be equal." )
+		#end
+			else
+				throw new Exception("No test record inserted, so unable to perform update.")
+			end if
+		end sub
+
+		<TestFixtureTearDown>public sub Delete()
+			if(inserted)
+				dim al as ArrayList = new ArrayList(dao.SelectAllWithLimit(1, Adapdev.Data.Sql.OrderBy.DESCENDING, new string(){${dao}.TABLE_PRIMARYKEY}))
+
+				dim count1 as integer = dao.GetCount()
+
+				dim s as $entity = directcast(al(0),${entity})
+				
+				Console.WriteLine("Deleted Record:")
+				Console.WriteLine(s.ToString())		
+				
+				dao.Delete(s.${pk.Alias})
+
+				dim count2 as integer = dao.GetCount()
+
+				Assert.IsTrue(count2 = (count1 - 1), "Unable to delete record.")
+				
+				me.inserted = false
+			end if
+		end sub
+#end
+	end class

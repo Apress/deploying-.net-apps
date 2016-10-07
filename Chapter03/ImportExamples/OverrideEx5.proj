@@ -1,0 +1,12 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <DeployURL>http://www.sayedhashimi.com</DeployURL>
+    </PropertyGroup>
+    
+    <Import Project="ImportOverride1.targets"/>
+
+    <Target Name="PrintDeployURL">
+        <Message Text="Deployment URL: $(DeployURL)"/>
+    </Target>
+</Project>

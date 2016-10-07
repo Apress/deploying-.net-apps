@@ -1,0 +1,16 @@
+bin\Debug\Codus.Templates.Adapdev.dll
+bin\Debug\Codus.Templates.Adapdev.pdb
+bin\Debug\Adapdev.CodeGen.dll
+bin\Debug\Adapdev.Data.dll
+bin\Debug\Adapdev.dll
+bin\Debug\Adapdev.NVelocity.dll
+bin\Debug\Codus.GUI.Extensions.dll
+bin\Debug\Genghis.dll
+bin\Debug\log4net.dll
+bin\Debug\MySql.Data.dll
+bin\Debug\Codus.GUI.Extensions.pdb
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Codus.Templates.Adapdev.Editor.resources
+obj\Debug\Codus.Templates.Adapdev.csproj.GenerateResource.Cache
+obj\Debug\Codus.Templates.Adapdev.dll
+obj\Debug\Codus.Templates.Adapdev.pdb

@@ -1,0 +1,153 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50215</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EFAEE51B-BD25-4E39-94FC-483A9DBA690E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MSBuild1</RootNamespace>
+    <AssemblyName>MSBuild1</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  
+  <!-- Custom content follows -->
+  <Target 
+	Name="SampleTarget"
+	Inputs="SampleInput"
+	Outputs="SampleOutput"
+	DependsOnTargets="DependentTarget"
+  >
+	<Message Text="SampleTarget executed, SampleInput: @(SampleInput)" />
+  </Target>
+  <Target Name="DependentTarget">
+	<Message Text="DependentTarget executed" />
+  </Target>
+  <Target 
+	Name="DependsAgain"
+	DependsOnTargets="DependentTarget"
+	>
+		<Message Text="DependsAgain has executed"/>
+  </Target>
+  
+    <PropertyGroup>
+        <CoreBuildDependsOn>
+            BuildOnlySettings;
+            PrepareForBuild;
+            PreBuildEvent;
+            UnmanagedUnregistration;
+            ResolveReferences;
+            PrepareResources;
+            ResolveKeySource;
+            Compile;
+		PrintIntermediateAssemblyName;
+            SGen;
+            CreateSatelliteAssemblies;
+            GenerateManifests;
+            PrepareForRun;
+            ObjectRelationalValidator;
+            UnmanagedRegistration;
+            IncrementalClean
+        </CoreBuildDependsOn>
+    </PropertyGroup>
+	<Target Name="PrintIntermediateAssemblyName" DependsOnTargets="Compile">
+		<Message Text="Intermediate assembly name: @(IntermediateAssembly)" />
+		<Message Text="Int assm full path: 
+$(MSBuildProjectDirectory)\@(IntermediateAssembly)"/>
+
+		<Message Text="---------CoreBuildDependsOn--------------"/>
+		<Message Text="$(CoreBuildDependsOn)"/>
+		<Message Text="-----------------------------------------"/>
+	</Target>
+  
+  <UsingTask TaskName="HelloTask" AssemblyFile="C:\MSBuild\MSBuild1\MSBuild1\TaskAssemblies\SampleTasks1.dll"/>
+  <Target Name="DoHelloTask" DependsOnTargets="Compile">
+	    <HelloTask 
+			TheAssembly="@(IntermediateAssembly->'%(FullPath)')"
+		>
+			<Output TaskParameter="HelloOutput" PropertyName="HelloTaskString" />
+		</HelloTask>
+		<!-- Now print out the task output -->
+		<Message Text="$(HelloTaskString)"/>
+  </Target>
+  
+  <Target Name="PrintReservedProperties" DependsOnTargets="Compile">
+    <Message Text="MSBuildProjectDirectory      : $(MSBuildProjectDirectory)" />
+    <Message Text="MSBuildProjectFile           : $(MSBuildProjectFile)" />
+    <Message Text="MSBuildProjectExtension      : $(MSBuildProjectExtension)" />
+    <Message Text="MSBuildProjectFullPath       : $(MSBuildProjectFullPath)" />
+    <Message Text="MSBuildProjectName           : $(MSBuildProjectName)" />
+    <Message Text="MSBuildBinPath               : $(MSBuildBinPath)" />
+    <Message Text="MSBuildProjectDefaultTargets : $(MSBuildProjectDefaultTargets)" />
+    <Message Text="MSBuildExtensionsPath        : $(MSBuildExtensionsPath)" />
+	<!-- END RESERVED PROPERTIES -->
+	<GetFrameworkPath>
+		<Output TaskParameter="Path" PropertyName="FrameworkPath"/>
+	</GetFrameworkPath>
+	<GetFrameworkSdkPath>
+		<Output TaskParameter="Path" PropertyName="SdkPath"/>
+	</GetFrameworkSdkPath>
+	
+	<Message Text="Framework path: $(FrameworkPath)"/>
+	<Message Text="GetFrameworkSdkPath: $(SdkPath)"/>
+	<Message Text="IntermediateAssembly: @(IntermediateAssembly)" />
+  </Target>
+	
+</Project>

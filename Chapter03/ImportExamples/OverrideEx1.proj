@@ -1,0 +1,19 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    
+    <PropertyGroup>
+        <FtpServer1URL>files.sedodream.com</FtpServer1URL>
+    </PropertyGroup>
+
+    <Target Name="PrintFtp">
+        <Message Text="FtpServer1URL: $(FtpServer1URL)"/>
+    </Target>
+
+    <PropertyGroup>
+        <FtpServer1URL>ftp.sedodream.com</FtpServer1URL>
+    </PropertyGroup>
+    
+    <Target Name="PrintFtp">
+        <Message Text="FtpServer1URL: $(FtpServer1URL)"/>
+    </Target>
+    
+</Project>

@@ -1,0 +1,5 @@
+<PropertyGroup>
+	<SharedTargetsPath>..</SharedTargetsPath>
+</PropertyGroup>
+
+<Import Project="$(SharedTargetsPath)\NUnit.targets" />

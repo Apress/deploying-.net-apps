@@ -1,0 +1,44 @@
+Build started 11/12/2005 2:40:41 PM.
+__________________________________________________
+Project "C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.sln" (default targets):
+
+Target ValidateSolutionConfiguration:
+    Building solution configuration "Debug|Any CPU".
+Target Build:
+    Target CardLib:
+        __________________________________________________
+        Project "C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.sln" is building "C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" (default targets):
+
+        Target CoreResGen:
+            No resources are out of date with respect to their source files. Skipping resource generation.
+        Target CoreCompile:
+          Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+        Target CopyFilesToOutputDirectory:
+            CardLib -> C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.dll
+    Target DotNetFreeCell:
+        __________________________________________________
+        Project "C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.sln" is building "C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj" (default targets):
+
+        Target ResolveProjectReferences:
+            __________________________________________________
+            Project "C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj" is building "C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" (GetTargetPath target(s)):
+
+            __________________________________________________
+            Project "C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj" is building "C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" (GetNativeManifest target(s)):
+
+        Target CoreResGen:
+            No resources are out of date with respect to their source files. Skipping resource generation.
+        Target CoreCompile:
+          Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+        Target GetCopyToOutputDirectoryItems:
+            __________________________________________________
+            Project "C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj" is building "C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" (GetCopyToOutputDirectoryItems target(s)):
+
+        Target CopyFilesToOutputDirectory:
+            DotNetFreeCell -> C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\bin\Debug\DotNetFreeCell.exe
+
+Build succeeded.
+    0 Warning(s)
+    0 Error(s)
+
+Time Elapsed 00:00:00.26

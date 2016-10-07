@@ -1,0 +1,28 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    
+    <Import Project="ErrorHandler.targets"/>
+    <PropertyGroup>
+        <ErrorEmails>$(ErrorEmails);deployError@sedodream.com</ErrorEmails>
+    </PropertyGroup>
+    <!-- Uncomment for normal execution
+    <PropertyGroup>
+        <WebURL>sedodream.com</WebURL>
+    </PropertyGroup>
+    -->
+    
+    <Target Name="DeployToWebServer">
+        
+        <Error Text="Unable to connect to webserver" Code="Deploy" Condition=" '$(WebURL)' == '' "/>
+        <!--
+           contents to deploy to your web server here
+        -->
+        <Message Text="Deployed project to Project $(MSBuildProjectName) to webserver at: $(WebURL)"/>
+         
+        <OnError ExecuteTargets="$(ErrorHandlers)"/>
+    </Target>
+
+    <Target Name="ProjectErrorHandler">
+        <Message Text="An error has occured, build stopped."/>
+    </Target>
+    
+</Project>

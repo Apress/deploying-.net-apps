@@ -1,0 +1,9 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <Import Project="ImportPathExSub\ProjectWeb.targets"/>
+
+    <Target Name="DoDefault">
+        <Message Text="Default target for ImportProjects.targets file"/>
+    </Target>
+    
+</Project>

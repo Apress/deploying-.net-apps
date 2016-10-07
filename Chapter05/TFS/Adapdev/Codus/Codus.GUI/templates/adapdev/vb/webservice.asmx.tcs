@@ -1,0 +1,2 @@
+#set( $table = "${tableschema.Alias}" )
+<%@ WebService Language="VB" Codebehind="${table}WebService.vb" Class="${namespace}.WebServices.${table}WebService" %>

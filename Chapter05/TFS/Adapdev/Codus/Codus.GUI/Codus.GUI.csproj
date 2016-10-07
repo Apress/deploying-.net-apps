@@ -1,0 +1,308 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ProjectType>Local</ProjectType>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E354F034-D1C2-4CE3-9A43-172333B1233F}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ApplicationIcon>codus_logo.ico</ApplicationIcon>
+    <AssemblyKeyContainerName>
+    </AssemblyKeyContainerName>
+    <AssemblyName>Codus</AssemblyName>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+    <DefaultClientScript>JScript</DefaultClientScript>
+    <DefaultHTMLPageLayout>Grid</DefaultHTMLPageLayout>
+    <DefaultTargetSchema>IE50</DefaultTargetSchema>
+    <DelaySign>false</DelaySign>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Codus.GUI</RootNamespace>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>true</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>false</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>full</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <AllowUnsafeBlocks>false</AllowUnsafeBlocks>
+    <BaseAddress>285212672</BaseAddress>
+    <CheckForOverflowUnderflow>false</CheckForOverflowUnderflow>
+    <ConfigurationOverrideFile>
+    </ConfigurationOverrideFile>
+    <DefineConstants>TRACE</DefineConstants>
+    <DocumentationFile>
+    </DocumentationFile>
+    <DebugSymbols>false</DebugSymbols>
+    <FileAlignment>4096</FileAlignment>
+    <NoStdLib>false</NoStdLib>
+    <NoWarn>
+    </NoWarn>
+    <Optimize>true</Optimize>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <RemoveIntegerChecks>false</RemoveIntegerChecks>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <WarningLevel>4</WarningLevel>
+    <DebugType>none</DebugType>
+    <ErrorReport>prompt</ErrorReport>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Adapdev, Version=0.8.3.0, Culture=neutral, PublicKeyToken=57e06bdbfcf2fd11">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\shared\Adapdev.dll</HintPath>
+    </Reference>
+    <Reference Include="Adapdev.CodeGen, Version=0.8.3.0, Culture=neutral, PublicKeyToken=57e06bdbfcf2fd11">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\shared\Adapdev.CodeGen.dll</HintPath>
+    </Reference>
+    <Reference Include="Adapdev.Data, Version=0.8.3.0, Culture=neutral, PublicKeyToken=57e06bdbfcf2fd11">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\shared\Adapdev.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Adapdev.NVelocity, Version=0.8.3.0, Culture=neutral, PublicKeyToken=57e06bdbfcf2fd11">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\shared\Adapdev.NVelocity.dll</HintPath>
+    </Reference>
+    <Reference Include="Adapdev.Windows.Forms, Version=0.8.3.0, Culture=neutral, PublicKeyToken=57e06bdbfcf2fd11">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\shared\Adapdev.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="EnvDTE">
+      <Name>EnvDTE</Name>
+      <HintPath>..\..\lib\EnvDTE.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Genghis, Version=0.5.1529.35402, Culture=neutral, PublicKeyToken=f595a82b5e5c871c">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\shared\Genghis.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net, Version=1.2.0.30714, Culture=neutral, PublicKeyToken=b32731d11ce58905">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\shared\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic">
+      <Name>Microsoft.VisualBasic</Name>
+      <HintPath>..\..\lib\Microsoft.VisualBasic.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=1.0.5.13785, Culture=neutral, PublicKeyToken=c5687fc88969c44d">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\shared\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Nini, Version=0.9.1.0, Culture=neutral, PublicKeyToken=691faec150a7fa7b">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\shared\Nini.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <Name>System</Name>
+    </Reference>
+    <Reference Include="System.Data">
+      <Name>System.Data</Name>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <Name>System.Drawing</Name>
+    </Reference>
+    <Reference Include="System.Windows.Forms">
+      <Name>System.Windows.Forms</Name>
+    </Reference>
+    <Reference Include="System.Xml">
+      <Name>System.XML</Name>
+    </Reference>
+    <Reference Include="VSLangProj">
+      <Name>VSLangProj</Name>
+      <HintPath>..\..\lib\VSLangProj.dll</HintPath>
+    </Reference>
+    <Reference Include="VSLangProj2">
+      <Name>VSLangProj2</Name>
+      <HintPath>..\..\lib\VSLangProj2.dll</HintPath>
+    </Reference>
+    <ProjectReference Include="..\Codus.GUI.Extensions\Codus.GUI.Extensions.csproj">
+      <Project>{FADD5CC9-A670-4726-BEBA-169C3806A71C}</Project>
+      <Name>Codus.GUI.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Codus.Templates.Adapdev\Codus.Templates.Adapdev.csproj">
+      <Project>{786B0905-23E4-4AB4-A34C-C5B87900FA8A}</Project>
+      <Name>Codus.Templates.Adapdev</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Codus.Templates.NHibernate\Codus.Templates.NHibernate.csproj">
+      <Project>{088C772E-4564-4649-B562-F7FD52D2B6CF}</Project>
+      <Name>Codus.Templates.NHibernate</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\CodusAssemblyInfo.cs">
+      <Link>CodusAssemblyInfo.cs</Link>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Commands\FillColumnsCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\FillTablesCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\LoadSettingsCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Commands\SaveSettingsCommand.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ConfigImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Constants.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="LoadTablesDetails.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProjectSetting.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SchemaConfigImpl.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TemplateProjects.cs">
+      <SubType>code</SubType>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <None Include="App.config" />
+    <None Include="Codus.exe.log4net" />
+    <None Include="directive.properties" />
+    <None Include="nvelocity.properties" />
+    <None Include="TemplateProjects.xsx">
+      <DependentUpon>TemplateProjects.xsd</DependentUpon>
+    </None>
+    <None Include="templates\adapdev\cs\abstractdao.tcs" />
+    <None Include="templates\adapdev\cs\abstractdaobase.tcs" />
+    <None Include="templates\adapdev\cs\connectionfactory.tcs" />
+    <None Include="templates\adapdev\cs\dbconstants.tcs" />
+    <None Include="templates\adapdev\cs\development_nunit.tcs" />
+    <None Include="templates\adapdev\cs\development_unittest.tcs" />
+    <None Include="templates\adapdev\cs\entity.tcs" />
+    <None Include="templates\adapdev\cs\entitybase.tcs" />
+    <None Include="templates\adapdev\cs\entitycollection.tcs" />
+    <None Include="templates\adapdev\cs\entitydictionary.tcs" />
+    <None Include="templates\adapdev\cs\entityenumerator.tcs" />
+    <None Include="templates\adapdev\cs\mockentity.tcs" />
+    <None Include="templates\adapdev\cs\nant.build" />
+    <None Include="templates\adapdev\cs\nant_mysql.build" />
+    <None Include="templates\adapdev\cs\nunit.tcs" />
+    <None Include="templates\adapdev\cs\runbuild.bat" />
+    <None Include="templates\adapdev\cs\storedprocedures.tsql" />
+    <None Include="templates\adapdev\cs\unittest.tcs" />
+    <None Include="templates\adapdev\cs\webservice.asmx.tcs" />
+    <None Include="templates\adapdev\cs\webservice.constants.tcs" />
+    <None Include="templates\adapdev\cs\webservice.tcs" />
+    <None Include="templates\adapdev\cs\zanebug.tcs" />
+    <None Include="templates\adapdev\vb\abstractdao.tcs" />
+    <None Include="templates\adapdev\vb\abstractdaobase.tcs" />
+    <None Include="templates\adapdev\vb\connectionfactory.tcs" />
+    <None Include="templates\adapdev\vb\dbconstants.tcs" />
+    <None Include="templates\adapdev\vb\entity.tcs" />
+    <None Include="templates\adapdev\vb\entitybase.tcs" />
+    <None Include="templates\adapdev\vb\entitycollection.tcs" />
+    <None Include="templates\adapdev\vb\entitydictionary.tcs" />
+    <None Include="templates\adapdev\vb\entityenumerator.tcs" />
+    <None Include="templates\adapdev\vb\mockentity.tcs" />
+    <None Include="templates\adapdev\vb\nant.build" />
+    <None Include="templates\adapdev\vb\nunit.tcs" />
+    <None Include="templates\adapdev\vb\runbuild.bat" />
+    <None Include="templates\adapdev\vb\storedprocedures.tsql" />
+    <None Include="templates\adapdev\vb\unittest.tcs" />
+    <None Include="templates\adapdev\vb\webservice.asmx.tcs" />
+    <None Include="templates\adapdev\vb\webservice.constants.tcs" />
+    <None Include="templates\adapdev\vb\webservice.tcs" />
+    <None Include="templates\adapdev\vb\zanebug.tcs" />
+    <None Include="templates\directive.properties" />
+    <None Include="templates\elementary\cs\connectionfactory.tcs" />
+    <None Include="templates\elementary\cs\entity.tcs" />
+    <None Include="templates\elementary\cs\entitybase.tcs" />
+    <None Include="templates\elementary\cs\entitycollection.tcs" />
+    <None Include="templates\elementary\cs\entitydictionary.tcs" />
+    <None Include="templates\elementary\cs\entityenumerator.tcs" />
+    <None Include="templates\elementary\cs\mockentity.tcs" />
+    <None Include="templates\elementary\cs\nant.build" />
+    <None Include="templates\elementary\cs\nant_mysql.build" />
+    <None Include="templates\elementary\cs\nunit.tcs" />
+    <None Include="templates\elementary\cs\runbuild.bat" />
+    <None Include="templates\elementary\cs\unittest.tcs" />
+    <None Include="templates\elementary\cs\zanebug.tcs" />
+    <None Include="templates\nhibernate\configurator.tcs" />
+    <None Include="templates\nhibernate\dao.tcs" />
+    <None Include="templates\nhibernate\entity.tcs" />
+    <None Include="templates\nhibernate\entitycollection.tcs" />
+    <None Include="templates\nhibernate\entitydictionary.tcs" />
+    <None Include="templates\nhibernate\entityenumerator.tcs" />
+    <None Include="templates\nhibernate\mockentity.tcs" />
+    <None Include="templates\nhibernate\nant.build" />
+    <None Include="templates\nhibernate\nunit.tcs" />
+    <None Include="templates\nhibernate\runbuild.bat" />
+    <None Include="templates\nhibernate\unittest.tcs" />
+    <None Include="templates\nhibernate\zanebug.tcs" />
+    <None Include="templates\nvelocity.properties" />
+    <Content Include="TemplateProjects.xml" />
+    <Content Include="TemplateProjects.xsd" />
+    <Content Include="templates\adapdev\cs\TestFile.txt" />
+    <Content Include="templates\adapdev\vb\testfile.txt" />
+    <Content Include="templates\elementary\cs\Elementary.Mappings.xml" />
+    <Content Include="templates\nhibernate\hbm.xml" />
+    <Content Include="templates\nhibernate\hibernate.cfg.xml" />
+    <Content Include="templates\test.txt" />
+    <Content Include="templates\TestFile.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+    <PostBuildEvent>copy $(ProjectDir)TemplateProjects.xml $(TargetDir)TemplateProjects.xml
+copy $(ProjectDir)Codus.exe.log4net $(TargetDir)Codus.exe.log4net
+copy $(ProjectDir)directive.properties $(TargetDir)directive.properties
+rmdir $(TargetDir)templates /s /q
+mkdir $(TargetDir)templates
+xcopy $(ProjectDir)templates\*.* $(TargetDir)templates /s /y /i
+move $(TargetDir)Codus.Templates.Adapdev.dll $(TargetDir)templates\adapdev\Codus.Templates.Adapdev.dll
+move $(TargetDir)Codus.Templates.NHibernate.dll $(TargetDir)templates\nhibernate\Codus.Templates.NHibernate.dll</PostBuildEvent>
+  </PropertyGroup>
+</Project>

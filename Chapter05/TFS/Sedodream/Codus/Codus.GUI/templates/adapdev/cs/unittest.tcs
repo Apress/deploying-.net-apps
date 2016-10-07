@@ -1,0 +1,149 @@
+{
+	/// <summary>
+	/// Summary description for ShippersDAOTest.
+	/// </summary>
+	/// 
+	[TestFixture]
+	public class ${dao}Test
+	{
+
+		$dao dao = null;
+		int total = 0;
+
+#if($tableschema.PrimaryKeyCount > 0)		
+		bool inserted = false;
+#end
+
+		[TestFixtureSetUp]
+		public void TestFixtureSetup()
+		{
+			dao = new ${dao}();
+			total = dao.GetCount();
+		}
+
+#if($tableschema.PrimaryKeyCount > 0)
+		[Test,Ignore("Only use this on a development database.")]
+		public void Insert()
+		{
+			this.inserted = false;
+			int count = dao.GetCount();
+
+			Mock${entity} e = new Mock${entity}();
+
+			dao.Save(e);
+			
+			Console.WriteLine("Inserted record: " + Environment.NewLine + e.ToString());
+
+			int count2 = dao.GetCount();
+			Assert.IsTrue(count == (count2 - 1), "Record was not inserted.");
+			this.inserted = true;
+		}
+#end
+
+		[Test]
+		public void SelectAll()
+		{
+			ICollection c = dao.SelectAll();
+			if(total > 0){
+				Assert.IsTrue(c.Count > 0, "No records returned.");
+				//foreach($entity e in c)
+				//{
+				//	Console.WriteLine(e.ToString());
+				//}
+			}
+		}
+
+		[Test]
+		[Ignore("")]
+		public void TestToString(){
+			ArrayList al = new ArrayList(dao.SelectAllWithLimit(1));
+			$entity s = (${entity})al[0];
+			Console.WriteLine(s.ToString());
+		}
+
+		[Test]
+		[Ignore("")]
+		public void TestSerialize(){
+			ArrayList al = new ArrayList(dao.SelectAllWithLimit(1));
+			$entity s = (${entity})al[0];
+			Console.WriteLine(Serializer.SerializeToXml(s));
+		}
+
+		#foreach($fk in $tableschema.ForeignKeys.Values)
+
+		[Test]
+		[Ignore("You must first enter a valid FK parameter for this test.")]
+		public void SelectAllBy${fk.Alias}()
+		{
+			// *************************************************
+			//
+			// Before this test can be run, you must replace the  
+			// === fill in === section with a valid parameter.
+			//
+			// *************************************************
+			
+			//ArrayList al = new ArrayList(dao.SelectAllBy${fk.Alias}(=== fill in ===));
+			//Assert.IsTrue(al.Count > 0, "No records were returned.");
+			//foreach($entity e in al)
+			//{
+			//	Console.WriteLine(e.ToString());
+			//}
+		}
+
+		#end
+
+#if($tableschema.PrimaryKeyCount > 0)
+		[Test,Ignore("Only use this on a development database.")]
+		public void Update()
+		{
+			if(this.inserted){
+				ArrayList al = new ArrayList(dao.SelectAllWithLimit(1, Adapdev.Data.Sql.OrderBy.DESCENDING, new string[]{${dao}.TABLE_PRIMARYKEY}));
+				$entity s = (${entity})al[0];
+
+				Console.WriteLine("Record to be updated: ");
+				Console.WriteLine(s.ToString());
+
+				#foreach($column in $tableschema.SortedColumns.Values) #if( !$column.IsKey && !$column.IsAutoIncremen && $column.IsActive )
+				s.${column.Alias} = $providerinfo.GetTestDefaultById( $databaseschema.DatabaseProviderType , $column.DataTypeId );
+				#end #end
+
+				dao.Update(s);
+
+				Console.WriteLine("Updated record:");
+				Console.WriteLine(s.ToString());
+
+				$entity s2 = (${entity})dao.SelectById(s.${pk.Alias});
+
+				#foreach($column in $tableschema.SortedColumns.Values) #if ($column.IsActive)
+				Assert.AreEqual( s.${column.Alias}.ToString().Trim() , s2.${column.Alias}.ToString().Trim(), "Objects should be equal." );
+				#end #end
+			}else{
+				throw new Exception("No test record inserted, so unable to perform update.");
+			}
+		}
+
+		[TestFixtureTearDown]
+		public void Delete()
+		{
+			if(inserted){
+				ArrayList al = new ArrayList(dao.SelectAllWithLimit(1, Adapdev.Data.Sql.OrderBy.DESCENDING, new string[]{${dao}.TABLE_PRIMARYKEY}));
+
+				int count1 = dao.GetCount();
+
+				$entity s = (${entity})al[0];
+				
+				Console.WriteLine("Deleted Record:");
+				Console.WriteLine(s.ToString());			
+				
+				dao.Delete(s.${pk.Alias});
+
+				int count2 = dao.GetCount();
+
+				Assert.IsTrue(count2 == (count1 - 1), "Unable to delete record.");
+				
+				this.inserted = false;
+			}
+		}
+#end
+	}
+}

@@ -1,0 +1,21 @@
+﻿    <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+        <PropertyGroup>
+            <ErrorHandlers>
+                ProjectErrorHandler;
+                SolutionErrorHandler;
+                ErrorLogger;
+                ErrorMailer;
+            </ErrorHandlers>
+            <ErrorEmails>errorHandler@sayedhashimi.com</ErrorEmails>
+        </PropertyGroup>
+
+        <Target Name="SolutionErrorHandler">
+            <Message Text="An error has occured in the solution; build failed"/>
+        </Target>
+        <Target Name="ErrorLogger">
+            <Message Text="A build error has occured and has been logged"/>
+        </Target>
+        <Target Name="ErrorMailer">
+            <Message Text="An error has occured and has been emailed to: $(ErrorEmails)"/>
+        </Target>
+    </Project>

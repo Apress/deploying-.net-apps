@@ -1,0 +1,14 @@
+bin\Debug\Codus.GUI.Extensions.dll
+bin\Debug\Codus.GUI.Extensions.pdb
+bin\Debug\Adapdev.CodeGen.dll
+bin\Debug\Adapdev.dll
+bin\Debug\log4net.dll
+bin\Debug\NVelocity.dll
+bin\Debug\Adapdev.Data.dll
+bin\Debug\Adapdev.NVelocity.dll
+bin\Debug\MySql.Data.dll
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\Codus.GUI.Extensions.GUIConfigurator.resources
+obj\Debug\Codus.GUI.Extensions.csproj.GenerateResource.Cache
+obj\Debug\Codus.GUI.Extensions.dll
+obj\Debug\Codus.GUI.Extensions.pdb

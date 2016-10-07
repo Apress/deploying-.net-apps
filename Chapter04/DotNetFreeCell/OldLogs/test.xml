@@ -1,0 +1,150 @@
+<MSBuild>
+  <Build Started="11/16/2005 11:09:19 PM" Verbosity="Detailed" Finished="11/16/2005 11:09:19 PM" Succeeded="False">
+    <Project Name="C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.sln" Message="Project &quot;DotNetFreeCell.sln&quot; (default targets):" Started="11/16/2005 11:09:19 PM" Finished="11/16/2005 11:09:19 PM">
+      <Target Started="11/16/2005 11:09:19 PM" Name="ValidateSolutionConfiguration" Message="Target &quot;ValidateSolutionConfiguration&quot; in project &quot;DotNetFreeCell.sln&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="Message" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="Build" Message="Target &quot;Build&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="11/16/2005 11:09:19 PM" Name="CallTarget" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="CardLib" Message="Target &quot;CardLib&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="11/16/2005 11:09:19 PM" Name="MSBuild" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="DotNetFreeCell" Message="Target &quot;DotNetFreeCell&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="11/16/2005 11:09:19 PM" Name="MSBuild" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" Message="Project &quot;CardLib.vbproj&quot; (default targets):" Started="11/16/2005 11:09:19 PM" Finished="11/16/2005 11:09:19 PM">
+      <Target Started="11/16/2005 11:09:19 PM" Name="_CheckForInvalidConfigurationAndPlatform" Message="Target &quot;_CheckForInvalidConfigurationAndPlatform&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="Message" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="Message" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="BeforeBuild" Message="Target &quot;BeforeBuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="BuildOnlySettings" Message="Target &quot;BuildOnlySettings&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateProperty" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="GetFrameworkPaths" Message="Target &quot;GetFrameworkPaths&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="GetFrameworkPath" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="GetFrameworkSDKPath" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="PrepareForBuild" Message="Target &quot;PrepareForBuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateProperty" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateProperty" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateItem" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="MakeDir" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="BeforeResolveReferences" Message="Target &quot;BeforeResolveReferences&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="GetRedistLists" Message="Target &quot;GetRedistLists&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateItem" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateItem" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="ResolveAssemblyReferences" Message="Target &quot;ResolveAssemblyReferences&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateProperty" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="ResolveAssemblyReference" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="AfterResolveReferences" Message="Target &quot;AfterResolveReferences&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="ResolveReferences" Message="Target &quot;ResolveReferences&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="AssignTargetPaths" Message="Target &quot;AssignTargetPaths&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="AssignTargetPath" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="AssignTargetPath" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="AssignTargetPath" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="AssignTargetPath" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="SplitResourcesByCulture" Message="Target &quot;SplitResourcesByCulture&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="AssignCulture" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="AssignCulture" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateItem" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateItem" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateItem" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="CreateManifestResourceNames" Message="Target &quot;CreateManifestResourceNames&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateVisualBasicManifestResourceName" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateVisualBasicManifestResourceName" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="PrepareResourceNames" Message="Target &quot;PrepareResourceNames&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="_CopyNonResxEmbeddedResources" Message="Target &quot;_CopyNonResxEmbeddedResources&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="Copy" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="MakeDir" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="Copy" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="BeforeResGen" Message="Target &quot;BeforeResGen&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="CoreResGen" Message="Target &quot;CoreResGen&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="GenerateResource" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="AfterResGen" Message="Target &quot;AfterResGen&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="ResGen" Message="Target &quot;ResGen&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="PrepareRdlFiles" Message="Target &quot;PrepareRdlFiles&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="CompileRdlFiles" Message="Target &quot;CompileRdlFiles&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="PrepareResources" Message="Target &quot;PrepareResources&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="BeforeCompile" Message="Target &quot;BeforeCompile&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="CoreCompile" Message="Target &quot;CoreCompile&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="AfterCompile" Message="Target &quot;AfterCompile&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="Compile" Message="Target &quot;Compile&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="GetTargetPath" Message="Target &quot;GetTargetPath&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="_CopyFilesMarkedCopyLocal" Message="Target &quot;_CopyFilesMarkedCopyLocal&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="Copy" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="GetCopyToOutputDirectoryItems" Message="Target &quot;GetCopyToOutputDirectoryItems&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="AssignTargetPath" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateItem" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="_CopySourceItemsToOutputDirectory" Message="Target &quot;_CopySourceItemsToOutputDirectory&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="_CheckForCompileOutputs" Message="Target &quot;_CheckForCompileOutputs&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateItem" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateItem" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateItem" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="CopyFilesToOutputDirectory" Message="Target &quot;CopyFilesToOutputDirectory&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="Copy" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="Message" Finished="11/16/2005 11:09:19 PM">
+          <Message Importance="High">CardLib -&gt; C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.dll</Message>
+        </Task>
+        <Task Started="11/16/2005 11:09:19 PM" Name="Copy" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="Copy" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="Copy" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="Copy" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="Copy" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="PrepareForRun" Message="Target &quot;PrepareForRun&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="_CleanGetCurrentAndPriorFileWrites" Message="Target &quot;_CleanGetCurrentAndPriorFileWrites&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="ReadLinesFromFile" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateItem" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="FindUnderPath" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="FindUnderPath" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="FindUnderPath" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateItem" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="RemoveDuplicates" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="IncrementalClean" Message="Target &quot;IncrementalClean&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateItem" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="FindUnderPath" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="FindUnderPath" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="Delete" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="CreateItem" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="RemoveDuplicates" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="MakeDir" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="WriteLinesToFile" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="CoreBuild" Message="Target &quot;CoreBuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="AfterBuild" Message="Target &quot;AfterBuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+      <Target Started="11/16/2005 11:09:19 PM" Name="Build" Message="Target &quot;Build&quot; in project &quot;CardLib.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True" />
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj" Message="Project &quot;DotNetFreeCell.vbproj&quot; (default targets):" Started="11/16/2005 11:09:19 PM" Finished="11/16/2005 11:09:19 PM">
+      <Target Started="11/16/2005 11:09:19 PM" Name="_CheckForInvalidConfigurationAndPlatform" Message="Target &quot;_CheckForInvalidConfigurationAndPlatform&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="True">
+        <Task Started="11/16/2005 11:09:19 PM" Name="Message" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="Message" Finished="11/16/2005 11:09:19 PM" />
+      </Target>
+      <Target Started="11/16/2005 11:09:19 PM" Name="BeforeBuild" Message="Target &quot;BeforeBuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="11/16/2005 11:09:19 PM" Succeeded="False">
+        <Task Started="11/16/2005 11:09:19 PM" Name="Warning" Finished="11/16/2005 11:09:19 PM" />
+        <Task Started="11/16/2005 11:09:19 PM" Name="Error" Finished="11/16/2005 11:09:19 PM">
+          <Error Code="errorCoDe" Subcategory="" Hint="HelpError">
+            <Message>This is an ERROR!</Message>
+            <FormattedError>DDDDC:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj(150,5): error errorCoDe: This is an ERROR!</FormattedError>
+            <Location Line="150" ColumnNumber="5" />
+          </Error>
+        </Task>
+      </Target>
+    </Project>
+    <Message>Build FAILED.</Message>
+  </Build>
+</MSBuild>

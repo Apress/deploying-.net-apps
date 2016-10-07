@@ -1,0 +1,453 @@
+<VisualStudioProject>
+    <CSHARP
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{9B08D224-04E0-4ABB-B3BA-4B2FCFCDBA2D}"
+        SccProjectName = "SAK"
+        SccLocalPath = "SAK"
+        SccAuxPath = "SAK"
+        SccProvider = "SAK"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = "codus_logo.ico"
+                AssemblyKeyContainerName = ""
+                AssemblyName = "Codus"
+                AssemblyOriginatorKeyFile = ""
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "WinExe"
+                PreBuildEvent = ""
+                PostBuildEvent = "copy $(ProjectDir)codus.exe.log4net $(TargetDir)codus.exe.log4net&#xd;&#xa;copy $(ProjectDir)TemplateProjects.xml $(TargetDir)TemplateProjects.xml"
+                RootNamespace = "Adapdev.Codus.GUI"
+                RunPostBuildEvent = "OnBuildSuccess"
+                StartupObject = ""
+            >
+                <Config
+                    Name = "Debug"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "DEBUG;TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "true"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "false"
+                    OutputPath = "bin\Debug\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+                <Config
+                    Name = "Release"
+                    AllowUnsafeBlocks = "false"
+                    BaseAddress = "285212672"
+                    CheckForOverflowUnderflow = "false"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = "TRACE"
+                    DocumentationFile = ""
+                    DebugSymbols = "false"
+                    FileAlignment = "4096"
+                    IncrementalBuild = "false"
+                    NoStdLib = "false"
+                    NoWarn = ""
+                    Optimize = "true"
+                    OutputPath = "bin\Release\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "4"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.dll"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Data.dll"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Drawing.dll"
+                />
+                <Reference
+                    Name = "System.Windows.Forms"
+                    AssemblyName = "System.Windows.Forms"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Windows.Forms.dll"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.XML.dll"
+                />
+                <Reference
+                    Name = "envdte"
+                    AssemblyName = "EnvDTE"
+                    HintPath = "..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\envdte.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Genghis"
+                    AssemblyName = "Genghis"
+                    HintPath = "..\shared\Genghis.dll"
+                />
+                <Reference
+                    Name = "Adapdev.Codus.Templates"
+                    Project = "{04B17D3E-DDD7-47D6-A79B-D0BB335BE78D}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "Adapdev.Data.CodeGen"
+                    Project = "{90142B0F-CE15-4B89-837F-A4923DED6588}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "Adapdev.Data"
+                    Project = "{79987AF7-D871-4C8F-AC4C-958B4CCCBAFD}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "Adapdev.NVelocity"
+                    Project = "{10AE9F9A-C23F-44D0-9E78-B4C125597ECE}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "VSLangProj"
+                    AssemblyName = "VSLangProj"
+                    HintPath = "C:\Program Files\Microsoft Visual Studio .NET 2003\Common7\IDE\PublicAssemblies\VSLangProj.dll"
+                    AssemblyFolderKey = "hklm\publicassemblies"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Microsoft.VisualBasic"
+                    AssemblyName = "Microsoft.VisualBasic"
+                    HintPath = "C:\WINDOWS\Microsoft.NET\Framework\v1.1.4322\Microsoft.VisualBasic.dll"
+                    Private = "True"
+                />
+                <Reference
+                    Name = "Adapdev"
+                    Project = "{1F5A6B5C-CD53-49DD-81E2-E351337D9105}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "Adapdev.Codus.GUI.Extensions"
+                    Project = "{767465FA-0443-4A99-906B-3ADD071D8AA1}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "Adapdev.Windows.Forms"
+                    Project = "{F91454AA-C797-4F71-84A7-DA55AC9649FA}"
+                    Package = "{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}"
+                />
+                <Reference
+                    Name = "log4net"
+                    AssemblyName = "log4net"
+                    HintPath = "..\..\..\shared\log4net.dll"
+                />
+                <Reference
+                    Name = "Nini"
+                    AssemblyName = "Nini"
+                    HintPath = "..\..\..\shared\Nini.dll"
+                />
+            </References>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "About.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "About.resx"
+                    DependentUpon = "About.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "Adapdev.Codus.GUI.MainForm.lic"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "App.config"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "App.ico"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "changelog.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Codus.exe.log4net"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ConnectionTypeUC.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "ConnectionTypeUC.resx"
+                    DependentUpon = "ConnectionTypeUC.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "DatabasePropertiesUC.cs"
+                    SubType = "UserControl"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "DatabasePropertiesUC.resx"
+                    DependentUpon = "DatabasePropertiesUC.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "MainForm.cs"
+                    SubType = "Form"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "MainForm.resx"
+                    DependentUpon = "MainForm.cs"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "ProjectSetting.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "SchemaConfigImpl.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "TemplateProjects.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "TemplateProjects.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "TemplateProjects.cs"
+                />
+                <File
+                    RelPath = "TemplateProjects.cs"
+                    DependentUpon = "TemplateProjects.xsd"
+                    SubType = "code"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "TemplateProjects.xsx"
+                    DependentUpon = "TemplateProjects.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "Templates.xml"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Templates.xsd"
+                    BuildAction = "Content"
+                    Generator = "MSDataSetGenerator"
+                    LastGenOutput = "Templates.cs"
+                />
+                <File
+                    RelPath = "Templates.cs"
+                    DependentUpon = "Templates.xsd"
+                    SubType = "Component"
+                    BuildAction = "Compile"
+                    DesignTime = "True"
+                    AutoGen = "True"
+                />
+                <File
+                    RelPath = "Templates.xsx"
+                    DependentUpon = "Templates.xsd"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "todo.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\codus.lic"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\setup.iss"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\directive.properties"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\nvelocity.properties"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\test.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\TestFile.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\Adapdev.Codus.Templates.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\nant.build"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\runbuild.bat"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\spdeleteone.tsql"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\spinsert.tsql"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\spselectallbyfk.tsql"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\spselectone.tsql"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\spupdate.tsql"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\storedprocedures.tsql"
+                    BuildAction = "None"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\unittest.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\webservice.asmx.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\webservice.constants.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\webservice.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\zanebug.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\backup\abstractdao.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\backup\abstractdaobase.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\backup\Adapdev.Codus.Templates.dll"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\backup\dbconstants.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\backup\entity.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\backup\entitycollection.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\backup\entitydictionary.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\backup\entityenumerator.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\backup\mockentity.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\backup\nunit.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\backup\unittest.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\backup\webservice.asmx.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\backup\webservice.constants.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\backup\webservice.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "bin\Debug\templates\adapdev\backup\zanebug.txt"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Commands\FillColumnsCommand.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Commands\FillDatabaseSettingsCommand.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Commands\FillTablesCommand.cs"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+            </Include>
+        </Files>
+    </CSHARP>
+</VisualStudioProject>
+

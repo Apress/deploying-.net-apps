@@ -1,0 +1,96 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D54FBF0C-D652-4730-97FC-432C24165509}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccessTest</RootNamespace>
+    <AssemblyName>DataAccessTest</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MSBuildTasks, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\TaskBin\MSBuildTasks.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.2.0.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DataAccessTest.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataAccess\DataAccess.csproj">
+      <Project>{1C2E75AD-8466-4AE0-8F01-09C44578CAFF}</Project>
+      <Name>DataAccess</Name>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+
+  <!--
+    This will point to the location of the NUnit.targets file, the reason that
+    this is a Property and not an item is because if you chose to get this value
+    from an envrionment variable the code below wouldn't require to be change
+    simply remove this property declaration.
+  -->
+  <PropertyGroup>
+    <SharedTargetsPath>..</SharedTargetsPath>
+  </PropertyGroup>
+  <!-- 
+    Include the NUnit.targets file.
+    This file defines the RunAllTests target which will examine and run NUnit
+    test cases in the output assemblies, this should be imported towards the
+    bottom of your project file.
+  -->
+
+  <Import Project="$(SharedTargetsPath)\NUnit.targets" />
+  <!--
+    We could enable testing each time a build is invoked with the following.
+    But this is not recommended, it is better to invoke the RunAllTests without
+    making the build automagically invoke it, because VS will exeucte the RunAllTests
+    each time it builds the project, and during normal development this will consume
+    too much time for the developer. And there are issues with VS putting a lock on
+    assemblies used during build (for performance reasons), so it will not be 
+    possible to build on 2 different instances of VS if you are are referring 
+    to the same assembly that contains the NUnitTask.
+  -->
+  <!--
+  <PropertyGroup>
+    <BuildDependsOn>
+      $(BuildDependsOn);RunAllTests
+    </BuildDependsOn>
+  </PropertyGroup>
+  -->
+</Project>

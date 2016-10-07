@@ -1,0 +1,14 @@
+copy $(ProjectDir)TemplateProjects.xml $(TargetDir)TemplateProjects.xml
+copy $(ProjectDir)Codus.exe.log4net $(TargetDir)Codus.exe.log4net
+copy $(ProjectDir)directive.properties $(TargetDir)directive.properties
+copy $(ProjectDir)nvelocity.properties $(TargetDir)nvelocity.properties
+copy $(ProjectDir)codus.settings $(TargetDir)codus.settings
+del $(TargetDir)templates/*.* /q /f
+mkdir $(TargetDir)templates
+xcopy $(ProjectDir)templates\*.* $(TargetDir)templates /s /y /i
+move $(TargetDir)Codus.Templates.Adapdev.dll $(TargetDir)templates\adapdev\Codus.Templates.Adapdev.dll
+move $(TargetDir)Codus.Templates.NHibernate.dll $(TargetDir)templates\nhibernate\Codus.Templates.NHibernate.dll
+cd $(SolutionDir)
+cd ..
+xcopy lib $(TargetDir)shared /s /y /i
+copy lib\adapdev\ProviderConfig.xml $(TargetDir)ProviderConfig.xml

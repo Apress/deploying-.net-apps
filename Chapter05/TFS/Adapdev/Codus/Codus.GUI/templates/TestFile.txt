@@ -1,0 +1,140 @@
+#set( $dao = "${tableschema.GetTrimmedName()}DAO" )
+#set( $table = "${tableschema.GetTrimmedName()}" )
+#set( $entity = "${tableschema.GetTrimmedName()}Entity" )
+#set($pk = $tableschema.GetPrimaryKey(0))
+
+using System;
+using System.Collections;
+using ${namespace};
+using Adapdev.Serialization;
+using Adapdev.UnitTest;
+
+namespace ${namespace}.Tests.Zanebug
+{
+	/// <summary>
+	/// Summary description for ShippersDAOTest.
+	/// </summary>
+	/// 
+	[TestFixture]
+	public class $classname
+	{
+
+		$dao dao = null;
+		int total = 0;
+
+		[TestFixtureSetUp]
+		public void TestFixtureSetup()
+		{
+			dao = new ${dao}();
+			total = dao.GetCount();
+		}
+
+		[Test]
+		public void Insert()
+		{
+			int count = dao.GetCount();
+
+			$entity e = new ${entity}();
+
+			#foreach($column in $tableschema.GetSortedColumns().Values)
+			e.${column.GetTrimmedName()} = $providerinfo.GetTestDefaultById( $databaseschema.DatabaseProviderType , $column.DataTypeId );
+			#end
+
+			dao.Save(e);
+
+			int count2 = dao.GetCount();
+			Assert.IsTrue(count == (count2 - 1));
+		}
+
+		[Test]
+		public void SelectAll()
+		{
+			ICollection c = dao.SelectAll();
+			Assert.IsTrue(c.Count > 0, "No records returned.");
+			//foreach($entity e in c)
+			//{
+			//	Console.WriteLine(e.ToString());
+			//}
+		}
+
+		[Test]
+		[Ignore]
+		public void TestToString(){
+			ArrayList al = new ArrayList(dao.SelectAllWithLimit(1));
+			$entity s = (${entity})al[0];
+			Console.WriteLine(s.ToString());
+		}
+
+		[Test]
+		[Ignore]
+		public void TestSerialize(){
+			ArrayList al = new ArrayList(dao.SelectAllWithLimit(1));
+			$entity s = (${entity})al[0];
+			Console.WriteLine(Serializer.SerializeToXml(s));
+		}
+
+
+		#foreach($fk in $tableschema.GetForeignKeys().Values)
+
+		[Test]
+		[Ignore("You must first enter a valid FK parameter for this test.")]
+		public void SelectAllBy${fk.GetTrimmedName()}()
+		{
+			// *************************************************
+			//
+			// Before this test can be run, you must replace the  
+			// === fill in === section with a valid parameter.
+			//
+			// *************************************************
+			
+			//ArrayList al = new ArrayList(dao.SelectAllBy${fk.GetTrimmedName()}(=== fill in ===));
+			//Assert.IsTrue(al.Count > 0, "No records were returned.");
+			//foreach($entity e in al)
+			//{
+			//	Console.WriteLine(e.ToString());
+			//}
+		}
+
+		#end
+
+		[Test]
+		public void Update()
+		{
+			ArrayList al = new ArrayList(dao.SelectAllWithLimit(1));
+			$entity s = (${entity})al[0];
+
+			Console.WriteLine(s.ToString());
+
+			#foreach($column in $tableschema.GetSortedColumns().Values) #if( !$column.IsKey && !$column.IsAutoIncrement )
+			s.${column.GetTrimmedName()} = $providerinfo.GetTestDefaultById( $databaseschema.DatabaseProviderType , $column.DataTypeId );
+			#end #end
+
+			dao.Update(s);
+
+			Console.WriteLine(s.ToString());
+
+			$entity s2 = (${entity})dao.SelectOne(s.${pk.GetTrimmedName()});
+
+			#foreach($column in $tableschema.GetSortedColumns().Values)
+			Assert.AreEqual( s.${column.GetTrimmedName()}.ToString().Trim() , s2.${column.GetTrimmedName()}.ToString().Trim() );
+			#end
+
+		}
+
+		[Test]
+		public void Delete()
+		{
+			ArrayList al1 = new ArrayList(dao.SelectAllWithLimit(1));
+
+			int count1 = dao.GetCount();
+
+			$entity s = (${entity})al1[0];
+			
+			dao.Delete(s.${pk.GetTrimmedName()});
+
+			int count2 = dao.GetCount();
+
+			Assert.IsTrue(count2 == (count1 - 1));
+		}
+	}
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-configuration  xmlns="urn:nhibernate-configuration-2.0" >
+	<session-factory name="NHibernate.Test">
+		<!-- properties -->
+		<property name="connection.provider">NHibernate.Connection.DriverConnectionProvider</property>
+		#if($databaseschema.DatabaseType.ToString() == "MYSQL")
+		
+		<property name="connection.driver_class">NHibernate.Driver.MySqlDataDriver</property>
+		<property name="dialect">NHibernate.Dialect.MySQLDialect</property>
+		
+		#elseif($databaseschema.DatabaseType.ToString() == "SQLSERVER")
+		
+		<property name="connection.driver_class">NHibernate.Driver.SqlClientDriver</property>
+		<property name="dialect">NHibernate.Dialect.MsSql2000Dialect</property>
+		
+		#elseif($databaseschema.DatabaseType.ToString() == "ORACLE")
+		
+		<property name="connection.driver_class">NHibernate.Driver.OracleClientDriver</property>
+		<property name="dialect">NHibernate.Dialect.OracleDialect</property>
+		
+		#end
+		
+		<property name="connection.connection_string">${databaseschema.ConnectionString}</property>
+		<property name="show_sql">false</property>
+		<property name="use_outer_join">true</property>
+		<property name="query.substitutions">true 1, false 0, yes 'Y', no 'N'</property>
+		<!-- mapping files -->
+		
+		#foreach($table in $databaseschema.Tables.Values)
+		#if($table.HasPrimaryKeys)
+		
+		<mapping file="${table.Alias}.hbm.xml" />
+		#end
+		#end
+		
+	</session-factory>
+	
+</hibernate-configuration>

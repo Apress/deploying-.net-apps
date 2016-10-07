@@ -1,0 +1,19 @@
+Project "DotNetFreeCell.sln" (default targets):
+	Message: Building solution configuration "Debug|Any CPU".
+	Project "CardLib.vbproj" (default targets):
+		GenerateResource: No resources are out of date with respect to their source files. Skipping resource generation.
+		Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+		Message: CardLib -> C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.dll
+	Done building project "CardLib.vbproj".
+	Project "DotNetFreeCell.vbproj" (default targets):
+		Project "CardLib.vbproj" (GetTargetPath target(s)):
+		Done building project "CardLib.vbproj".
+		Project "CardLib.vbproj" (GetNativeManifest target(s)):
+		Done building project "CardLib.vbproj".
+		GenerateResource: No resources are out of date with respect to their source files. Skipping resource generation.
+		Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+		Project "CardLib.vbproj" (GetCopyToOutputDirectoryItems target(s)):
+		Done building project "CardLib.vbproj".
+		Message: DotNetFreeCell -> C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\bin\Debug\DotNetFreeCell.exe
+	Done building project "DotNetFreeCell.vbproj".
+Done building project "DotNetFreeCell.sln".

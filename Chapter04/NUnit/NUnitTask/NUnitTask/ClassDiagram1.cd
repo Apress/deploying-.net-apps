@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="SayedHashimi.Util.MSBuild.NUnitTask">
+    <Position X="3.5" Y="3" Width="2.5" />
+    <TypeIdentifier>
+      <FileName>NUnitTask.cs</FileName>
+      <HashCode>EAAgIIgACABAgAQBSAAAAAAAAACAABBQAAIBAgAACAA=</HashCode>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="SBEventCollector" />
+    </ShowAsAssociation>
+    <AssociationLine Name="SBEventCollector" Type="SayedHashimi.Util.MSBuild.SBEventCollector">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="1.124" Y="0.102" Height="0.16" Width="2.225" />
+      </MemberNameLabel>
+    </AssociationLine>
+  </Class>
+  <Class Name="SayedHashimi.Util.MSBuild.SBEventCollector">
+    <Position X="8.25" Y="3" Width="2" />
+    <TypeIdentifier>
+      <FileName>SBEventCollector.cs</FileName>
+      <HashCode>AAAUAAAABSAIAhAEBAAAQAgqAGAABYAJSAQgAEQADAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Microsoft.Build.Utilities.Task">
+    <Position X="6.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Orientation="Left" Position="0.421" />
+  </Class>
+  <Interface Name="Microsoft.Build.Framework.ITask">
+    <Position X="3.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+  <Interface Name="NUnit.Core.EventListener">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+  </Interface>
+</ClassDiagram>

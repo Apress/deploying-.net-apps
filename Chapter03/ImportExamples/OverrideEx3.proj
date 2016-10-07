@@ -1,0 +1,17 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+
+    <PropertyGroup>
+        <Email>sayed.hashimi@gmail.com</Email>
+    </PropertyGroup>
+    <PropertyGroup>
+        <Email>Sayed I. Hashim [$(Email)]</Email>
+    </PropertyGroup>
+    <Target Name="EmailAdmin">
+        <Message Text="Emailing: $(Email)"/>
+    </Target>
+
+    <Target Name="EmailAdmin">
+        <Message Text="Email sent to : $(Email)"/>
+    </Target>
+
+</Project>

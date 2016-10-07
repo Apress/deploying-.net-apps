@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<project name="DAOFramework" default="build" basedir=".">
+	<description>Builds all files for the Codus DAO Framework</description>
+	<property name="debug" value="true" overwrite="true" />
+	<property name="adapdev" value="${codusdir}shared\adapdev" overwrite="true" />
+	<property name="nunit" value="${codusdir}shared\nunit222" overwrite="true" />
+	<property name="output" value="${outputdir}\src" overwrite="true" />
+	<property name="bin" value="${outputdir}\bin" overwrite="true" />	
+	<target name="build" description="compiles the source code">
+		<delete dir="${bin}" failonerror="false" />
+		<mkdir dir="${bin}" />
+		<copy file="${adapdev}\Adapdev.dll" tofile="${bin}\Adapdev.dll" />
+		<copy file="${adapdev}\Adapdev.Data.dll" tofile="${bin}\Adapdev.Data.dll" />
+		<copy file="${codusdir}\shared\MySql.Data.dll" tofile="${bin}\MySql.Data.dll" />
+		<csc target="library" output="${bin}\DAO.dll" debug="${debug}" warninglevel="0">
+			<sources failonempty="true">
+				<include name="${output}\Entities\Base\*.cs" />
+				<include name="${output}\Entities\*.cs" />
+				<include name="${output}\DAO\Base\*.cs" />
+				<include name="${output}\DAO\*.cs" />
+				<include name="${output}\Collections\*.cs" />
+			</sources>
+			<references>
+				<include name="${adapdev}\Adapdev.dll" />
+				<include name="${adapdev}\Adapdev.Data.dll" />
+				<include name="${codusdir}\shared\MySql.Data.dll"/>
+			</references>
+		</csc>
+		<csc target="library" output="${bin}\DAO.Tests.NUnit.dll" debug="${debug}">
+			<sources failonempty="true">
+				<include name="${output}\MockEntities\*.cs" />
+				<include name="${output}\Tests.NUnit\*.cs" />
+			</sources>
+			<references>
+				<include name="${adapdev}\Adapdev.dll" />
+				<include name="${adapdev}\Adapdev.Data.dll" />
+				<include name="${codusdir}\shared\MySql.Data.dll"/>
+				<include name="${nunit}\nunit.framework.dll" />					
+				<include name="${bin}\DAO.dll" />
+			</references>
+		</csc>
+		<csc target="library" output="${bin}\DAO.Tests.Zanebug.dll" debug="${debug}">
+			<sources failonempty="true">
+				<include name="${output}\MockEntities\*.cs" />
+				<include name="${output}\Tests.Zanebug\*.cs" />
+			</sources>
+			<references>
+				<include name="${adapdev}\Adapdev.dll" />
+				<include name="${adapdev}\Adapdev.Data.dll" />
+				<include name="${adapdev}\Adapdev.UnitTest.dll" />
+				<include name="${adapdev}\Adapdev.UnitTest.Core.dll" />
+				<include name="${codusdir}\shared\MySql.Data.dll"/>
+				<include name="${bin}\DAO.dll" />
+			</references>
+		</csc>
+
+	</target>
+</project>

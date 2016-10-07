@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<xs:schema id="TemplateProjects" targetNamespace="http://tempuri.org/TemplateProjects.xsd" xmlns:mstns="http://tempuri.org/TemplateProjects.xsd" xmlns="http://tempuri.org/TemplateProjects.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:element name="TemplateProjects" msdata:IsDataSet="true" msdata:EnforceConstraints="False">
+    <xs:complexType>
+      <xs:choice maxOccurs="unbounded">
+        <xs:element name="Solutions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Solution" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Projects" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="Project" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="ref" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="assembly" form="unqualified" type="xs:string" />
+                                    <xs:attribute name="project" form="unqualified" type="xs:string" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="name" form="unqualified" type="xs:string" />
+                              <xs:attribute name="type" form="unqualified" type="xs:string" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="name" form="unqualified" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="TemplateProject">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Name" type="xs:string" minOccurs="0" msdata:Ordinal="0" />
+              <xs:element name="Description" type="xs:string" minOccurs="0" msdata:Ordinal="1" />
+              <xs:element name="Author" type="xs:string" minOccurs="0" msdata:Ordinal="2" />
+              <xs:element name="Version" type="xs:string" minOccurs="0" msdata:Ordinal="3" />
+              <xs:element name="Copyright" type="xs:string" minOccurs="0" msdata:Ordinal="4" />
+              <xs:element name="Editor" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="assembly" form="unqualified" type="xs:string" />
+                  <xs:attribute name="class" form="unqualified" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="Templates" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Template" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="deps" minOccurs="0" maxOccurs="unbounded">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="dep" minOccurs="0" maxOccurs="unbounded">
+                                  <xs:complexType>
+                                    <xs:attribute name="key" form="unqualified" type="xs:string" />
+                                    <xs:attribute name="type" form="unqualified" type="xs:string" />
+                                    <xs:attribute name="value" form="unqualified" type="xs:string" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="type" form="unqualified" type="xs:string" />
+                        <xs:attribute name="templateFile" form="unqualified" type="xs:string" />
+                        <xs:attribute name="outputFileName" form="unqualified" type="xs:string" />
+                        <xs:attribute name="outputFileExtension" form="unqualified" type="xs:string" />
+                        <xs:attribute name="outputDirectory" form="unqualified" type="xs:string" />
+                        <xs:attribute name="className" form="unqualified" type="xs:string" />
+                        <xs:attribute name="overWrite" form="unqualified" type="xs:string" />
+                        <xs:attribute name="project" form="unqualified" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+              <xs:element name="CustomCode" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="Code" minOccurs="0" maxOccurs="unbounded">
+                      <xs:complexType>
+                        <xs:attribute name="assembly" form="unqualified" type="xs:string" />
+                        <xs:attribute name="class" form="unqualified" type="xs:string" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="solution" form="unqualified" type="xs:string" />
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="CompiledProject">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="CompiledTemplate" minOccurs="0" maxOccurs="unbounded">
+                <xs:complexType>
+                  <xs:attribute name="assembly" form="unqualified" type="xs:string" />
+                  <xs:attribute name="class" form="unqualified" type="xs:string" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,42 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Import Project="Import1.proj"/>
+
+    <Target Name="PropertyImport1">
+        <Message Text="FtpServer1URL: $(FtpServer1URL)"/>
+        <Message Text="FtpServer2URL: $(FtpServer2URL)"/>
+    </Target>
+
+</Project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

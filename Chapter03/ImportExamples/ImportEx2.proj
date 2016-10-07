@@ -1,0 +1,50 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <FtpServer1URL>ftp.sayedhashimi.com</FtpServer1URL>
+    </PropertyGroup>
+
+    <Import Project="Import1.proj"/>
+
+    <Target Name="PropertyImport1">
+        <Message Text="FtpServer1URL: $(FtpServer1URL)"/>
+    </Target>
+    <Target Name="PropertyImport2">
+        <Message Text="FtpServer2URL: $(FtpServer2URL)"/>
+    </Target>
+    <PropertyGroup>
+        <FtpServer2URL>ftp.apress.com</FtpServer2URL>
+    </PropertyGroup>
+</Project>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

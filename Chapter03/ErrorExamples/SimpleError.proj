@@ -1,0 +1,12 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <Target Name="ThrowError">
+        <Error Text="Error in ThrowError target" />
+        
+        <Message Text="We have continued"/>
+        <OnError ExecuteTargets="MessageErrorHandler"/>
+    </Target> 
+    
+    <Target Name="MessageErrorHandler">
+        <Message Text="An error has occured, build will be halted"/>
+    </Target>
+</Project>

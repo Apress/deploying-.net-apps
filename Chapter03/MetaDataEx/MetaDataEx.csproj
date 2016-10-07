@@ -1,0 +1,315 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50215</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{98F44592-1AAC-4F28-A968-D577469979E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MetaDataEx</RootNamespace>
+    <AssemblyName>MetaDataEx</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MetaDataFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MetaDataFrm.Designer.cs">
+      <DependentUpon>MetaDataFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <!-- 
+    <Compile Include="Properties\Resources.resx">
+      
+    </Compile>
+    -->
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+
+	<!-- Properties to avoid special characters mid strings -->
+	<PropertyGroup>
+		<AT_SIGN>%40</AT_SIGN>
+		<PERCENT_SIGN>%25</PERCENT_SIGN>
+		
+		<SPACE>%20</SPACE>
+		<DOUBLE_QUOTE>%22</DOUBLE_QUOTE>
+		<SINGLE_QUOTE>%27</SINGLE_QUOTE>
+		<CR>%0D</CR>
+		<LF>%0A</LF>
+
+		<!-- These Ascii properties that contai white space -->
+		<!-- Leading Space required or two consecutive tabs don't work right-->
+		<TAB>%09</TAB>
+		<!-- 
+			HARD_NEW_LINE = New line that starts at the very begining of the next line
+			SOFT_NEW_LINE = New line that starts at the next line at same horizontal position
+			  as previous line started.
+		-->
+		<HARD_NEW_LINE>%0A%0D%0C%08</HARD_NEW_LINE>
+		<SOFT_NEW_LINE>%0A%20%08</SOFT_NEW_LINE>
+	</PropertyGroup>
+
+	<!-- These properties do NOT work as expected -->
+	<PropertyGroup>
+		<!-- This doesn't work! -->
+		<BAD_NEW_LINE>%0D%0A</BAD_NEW_LINE>
+		<BAD_TAB>%09</BAD_TAB>
+		<BAD_SPACE>%20</BAD_SPACE>
+	</PropertyGroup>
+  
+	<Target Name="ShowBadAsciiProps">
+		<Message Text="Space$(BAD_SPACE)Here"/>
+		<Message Text="Space Here"/>
+
+		<Message Text="%0D%0A"/>	<!--New line -->
+		
+		<Message Text="A Tab$(BAD_TAB)Example"/>
+		<Message Text="A Tab%09Example"/>
+
+		<Message Text="%0D%0A"/>	<!--New line -->
+		<Message Text="Bad New$(BAD_NEW_LINE)Line"/>
+		<Message Text="New%0D%0ALine"/>
+	</Target>
+	<Target Name="ShowAsciiProps">
+		<Message Text="At sign: $(AT_SIGN)" />
+		<Message Text="Percent: $(PERCENT_SIGN)"/>
+		<Message Text="Double $(DOUBLE_QUOTE)Quote$(DOUBLE_QUOTE)" />
+		<Message Text="Single $(SINGLE_QUOTE)Quote$(SINGLE_QUOTE)"/>
+	</Target>
+	<Target Name="fhiteSpaceProps">
+		<Message Text="Space$(SPACE)Here"/>
+		<Message Text="Space Here"/>
+		
+		<Message Text=" "/>
+
+		<Message Text="A Tab$(TAB)Example"/>
+		<Message Text="A Tab%09Example"/>
+
+		<Message Text=" "/>
+		<Message Text="(soft)New$(SOFT_NEW_LINE)Line"/>
+		<Message Text=" "/>
+		<Message Text="(hard)New$(HARD_NEW_LINE)Line"/>
+		<Message Text=" "/>
+		
+		<Message Text="New%0D%0ALine"/>
+	</Target>
+	<Target Name="ShowNewLine">
+		<Message Text="PRE"/>
+		<Message Text="(soft)New$(SOFT_NEW_LINE)Line"/>
+		<Message Text="POST"/>
+	</Target>
+  <!-- Sample to show how to access well known data -->
+	<ItemGroup>
+		<MDForm Include="MetaDataFrm.cs">
+			<Name>Sayed Ibrahim Hashimi</Name>
+			<Email>sayed.hashimi@gmail.com</Email>
+		</MDForm>
+		<MDFormOther Include="..\..\**\MSBuild1\*.cs">
+			<Name>Sayed Y. Hashimi</Name>
+			<Email>hashimi_sayed@gmail.com</Email>
+		</MDFormOther>
+	</ItemGroup>
+	<Target Name="PrintAuthorInfo">
+		<Message Text="@(MDForm->'%(Filename)%(Extension)')" />
+		<Message Text="%09Name:%09@(MDForm->'%(Name)')"/>
+		<Message Text="%09Email:%09@(MDForm->'%(Email)')"/>
+
+		<Message Text="%0D%0A"/>  <!--New line -->
+		<Message Text="@(MDFormOther->'%(Filename)%(Extension)', '  ')" />
+		
+		<Message Text="%09Name:%09%(MDFormOther.Name)"/>
+		<Message Text="%09Email:%09%(MDFormOther.Email)"/>
+		<!-- Don't use this will print name/email once for each file included in the item
+		<Message Text="%09Name:%09@(MDFormOther->'%(Name)')"/>
+		<Message Text="%09Email:%09@(MDFormOther->'%(Email)')"/>
+		-->
+	</Target>
+	<Target Name="ShowWellKnownMD">
+		<Message Text="Normal: @(MDForm)" />
+		<Message Text="FullPath: @(MDForm->'%(FullPath)') " />
+		<Message Text="RootDir: @(MDForm->'%(RootDir)')" />
+		<Message Text="Filename: @(MDForm->'%(Filename)')" />
+		<Message Text="Extension: @(MDForm->'%(Extension)')" />
+		<Message Text="RelativeDir: @(MDForm->'%(RelativeDir)')" />
+		<Message Text="Directory: @(MDForm->'%(Directory)')" />
+		<Message Text="RecusriveDir: @(MDForm->'%(RecursiveDir)')" />
+		<Message Text="Identity: @(MDForm->'%(Identity)')" />
+		<Message Text="ModifiedTime: @(MDForm->'%(ModifiedTime)')" />
+		<Message Text="CreatedTime: @(MDForm->'%(CreatedTime)')" />
+		<Message Text="AccessedTime: @(MDForm->'%(AccessedTime)')" />
+		
+		<Message Text="%0D%0A--------------"/>
+		<Message Text="Recursive dir [MDFormOther]: "/>
+		<Message Text="%09@(MDFormOther->'%(Filename)%09%(RecursiveDir)', '%0D%0A%09')"/>
+		
+		<Message Text="%0D%0ARelative dir [MDFormOther]: "/>
+		<Message Text="%09@(MDFormOther->'%(Filename)%09%(RelativeDir)', '%0D%0A%09')"/>
+
+		<Message Text="%0D%0A********************************************************"/>
+		<Message Text="Recursive dir [MDFormOther]: "/>
+		<Message Text="@(MDFormOther->'%(Filename)')"/>
+	</Target>
+	<Target Name="ShowFiles">
+		<Message Text="MDFormOther files:" />
+		<!-- Uses standard ; delimiter -->
+		<Message Text="Default delimiter" />
+		<Message Text="@(MDFormOther->'%(Filename)')" />
+		<!-- Uses , delimiter instead-->
+		<Message Text="Comma delimiter" />
+		<Message Text="@(MDFormOther->'%(Filename)', ',')" />
+		<!-- This lines up the filenames -->
+		<Message Text="Align on new lines"/>
+		<Message Text="@(MDFormOther->'%(Filename)', '%0D%0A')" />
+	</Target>
+	<Target Name="ShowFilesFinal">
+		<Message Text="MDFormOther files:%0D%0A" />
+		<!-- Uses standard ; delimiter -->
+		<Message Text="Default delimiter" />
+		<Message Text="%09@(MDFormOther->'%(Filename)')" />
+		<Message Text="%0D%0A"/>
+		
+		<!-- Uses , delimiter instead-->
+		<Message Text="Comma delimiter" />
+		<Message Text="%09@(MDFormOther->'%(Filename)', ',')" />
+		<Message Text="%0D%0A"/>
+		<!-- This lines up the filenames -->
+		<Message Text="Align on new lines"/>
+		<Message Text="%09@(MDFormOther->'%(Filename)', '%0D%0A%09')" />
+		<Message Text="%0D%0A"/>
+	</Target>
+	<Target Name="FormatNewline">
+		<Message Text="FirstLine%0D%0ASecondLine" />
+	</Target>
+	<Target Name="ErrorExample">
+		<Message Text="Start ErrorExample"/>
+		<Error Text="An error has occured, please handle it!" />
+		<OnError ExecuteTargets="HandleError;HandleError3"/>
+	</Target>
+	<Target Name="HandleError">
+		<Message Text="An Error has occured, the build will be aborted!"/>
+		<Error Text="Sending to next error handler" />
+
+		<OnError ExecuteTargets="HandleError2"/>
+	</Target>
+
+	<!-- TODO: Fix these examples with 2005 RC -->
+	<Target Name="VectorScalar1">
+		<Message Text="%40(MDForm->'% (Filename)'):  @(MDForm->'%(Filename)')" />
+		<Message Text="%25(MDForm.Filename): %(MDForm.Filename)" />
+	</Target>
+	<Target Name="VectorScalar2">
+		<Message Text="%40(Compile->'%25(Filename)'):  @(Compile->'%(Filename)')"/>
+
+		<Message Text=" "/>	<!-- Empty line for readability -->
+		
+		<Message Text="%25(Compile.Filename): %(Compile.Filename)"/>
+	</Target>
+  <Target Name="VectorScalar3">
+    <Message Text="%40(Compile->'%25(Filename)%25(Extension)'):  @(Compile->'%(Filename)%(Extension)')"/>
+
+    <Message Text=" "/> <!-- Empty line for readability -->
+
+    <Message Text="%25(Compile.Filename)%25(Extension): %(Compile.Filename)%(Extension)"/>
+    <Message Text=" "/> <!-- Empty line for readability -->
+
+    <!-- Most likely not what you want to do -->
+    <Message Text="%40(Compile->'%25(Filename)')%25(Extension):  @(Compile->'%(Filename)')%(Extension)"/>
+  </Target>
+  <Target Name="TranzTodo">
+    <Message Text="%25(Compile.Filename)%25(Extension): %(Reference.Identity) %(Filename) %(Compile.Extension)"/>
+  </Target>
+  <Target Name="PrintSystemPath">
+    <!--  slows down the build so commented out :)
+    <Message Text="Path: $(Path)"/>
+    -->
+  </Target>
+  <Target Name="ExecuteTest">
+    <Exec Command="echo This is really just a test" />
+  </Target>
+  
+	
+	
+	
+	
+	
+	<Target Name="HandleError2">
+		<Message Text="HandleError2 executing now"/>
+	</Target>
+	<Target Name="HandleError3">
+		<Message Text="HandleError3 executing now"/>
+	</Target>
+	
+	<Target Name="HandleError"	>
+		<Message Text="HandleError again"/>
+	</Target>
+
+	<ItemGroup>
+		<One Include="MetaDataEx.cs">
+			<Two>
+				<Three>Value Three</Three>
+			</Two>
+		</One>
+		<Test Include="MetaDataEx.cs">
+			<TestValue>test value here</TestValue>
+		</Test>
+	</ItemGroup>
+	<Target Name="PrintThree">
+		<Message Text="Test Three Value: $(Test.TestValue)"/>
+<!--		@(RESXFile->'%(filename).resources') 
+		<Message Text="@(One->'%(Two)->InnerXml')"/>
+		-->
+	</Target>
+  <Target Name="TestSpace">
+    <Message Text="This is a%09test"/>
+  </Target>
+</Project>
+
+
+
+
+
+

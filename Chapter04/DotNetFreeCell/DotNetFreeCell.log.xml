@@ -1,0 +1,1505 @@
+<MSBuild>
+  <Build Started="12/2/2005 5:51:45 PM" Verbosity="Normal" Finished="12/2/2005 5:51:54 PM" Succeeded="True">
+    <Message>Build started.</Message>
+    <Project Name="C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.sln" Message="Project &quot;DotNetFreeCell.sln&quot; (Clean;Build target(s)):" Started="12/2/2005 5:51:45 PM" Finished="12/2/2005 5:51:54 PM">
+      <Target Started="12/2/2005 5:51:45 PM" Name="ValidateSolutionConfiguration" Message="Target &quot;ValidateSolutionConfiguration&quot; in project &quot;DotNetFreeCell.sln&quot;" Finished="12/2/2005 5:51:45 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:45 PM" Name="Message" Finished="12/2/2005 5:51:45 PM">
+          <Message Importance="Normal">Building solution configuration "Debug|Any CPU".</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:51:45 PM" Name="Clean" Message="Target &quot;Clean&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="12/2/2005 5:51:45 PM" Name="CallTarget" Finished="12/2/2005 5:51:45 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:45 PM" Name="CardLib:Clean" Message="Target &quot;CardLib:Clean&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="12/2/2005 5:51:45 PM" Name="MSBuild" Finished="12/2/2005 5:51:45 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:45 PM" Name="DotNetFreeCell:Clean" Message="Target &quot;DotNetFreeCell:Clean&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="12/2/2005 5:51:45 PM" Name="MSBuild" Finished="12/2/2005 5:51:45 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:45 PM" Name="Build" Message="Target &quot;Build&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="12/2/2005 5:51:45 PM" Name="CallTarget" Finished="12/2/2005 5:51:54 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:45 PM" Name="CardLib" Message="Target &quot;CardLib&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="12/2/2005 5:51:45 PM" Name="MSBuild" Finished="12/2/2005 5:51:52 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:52 PM" Name="DotNetFreeCell" Message="Target &quot;DotNetFreeCell&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="12/2/2005 5:51:52 PM" Name="MSBuild" Finished="12/2/2005 5:51:54 PM" />
+      </Target>
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" Message="Project &quot;CardLib.vbproj&quot; (Clean target(s)):" Started="12/2/2005 5:51:45 PM" Finished="12/2/2005 5:51:45 PM">
+      <Target Started="12/2/2005 5:51:45 PM" Name="_CheckForInvalidConfigurationAndPlatform" Message="Target &quot;_CheckForInvalidConfigurationAndPlatform&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:45 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:45 PM" Name="Message" Finished="12/2/2005 5:51:45 PM" />
+        <Task Started="12/2/2005 5:51:45 PM" Name="Message" Finished="12/2/2005 5:51:45 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:45 PM" Name="BeforeClean" Message="Target &quot;BeforeClean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:45 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:45 PM" Name="CleanReferencedProjects" Message="Target &quot;CleanReferencedProjects&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:45 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:45 PM" Name="CoreClean" Message="Target &quot;CoreClean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:45 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:45 PM" Name="ReadLinesFromFile" Finished="12/2/2005 5:51:45 PM" />
+        <Task Started="12/2/2005 5:51:45 PM" Name="FindUnderPath" Finished="12/2/2005 5:51:45 PM" />
+        <Task Started="12/2/2005 5:51:45 PM" Name="FindUnderPath" Finished="12/2/2005 5:51:45 PM" />
+        <Task Started="12/2/2005 5:51:45 PM" Name="Delete" Finished="12/2/2005 5:51:45 PM">
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.dll".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.pdb".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.xml".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.01C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.01D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.01H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.01S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.02C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.02D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.02H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.02S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.03C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.03D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.03H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.03S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.04C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.04D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.04H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.04S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.05C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.05D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.05H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.05S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.06C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.06D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.06H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.06S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.07C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.07D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.07H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.07S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.08C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.08D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.08H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.08S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.09C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.09D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.09H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.09S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.10C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.10D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.10H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.10S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.11C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.11D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.11H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.11S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.12C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.12D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.12H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.12S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.13C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.13D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.13H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.13S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.Resources.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.Card.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.vbproj.GenerateResource.Cache".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.dll".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.xml".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.pdb".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:51:45 PM" Name="CreateItem" Finished="12/2/2005 5:51:45 PM" />
+        <Task Started="12/2/2005 5:51:45 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:51:45 PM" />
+        <Task Started="12/2/2005 5:51:45 PM" Name="MakeDir" Finished="12/2/2005 5:51:45 PM" />
+        <Task Started="12/2/2005 5:51:45 PM" Name="WriteLinesToFile" Finished="12/2/2005 5:51:45 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:45 PM" Name="CleanPublishFolder" Message="Target &quot;CleanPublishFolder&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:45 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:45 PM" Name="AfterClean" Message="Target &quot;AfterClean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:45 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:45 PM" Name="Clean" Message="Target &quot;Clean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:45 PM" Succeeded="True" />
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj" Message="Project &quot;DotNetFreeCell.vbproj&quot; (Clean target(s)):" Started="12/2/2005 5:51:45 PM" Finished="12/2/2005 5:51:45 PM">
+      <Target Started="12/2/2005 5:51:45 PM" Name="_CheckForInvalidConfigurationAndPlatform" Message="Target &quot;_CheckForInvalidConfigurationAndPlatform&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:45 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:45 PM" Name="Message" Finished="12/2/2005 5:51:45 PM" />
+        <Task Started="12/2/2005 5:51:45 PM" Name="Message" Finished="12/2/2005 5:51:45 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:45 PM" Name="BeforeClean" Message="Target &quot;BeforeClean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:45 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:45 PM" Name="CleanReferencedProjects" Message="Target &quot;CleanReferencedProjects&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:45 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:45 PM" Name="CoreClean" Message="Target &quot;CoreClean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:45 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:45 PM" Name="ReadLinesFromFile" Finished="12/2/2005 5:51:45 PM" />
+        <Task Started="12/2/2005 5:51:45 PM" Name="FindUnderPath" Finished="12/2/2005 5:51:45 PM" />
+        <Task Started="12/2/2005 5:51:45 PM" Name="FindUnderPath" Finished="12/2/2005 5:51:45 PM" />
+        <Task Started="12/2/2005 5:51:45 PM" Name="Delete" Finished="12/2/2005 5:51:45 PM">
+          <Message Importance="Normal">Deleting file "bin\Debug\DotNetFreeCell.exe".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\DotNetFreeCell.pdb".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\DotNetFreeCell.xml".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.dll".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.pdb".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.xml".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\ResolveAssemblyReference.cache".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.NORMAL05.CUR".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.Form1.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.FreeCellColumn.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.frmChooseGame.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.Resources.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.frmStatistics.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.vbproj.GenerateResource.Cache".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.exe".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.xml".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.pdb".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:51:45 PM" Name="CreateItem" Finished="12/2/2005 5:51:45 PM" />
+        <Task Started="12/2/2005 5:51:45 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:51:45 PM" />
+        <Task Started="12/2/2005 5:51:45 PM" Name="MakeDir" Finished="12/2/2005 5:51:45 PM" />
+        <Task Started="12/2/2005 5:51:45 PM" Name="WriteLinesToFile" Finished="12/2/2005 5:51:45 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:45 PM" Name="CleanPublishFolder" Message="Target &quot;CleanPublishFolder&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:45 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:45 PM" Name="AfterClean" Message="Target &quot;AfterClean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:45 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:45 PM" Name="Clean" Message="Target &quot;Clean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:45 PM" Succeeded="True" />
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" Message="Project &quot;CardLib.vbproj&quot; (default targets):" Started="12/2/2005 5:51:45 PM" Finished="12/2/2005 5:51:52 PM">
+      <Target Started="12/2/2005 5:51:45 PM" Name="BeforeBuild" Message="Target &quot;BeforeBuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:45 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:45 PM" Name="BuildOnlySettings" Message="Target &quot;BuildOnlySettings&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:46 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:45 PM" Name="CreateProperty" Finished="12/2/2005 5:51:45 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:46 PM" Name="GetFrameworkPaths" Message="Target &quot;GetFrameworkPaths&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:46 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:46 PM" Name="GetFrameworkPath" Finished="12/2/2005 5:51:46 PM" />
+        <Task Started="12/2/2005 5:51:46 PM" Name="GetFrameworkSDKPath" Finished="12/2/2005 5:51:46 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:46 PM" Name="PrepareForBuild" Message="Target &quot;PrepareForBuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:46 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:46 PM" Name="CreateProperty" Finished="12/2/2005 5:51:46 PM" />
+        <Task Started="12/2/2005 5:51:46 PM" Name="CreateProperty" Finished="12/2/2005 5:51:46 PM" />
+        <Task Started="12/2/2005 5:51:46 PM" Name="CreateItem" Finished="12/2/2005 5:51:46 PM" />
+        <Task Started="12/2/2005 5:51:46 PM" Name="MakeDir" Finished="12/2/2005 5:51:46 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:46 PM" Name="BeforeResolveReferences" Message="Target &quot;BeforeResolveReferences&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:46 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:46 PM" Name="GetRedistLists" Message="Target &quot;GetRedistLists&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:46 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:46 PM" Name="CreateItem" Finished="12/2/2005 5:51:46 PM" />
+        <Task Started="12/2/2005 5:51:46 PM" Name="CreateItem" Finished="12/2/2005 5:51:46 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:46 PM" Name="ResolveAssemblyReferences" Message="Target &quot;ResolveAssemblyReferences&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:46 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:46 PM" Name="CreateProperty" Finished="12/2/2005 5:51:46 PM" />
+        <Task Started="12/2/2005 5:51:46 PM" Name="ResolveAssemblyReference" Finished="12/2/2005 5:51:46 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:46 PM" Name="AfterResolveReferences" Message="Target &quot;AfterResolveReferences&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:46 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:46 PM" Name="ResolveReferences" Message="Target &quot;ResolveReferences&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:46 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:46 PM" Name="AssignTargetPaths" Message="Target &quot;AssignTargetPaths&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:46 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:46 PM" Name="AssignTargetPath" Finished="12/2/2005 5:51:46 PM" />
+        <Task Started="12/2/2005 5:51:46 PM" Name="AssignTargetPath" Finished="12/2/2005 5:51:46 PM" />
+        <Task Started="12/2/2005 5:51:46 PM" Name="AssignTargetPath" Finished="12/2/2005 5:51:46 PM" />
+        <Task Started="12/2/2005 5:51:46 PM" Name="AssignTargetPath" Finished="12/2/2005 5:51:46 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:46 PM" Name="SplitResourcesByCulture" Message="Target &quot;SplitResourcesByCulture&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:46 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:46 PM" Name="AssignCulture" Finished="12/2/2005 5:51:46 PM" />
+        <Task Started="12/2/2005 5:51:46 PM" Name="AssignCulture" Finished="12/2/2005 5:51:46 PM" />
+        <Task Started="12/2/2005 5:51:46 PM" Name="CreateItem" Finished="12/2/2005 5:51:46 PM" />
+        <Task Started="12/2/2005 5:51:46 PM" Name="CreateItem" Finished="12/2/2005 5:51:46 PM" />
+        <Task Started="12/2/2005 5:51:46 PM" Name="CreateItem" Finished="12/2/2005 5:51:46 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:46 PM" Name="CreateManifestResourceNames" Message="Target &quot;CreateManifestResourceNames&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:46 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:46 PM" Name="CreateVisualBasicManifestResourceName" Finished="12/2/2005 5:51:46 PM" />
+        <Task Started="12/2/2005 5:51:46 PM" Name="CreateVisualBasicManifestResourceName" Finished="12/2/2005 5:51:46 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:46 PM" Name="PrepareResourceNames" Message="Target &quot;PrepareResourceNames&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:46 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:46 PM" Name="_CopyNonResxEmbeddedResources" Message="Target &quot;_CopyNonResxEmbeddedResources&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:46 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:46 PM" Name="Copy" Finished="12/2/2005 5:51:46 PM">
+          <Message Importance="Normal">Copying file from "Images\01C.png" to "obj\Debug\CardLib.01C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\01D.png" to "obj\Debug\CardLib.01D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\01H.png" to "obj\Debug\CardLib.01H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\01S.png" to "obj\Debug\CardLib.01S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\02C.png" to "obj\Debug\CardLib.02C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\02D.png" to "obj\Debug\CardLib.02D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\02H.png" to "obj\Debug\CardLib.02H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\02S.png" to "obj\Debug\CardLib.02S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\03C.png" to "obj\Debug\CardLib.03C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\03D.png" to "obj\Debug\CardLib.03D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\03H.png" to "obj\Debug\CardLib.03H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\03S.png" to "obj\Debug\CardLib.03S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\04C.png" to "obj\Debug\CardLib.04C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\04D.png" to "obj\Debug\CardLib.04D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\04H.png" to "obj\Debug\CardLib.04H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\04S.png" to "obj\Debug\CardLib.04S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\05C.png" to "obj\Debug\CardLib.05C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\05D.png" to "obj\Debug\CardLib.05D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\05H.png" to "obj\Debug\CardLib.05H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\05S.png" to "obj\Debug\CardLib.05S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\06C.png" to "obj\Debug\CardLib.06C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\06D.png" to "obj\Debug\CardLib.06D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\06H.png" to "obj\Debug\CardLib.06H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\06S.png" to "obj\Debug\CardLib.06S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\07C.png" to "obj\Debug\CardLib.07C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\07D.png" to "obj\Debug\CardLib.07D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\07H.png" to "obj\Debug\CardLib.07H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\07S.png" to "obj\Debug\CardLib.07S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\08C.png" to "obj\Debug\CardLib.08C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\08D.png" to "obj\Debug\CardLib.08D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\08H.png" to "obj\Debug\CardLib.08H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\08S.png" to "obj\Debug\CardLib.08S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\09C.png" to "obj\Debug\CardLib.09C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\09D.png" to "obj\Debug\CardLib.09D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\09H.png" to "obj\Debug\CardLib.09H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\09S.png" to "obj\Debug\CardLib.09S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\10C.png" to "obj\Debug\CardLib.10C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\10D.png" to "obj\Debug\CardLib.10D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\10H.png" to "obj\Debug\CardLib.10H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\10S.png" to "obj\Debug\CardLib.10S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\11C.png" to "obj\Debug\CardLib.11C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\11D.png" to "obj\Debug\CardLib.11D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\11H.png" to "obj\Debug\CardLib.11H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\11S.png" to "obj\Debug\CardLib.11S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\12C.png" to "obj\Debug\CardLib.12C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\12D.png" to "obj\Debug\CardLib.12D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\12H.png" to "obj\Debug\CardLib.12H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\12S.png" to "obj\Debug\CardLib.12S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\13C.png" to "obj\Debug\CardLib.13C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\13D.png" to "obj\Debug\CardLib.13D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\13H.png" to "obj\Debug\CardLib.13H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\13S.png" to "obj\Debug\CardLib.13S.png".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:51:46 PM" Name="MakeDir" Finished="12/2/2005 5:51:46 PM" />
+        <Task Started="12/2/2005 5:51:46 PM" Name="Copy" Finished="12/2/2005 5:51:46 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:46 PM" Name="BeforeResGen" Message="Target &quot;BeforeResGen&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:46 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:46 PM" Name="CoreResGen" Message="Target &quot;CoreResGen&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:47 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:46 PM" Name="GenerateResource" Finished="12/2/2005 5:51:47 PM">
+          <Message Importance="Normal">Processing resource file "My Project\Resources.resx" into "obj\Debug\CardLib.Resources.resources".</Message>
+          <Message Importance="Normal">Processing resource file "Card.resx" into "obj\Debug\CardLib.Card.resources".</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:51:47 PM" Name="AfterResGen" Message="Target &quot;AfterResGen&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:47 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:47 PM" Name="ResGen" Message="Target &quot;ResGen&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:47 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:47 PM" Name="PrepareRdlFiles" Message="Target &quot;PrepareRdlFiles&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:47 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:47 PM" Name="CompileRdlFiles" Message="Target &quot;CompileRdlFiles&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:47 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:47 PM" Name="PrepareResources" Message="Target &quot;PrepareResources&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:47 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:47 PM" Name="BeforeCompile" Message="Target &quot;BeforeCompile&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:47 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:47 PM" Name="CoreCompile" Message="Target &quot;CoreCompile&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:47 PM" Name="Vbc" Finished="12/2/2005 5:51:52 PM">
+          <Message Importance="High">c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Vbc.exe /noconfig /imports:Microsoft.VisualBasic,System,System.Collections,System.Collections.Generic,System.Data,System.Diagnostics /nowarn:42016,41999,42017,42018,42019,42032,42036,42020,42021,42022 /rootnamespace:CardLib /doc:obj\Debug\CardLib.xml /define:"CONFIG=\"Debug\",DEBUG=-1,TRACE=-1,_MyType=\"Windows\",PLATFORM=\"AnyCPU\"" /reference:c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug+ /debug:full /out:obj\Debug\CardLib.dll /resource:obj\Debug\CardLib.Resources.resources /resource:obj\Debug\CardLib.Card.resources /resource:obj\Debug\CardLib.01C.png /resource:obj\Debug\CardLib.01D.png /resource:obj\Debug\CardLib.01H.png /resource:obj\Debug\CardLib.01S.png /resource:obj\Debug\CardLib.02C.png /resource:obj\Debug\CardLib.02D.png /resource:obj\Debug\CardLib.02H.png /resource:obj\Debug\CardLib.02S.png /resource:obj\Debug\CardLib.03C.png /resource:obj\Debug\CardLib.03D.png /resource:obj\Debug\CardLib.03H.png /resource:obj\Debug\CardLib.03S.png /resource:obj\Debug\CardLib.04C.png /resource:obj\Debug\CardLib.04D.png /resource:obj\Debug\CardLib.04H.png /resource:obj\Debug\CardLib.04S.png /resource:obj\Debug\CardLib.05C.png /resource:obj\Debug\CardLib.05D.png /resource:obj\Debug\CardLib.05H.png /resource:obj\Debug\CardLib.05S.png /resource:obj\Debug\CardLib.06C.png /resource:obj\Debug\CardLib.06D.png /resource:obj\Debug\CardLib.06H.png /resource:obj\Debug\CardLib.06S.png /resource:obj\Debug\CardLib.07C.png /resource:obj\Debug\CardLib.07D.png /resource:obj\Debug\CardLib.07H.png /resource:obj\Debug\CardLib.07S.png /resource:obj\Debug\CardLib.08C.png /resource:obj\Debug\CardLib.08D.png /resource:obj\Debug\CardLib.08H.png /resource:obj\Debug\CardLib.08S.png /resource:obj\Debug\CardLib.09C.png /resource:obj\Debug\CardLib.09D.png /resource:obj\Debug\CardLib.09H.png /resource:obj\Debug\CardLib.09S.png /resource:obj\Debug\CardLib.10C.png /resource:obj\Debug\CardLib.10D.png /resource:obj\Debug\CardLib.10H.png /resource:obj\Debug\CardLib.10S.png /resource:obj\Debug\CardLib.11C.png /resource:obj\Debug\CardLib.11D.png /resource:obj\Debug\CardLib.11H.png /resource:obj\Debug\CardLib.11S.png /resource:obj\Debug\CardLib.12C.png /resource:obj\Debug\CardLib.12D.png /resource:obj\Debug\CardLib.12H.png /resource:obj\Debug\CardLib.12S.png /resource:obj\Debug\CardLib.13C.png /resource:obj\Debug\CardLib.13D.png /resource:obj\Debug\CardLib.13H.png /resource:obj\Debug\CardLib.13S.png /target:library CardDeck.vb Card.Designer.vb Card.vb "My Project\AssemblyInfo.vb" "My Project\Application.Designer.vb" "My Project\Resources.Designer.vb" "My Project\Settings.Designer.vb"</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:51:52 PM" Name="AfterCompile" Message="Target &quot;AfterCompile&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:52 PM" Name="Compile" Message="Target &quot;Compile&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:52 PM" Name="GetTargetPath" Message="Target &quot;GetTargetPath&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:52 PM" Name="_CopyFilesMarkedCopyLocal" Message="Target &quot;_CopyFilesMarkedCopyLocal&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:52 PM" Name="Copy" Finished="12/2/2005 5:51:52 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:52 PM" Name="GetCopyToOutputDirectoryItems" Message="Target &quot;GetCopyToOutputDirectoryItems&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:52 PM" Name="AssignTargetPath" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateItem" Finished="12/2/2005 5:51:52 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:52 PM" Name="_CopySourceItemsToOutputDirectory" Message="Target &quot;_CopySourceItemsToOutputDirectory&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:52 PM" Name="_CheckForCompileOutputs" Message="Target &quot;_CheckForCompileOutputs&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateItem" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateItem" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateItem" Finished="12/2/2005 5:51:52 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:52 PM" Name="CopyFilesToOutputDirectory" Message="Target &quot;CopyFilesToOutputDirectory&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:52 PM" Name="Copy" Finished="12/2/2005 5:51:52 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\CardLib.dll" to "bin\Debug\CardLib.dll".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:51:52 PM" Name="Message" Finished="12/2/2005 5:51:52 PM">
+          <Message Importance="High">CardLib -&gt; C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.dll</Message>
+        </Task>
+        <Task Started="12/2/2005 5:51:52 PM" Name="Copy" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="Copy" Finished="12/2/2005 5:51:52 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\CardLib.pdb" to "bin\Debug\CardLib.pdb".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:51:52 PM" Name="Copy" Finished="12/2/2005 5:51:52 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\CardLib.xml" to "bin\Debug\CardLib.xml".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:51:52 PM" Name="Copy" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="Copy" Finished="12/2/2005 5:51:52 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:52 PM" Name="PrepareForRun" Message="Target &quot;PrepareForRun&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:52 PM" Name="_CleanGetCurrentAndPriorFileWrites" Message="Target &quot;_CleanGetCurrentAndPriorFileWrites&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:52 PM" Name="ReadLinesFromFile" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateItem" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="FindUnderPath" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="FindUnderPath" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="FindUnderPath" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateItem" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:51:52 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:52 PM" Name="IncrementalClean" Message="Target &quot;IncrementalClean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateItem" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="FindUnderPath" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="FindUnderPath" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="Delete" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateItem" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="MakeDir" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="WriteLinesToFile" Finished="12/2/2005 5:51:52 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:52 PM" Name="CoreBuild" Message="Target &quot;CoreBuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:52 PM" Name="AfterBuild" Message="Target &quot;AfterBuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:52 PM" Name="Build" Message="Target &quot;Build&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True" />
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj" Message="Project &quot;DotNetFreeCell.vbproj&quot; (default targets):" Started="12/2/2005 5:51:52 PM" Finished="12/2/2005 5:51:54 PM">
+      <Target Started="12/2/2005 5:51:52 PM" Name="BeforeBuild" Message="Target &quot;BeforeBuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:52 PM" Name="BuildOnlySettings" Message="Target &quot;BuildOnlySettings&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateProperty" Finished="12/2/2005 5:51:52 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:52 PM" Name="GetFrameworkPaths" Message="Target &quot;GetFrameworkPaths&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:52 PM" Name="GetFrameworkPath" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="GetFrameworkSDKPath" Finished="12/2/2005 5:51:52 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:52 PM" Name="PrepareForBuild" Message="Target &quot;PrepareForBuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateProperty" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateProperty" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateItem" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="MakeDir" Finished="12/2/2005 5:51:52 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:52 PM" Name="BeforeResolveReferences" Message="Target &quot;BeforeResolveReferences&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:52 PM" Name="SplitProjectReferencesByType" Message="Target &quot;SplitProjectReferencesByType&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:52 PM" Name="AssignProjectConfiguration" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateItem" Finished="12/2/2005 5:51:52 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:52 PM" Name="_SplitProjectReferencesByFileExistence" Message="Target &quot;_SplitProjectReferencesByFileExistence&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateItem" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateItem" Finished="12/2/2005 5:51:52 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:52 PM" Name="ResolveProjectReferences" Message="Target &quot;ResolveProjectReferences&quot; in project &quot;DotNetFreeCell.vbproj&quot;">
+        <Task Started="12/2/2005 5:51:52 PM" Name="MSBuild" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="MSBuild" Finished="12/2/2005 5:51:52 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:52 PM" Name="GetRedistLists" Message="Target &quot;GetRedistLists&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateItem" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateItem" Finished="12/2/2005 5:51:52 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:52 PM" Name="ResolveAssemblyReferences" Message="Target &quot;ResolveAssemblyReferences&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateProperty" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="CreateItem" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="ResolveAssemblyReference" Finished="12/2/2005 5:51:52 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:52 PM" Name="AfterResolveReferences" Message="Target &quot;AfterResolveReferences&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:52 PM" Name="ResolveReferences" Message="Target &quot;ResolveReferences&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:52 PM" Name="AssignTargetPaths" Message="Target &quot;AssignTargetPaths&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:52 PM" Name="AssignTargetPath" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="AssignTargetPath" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="AssignTargetPath" Finished="12/2/2005 5:51:52 PM" />
+        <Task Started="12/2/2005 5:51:52 PM" Name="AssignTargetPath" Finished="12/2/2005 5:51:52 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:52 PM" Name="SplitResourcesByCulture" Message="Target &quot;SplitResourcesByCulture&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:53 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:52 PM" Name="AssignCulture" Finished="12/2/2005 5:51:53 PM" />
+        <Task Started="12/2/2005 5:51:53 PM" Name="AssignCulture" Finished="12/2/2005 5:51:53 PM" />
+        <Task Started="12/2/2005 5:51:53 PM" Name="CreateItem" Finished="12/2/2005 5:51:53 PM" />
+        <Task Started="12/2/2005 5:51:53 PM" Name="CreateItem" Finished="12/2/2005 5:51:53 PM" />
+        <Task Started="12/2/2005 5:51:53 PM" Name="CreateItem" Finished="12/2/2005 5:51:53 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:53 PM" Name="CreateManifestResourceNames" Message="Target &quot;CreateManifestResourceNames&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:53 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:53 PM" Name="CreateVisualBasicManifestResourceName" Finished="12/2/2005 5:51:53 PM" />
+        <Task Started="12/2/2005 5:51:53 PM" Name="CreateVisualBasicManifestResourceName" Finished="12/2/2005 5:51:53 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:53 PM" Name="PrepareResourceNames" Message="Target &quot;PrepareResourceNames&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:53 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:53 PM" Name="_CopyNonResxEmbeddedResources" Message="Target &quot;_CopyNonResxEmbeddedResources&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:53 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:53 PM" Name="Copy" Finished="12/2/2005 5:51:53 PM">
+          <Message Importance="Normal">Copying file from "NORMAL05.CUR" to "obj\Debug\DotNetFreeCell.NORMAL05.CUR".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:51:53 PM" Name="MakeDir" Finished="12/2/2005 5:51:53 PM" />
+        <Task Started="12/2/2005 5:51:53 PM" Name="Copy" Finished="12/2/2005 5:51:53 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:53 PM" Name="BeforeResGen" Message="Target &quot;BeforeResGen&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:53 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:53 PM" Name="CoreResGen" Message="Target &quot;CoreResGen&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:53 PM" Name="GenerateResource" Finished="12/2/2005 5:51:54 PM">
+          <Message Importance="Normal">Processing resource file "Form1.resx" into "obj\Debug\DotNetFreeCell.Form1.resources".</Message>
+          <Message Importance="Normal">Processing resource file "FreeCellColumn.resx" into "obj\Debug\DotNetFreeCell.FreeCellColumn.resources".</Message>
+          <Message Importance="Normal">Processing resource file "frmChooseGame.resx" into "obj\Debug\DotNetFreeCell.frmChooseGame.resources".</Message>
+          <Message Importance="Normal">Processing resource file "My Project\Resources.resx" into "obj\Debug\DotNetFreeCell.Resources.resources".</Message>
+          <Message Importance="Normal">Processing resource file "frmStatistics.resx" into "obj\Debug\DotNetFreeCell.frmStatistics.resources".</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:51:54 PM" Name="AfterResGen" Message="Target &quot;AfterResGen&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:54 PM" Name="ResGen" Message="Target &quot;ResGen&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:54 PM" Name="PrepareRdlFiles" Message="Target &quot;PrepareRdlFiles&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:54 PM" Name="CompileRdlFiles" Message="Target &quot;CompileRdlFiles&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:54 PM" Name="PrepareResources" Message="Target &quot;PrepareResources&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:54 PM" Name="BeforeCompile" Message="Target &quot;BeforeCompile&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:54 PM" Name="CoreCompile" Message="Target &quot;CoreCompile&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:54 PM" Name="Vbc" Finished="12/2/2005 5:51:54 PM">
+          <Message Importance="High">c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Vbc.exe /noconfig /imports:Microsoft.VisualBasic,System,System.Collections,System.Collections.Generic,System.Drawing,System.Diagnostics,System.Windows.Forms /nowarn:42016,41999,42017,42018,42019,42032,42036,42020,42021,42022 /rootnamespace:DotNetFreeCell /doc:obj\Debug\DotNetFreeCell.xml /define:"CONFIG=\"Debug\",DEBUG=-1,TRACE=-1,_MyType=\"WindowsForms\",PLATFORM=\"AnyCPU\"" /reference:C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Deployment.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll /main:DotNetFreeCell.My.MyApplication /debug+ /debug:full /out:obj\Debug\DotNetFreeCell.exe /resource:obj\Debug\DotNetFreeCell.Form1.resources /resource:obj\Debug\DotNetFreeCell.FreeCellColumn.resources /resource:obj\Debug\DotNetFreeCell.frmChooseGame.resources /resource:obj\Debug\DotNetFreeCell.Resources.resources /resource:obj\Debug\DotNetFreeCell.frmStatistics.resources /resource:obj\Debug\DotNetFreeCell.NORMAL05.CUR /target:winexe /win32icon:Icon1.ico CompletedCell.Designer.vb CompletedCell.vb EmptyCell.Designer.vb EmptyCell.vb Form1.vb Form1.Designer.vb FreeCellColumn.Designer.vb FreeCellColumn.vb frmChooseGame.Designer.vb frmChooseGame.vb frmStatistics.Designer.vb frmStatistics.vb "My Project\AssemblyInfo.vb" "My Project\Application.Designer.vb" "My Project\Resources.Designer.vb" "My Project\Settings.Designer.vb" "My Project\ApplicationEvents.vb"</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:51:54 PM" Name="AfterCompile" Message="Target &quot;AfterCompile&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:54 PM" Name="Compile" Message="Target &quot;Compile&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:54 PM" Name="GetTargetPath" Message="Target &quot;GetTargetPath&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:54 PM" Name="_CopyFilesMarkedCopyLocal" Message="Target &quot;_CopyFilesMarkedCopyLocal&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:54 PM" Name="Copy" Finished="12/2/2005 5:51:54 PM">
+          <Message Importance="Normal">Copying file from "C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.dll" to "bin\Debug\CardLib.dll".</Message>
+          <Message Importance="Normal">Copying file from "C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.pdb" to "bin\Debug\CardLib.pdb".</Message>
+          <Message Importance="Normal">Copying file from "C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.xml" to "bin\Debug\CardLib.xml".</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:51:54 PM" Name="GetCopyToOutputDirectoryItems" Message="Target &quot;GetCopyToOutputDirectoryItems&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:54 PM" Name="MSBuild" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="AssignTargetPath" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="CreateItem" Finished="12/2/2005 5:51:54 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:54 PM" Name="_CopySourceItemsToOutputDirectory" Message="Target &quot;_CopySourceItemsToOutputDirectory&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:54 PM" Name="_CheckForCompileOutputs" Message="Target &quot;_CheckForCompileOutputs&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:54 PM" Name="CreateItem" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="CreateItem" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="CreateItem" Finished="12/2/2005 5:51:54 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:54 PM" Name="CopyFilesToOutputDirectory" Message="Target &quot;CopyFilesToOutputDirectory&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:54 PM" Name="Copy" Finished="12/2/2005 5:51:54 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\DotNetFreeCell.exe" to "bin\Debug\DotNetFreeCell.exe".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:51:54 PM" Name="Message" Finished="12/2/2005 5:51:54 PM">
+          <Message Importance="High">DotNetFreeCell -&gt; C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\bin\Debug\DotNetFreeCell.exe</Message>
+        </Task>
+        <Task Started="12/2/2005 5:51:54 PM" Name="Copy" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="Copy" Finished="12/2/2005 5:51:54 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\DotNetFreeCell.pdb" to "bin\Debug\DotNetFreeCell.pdb".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:51:54 PM" Name="Copy" Finished="12/2/2005 5:51:54 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\DotNetFreeCell.xml" to "bin\Debug\DotNetFreeCell.xml".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:51:54 PM" Name="Copy" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="Copy" Finished="12/2/2005 5:51:54 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:54 PM" Name="PrepareForRun" Message="Target &quot;PrepareForRun&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:54 PM" Name="_CleanGetCurrentAndPriorFileWrites" Message="Target &quot;_CleanGetCurrentAndPriorFileWrites&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:54 PM" Name="ReadLinesFromFile" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="CreateItem" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="FindUnderPath" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="FindUnderPath" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="FindUnderPath" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="CreateItem" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:51:54 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:54 PM" Name="IncrementalClean" Message="Target &quot;IncrementalClean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:51:54 PM" Name="CreateItem" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="FindUnderPath" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="FindUnderPath" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="Delete" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="CreateItem" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="MakeDir" Finished="12/2/2005 5:51:54 PM" />
+        <Task Started="12/2/2005 5:51:54 PM" Name="WriteLinesToFile" Finished="12/2/2005 5:51:54 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:51:54 PM" Name="CoreBuild" Message="Target &quot;CoreBuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:54 PM" Name="AfterBuild" Message="Target &quot;AfterBuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:51:54 PM" Name="Build" Message="Target &quot;Build&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:51:54 PM" Succeeded="True" />
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" Message="Project &quot;CardLib.vbproj&quot; (GetTargetPath target(s)):" Started="12/2/2005 5:51:52 PM" Finished="12/2/2005 5:51:52 PM" />
+    <Project Name="C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" Message="Project &quot;CardLib.vbproj&quot; (GetNativeManifest target(s)):" Started="12/2/2005 5:51:52 PM" Finished="12/2/2005 5:51:52 PM">
+      <Target Started="12/2/2005 5:51:52 PM" Name="GetNativeManifest" Message="Target &quot;GetNativeManifest&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:51:52 PM" Succeeded="True" />
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" Message="Project &quot;CardLib.vbproj&quot; (GetCopyToOutputDirectoryItems target(s)):" Started="12/2/2005 5:51:54 PM" Finished="12/2/2005 5:51:54 PM" />
+    <Message>Build succeeded.</Message>
+  </Build>
+  <Build Started="12/2/2005 5:52:12 PM" Verbosity="Normal" Finished="12/2/2005 5:52:14 PM" Succeeded="True">
+    <Message>Build started.</Message>
+    <Project Name="C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.sln" Message="Project &quot;DotNetFreeCell.sln&quot; (Rebuild target(s)):" Started="12/2/2005 5:52:12 PM" Finished="12/2/2005 5:52:14 PM">
+      <Target Started="12/2/2005 5:52:12 PM" Name="ValidateSolutionConfiguration" Message="Target &quot;ValidateSolutionConfiguration&quot; in project &quot;DotNetFreeCell.sln&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:12 PM" Name="Message" Finished="12/2/2005 5:52:12 PM">
+          <Message Importance="Normal">Building solution configuration "Debug|Any CPU".</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:52:12 PM" Name="Rebuild" Message="Target &quot;Rebuild&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="12/2/2005 5:52:12 PM" Name="CallTarget" Finished="12/2/2005 5:52:14 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:12 PM" Name="CardLib:Rebuild" Message="Target &quot;CardLib:Rebuild&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="12/2/2005 5:52:12 PM" Name="MSBuild" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="DotNetFreeCell:Rebuild" Message="Target &quot;DotNetFreeCell:Rebuild&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="12/2/2005 5:52:13 PM" Name="MSBuild" Finished="12/2/2005 5:52:14 PM" />
+      </Target>
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" Message="Project &quot;CardLib.vbproj&quot; (Rebuild target(s)):" Started="12/2/2005 5:52:12 PM" Finished="12/2/2005 5:52:13 PM">
+      <Target Started="12/2/2005 5:52:12 PM" Name="_CheckForInvalidConfigurationAndPlatform" Message="Target &quot;_CheckForInvalidConfigurationAndPlatform&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:12 PM" Name="Message" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="Message" Finished="12/2/2005 5:52:12 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:12 PM" Name="BeforeRebuild" Message="Target &quot;BeforeRebuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="BeforeClean" Message="Target &quot;BeforeClean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="CleanReferencedProjects" Message="Target &quot;CleanReferencedProjects&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="CoreClean" Message="Target &quot;CoreClean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:12 PM" Name="ReadLinesFromFile" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="Delete" Finished="12/2/2005 5:52:12 PM">
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.dll".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.pdb".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.xml".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.01C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.01D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.01H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.01S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.02C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.02D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.02H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.02S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.03C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.03D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.03H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.03S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.04C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.04D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.04H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.04S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.05C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.05D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.05H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.05S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.06C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.06D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.06H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.06S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.07C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.07D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.07H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.07S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.08C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.08D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.08H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.08S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.09C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.09D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.09H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.09S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.10C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.10D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.10H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.10S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.11C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.11D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.11H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.11S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.12C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.12D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.12H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.12S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.13C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.13D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.13H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.13S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.Resources.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.Card.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.vbproj.GenerateResource.Cache".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.dll".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.xml".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.pdb".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:12 PM" Name="CreateItem" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="MakeDir" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="WriteLinesToFile" Finished="12/2/2005 5:52:12 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:12 PM" Name="CleanPublishFolder" Message="Target &quot;CleanPublishFolder&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="AfterClean" Message="Target &quot;AfterClean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="Clean" Message="Target &quot;Clean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="BeforeBuild" Message="Target &quot;BeforeBuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="BuildOnlySettings" Message="Target &quot;BuildOnlySettings&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:12 PM" Name="CreateProperty" Finished="12/2/2005 5:52:12 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:12 PM" Name="GetFrameworkPaths" Message="Target &quot;GetFrameworkPaths&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:12 PM" Name="GetFrameworkPath" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="GetFrameworkSDKPath" Finished="12/2/2005 5:52:12 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:12 PM" Name="PrepareForBuild" Message="Target &quot;PrepareForBuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:12 PM" Name="CreateProperty" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="CreateProperty" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="CreateItem" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="MakeDir" Finished="12/2/2005 5:52:12 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:12 PM" Name="BeforeResolveReferences" Message="Target &quot;BeforeResolveReferences&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="GetRedistLists" Message="Target &quot;GetRedistLists&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:12 PM" Name="CreateItem" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="CreateItem" Finished="12/2/2005 5:52:12 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:12 PM" Name="ResolveAssemblyReferences" Message="Target &quot;ResolveAssemblyReferences&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:12 PM" Name="CreateProperty" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="ResolveAssemblyReference" Finished="12/2/2005 5:52:12 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:12 PM" Name="AfterResolveReferences" Message="Target &quot;AfterResolveReferences&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="ResolveReferences" Message="Target &quot;ResolveReferences&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="AssignTargetPaths" Message="Target &quot;AssignTargetPaths&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:12 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:12 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:12 PM" Name="SplitResourcesByCulture" Message="Target &quot;SplitResourcesByCulture&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:12 PM" Name="AssignCulture" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="AssignCulture" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="CreateItem" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="CreateItem" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="CreateItem" Finished="12/2/2005 5:52:12 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:12 PM" Name="CreateManifestResourceNames" Message="Target &quot;CreateManifestResourceNames&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:12 PM" Name="CreateVisualBasicManifestResourceName" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="CreateVisualBasicManifestResourceName" Finished="12/2/2005 5:52:12 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:12 PM" Name="PrepareResourceNames" Message="Target &quot;PrepareResourceNames&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="_CopyNonResxEmbeddedResources" Message="Target &quot;_CopyNonResxEmbeddedResources&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:12 PM" Name="Copy" Finished="12/2/2005 5:52:12 PM">
+          <Message Importance="Normal">Copying file from "Images\01C.png" to "obj\Debug\CardLib.01C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\01D.png" to "obj\Debug\CardLib.01D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\01H.png" to "obj\Debug\CardLib.01H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\01S.png" to "obj\Debug\CardLib.01S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\02C.png" to "obj\Debug\CardLib.02C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\02D.png" to "obj\Debug\CardLib.02D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\02H.png" to "obj\Debug\CardLib.02H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\02S.png" to "obj\Debug\CardLib.02S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\03C.png" to "obj\Debug\CardLib.03C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\03D.png" to "obj\Debug\CardLib.03D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\03H.png" to "obj\Debug\CardLib.03H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\03S.png" to "obj\Debug\CardLib.03S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\04C.png" to "obj\Debug\CardLib.04C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\04D.png" to "obj\Debug\CardLib.04D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\04H.png" to "obj\Debug\CardLib.04H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\04S.png" to "obj\Debug\CardLib.04S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\05C.png" to "obj\Debug\CardLib.05C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\05D.png" to "obj\Debug\CardLib.05D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\05H.png" to "obj\Debug\CardLib.05H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\05S.png" to "obj\Debug\CardLib.05S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\06C.png" to "obj\Debug\CardLib.06C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\06D.png" to "obj\Debug\CardLib.06D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\06H.png" to "obj\Debug\CardLib.06H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\06S.png" to "obj\Debug\CardLib.06S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\07C.png" to "obj\Debug\CardLib.07C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\07D.png" to "obj\Debug\CardLib.07D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\07H.png" to "obj\Debug\CardLib.07H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\07S.png" to "obj\Debug\CardLib.07S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\08C.png" to "obj\Debug\CardLib.08C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\08D.png" to "obj\Debug\CardLib.08D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\08H.png" to "obj\Debug\CardLib.08H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\08S.png" to "obj\Debug\CardLib.08S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\09C.png" to "obj\Debug\CardLib.09C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\09D.png" to "obj\Debug\CardLib.09D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\09H.png" to "obj\Debug\CardLib.09H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\09S.png" to "obj\Debug\CardLib.09S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\10C.png" to "obj\Debug\CardLib.10C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\10D.png" to "obj\Debug\CardLib.10D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\10H.png" to "obj\Debug\CardLib.10H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\10S.png" to "obj\Debug\CardLib.10S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\11C.png" to "obj\Debug\CardLib.11C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\11D.png" to "obj\Debug\CardLib.11D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\11H.png" to "obj\Debug\CardLib.11H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\11S.png" to "obj\Debug\CardLib.11S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\12C.png" to "obj\Debug\CardLib.12C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\12D.png" to "obj\Debug\CardLib.12D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\12H.png" to "obj\Debug\CardLib.12H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\12S.png" to "obj\Debug\CardLib.12S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\13C.png" to "obj\Debug\CardLib.13C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\13D.png" to "obj\Debug\CardLib.13D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\13H.png" to "obj\Debug\CardLib.13H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\13S.png" to "obj\Debug\CardLib.13S.png".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:12 PM" Name="MakeDir" Finished="12/2/2005 5:52:12 PM" />
+        <Task Started="12/2/2005 5:52:12 PM" Name="Copy" Finished="12/2/2005 5:52:12 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:12 PM" Name="BeforeResGen" Message="Target &quot;BeforeResGen&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="CoreResGen" Message="Target &quot;CoreResGen&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:12 PM" Name="GenerateResource" Finished="12/2/2005 5:52:12 PM">
+          <Message Importance="Normal">Processing resource file "My Project\Resources.resx" into "obj\Debug\CardLib.Resources.resources".</Message>
+          <Message Importance="Normal">Processing resource file "Card.resx" into "obj\Debug\CardLib.Card.resources".</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:52:12 PM" Name="AfterResGen" Message="Target &quot;AfterResGen&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="ResGen" Message="Target &quot;ResGen&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="PrepareRdlFiles" Message="Target &quot;PrepareRdlFiles&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="CompileRdlFiles" Message="Target &quot;CompileRdlFiles&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="PrepareResources" Message="Target &quot;PrepareResources&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="BeforeCompile" Message="Target &quot;BeforeCompile&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:12 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:12 PM" Name="CoreCompile" Message="Target &quot;CoreCompile&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:12 PM" Name="Vbc" Finished="12/2/2005 5:52:13 PM">
+          <Message Importance="High">c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Vbc.exe /noconfig /imports:Microsoft.VisualBasic,System,System.Collections,System.Collections.Generic,System.Data,System.Diagnostics /nowarn:42016,41999,42017,42018,42019,42032,42036,42020,42021,42022 /rootnamespace:CardLib /doc:obj\Debug\CardLib.xml /define:"CONFIG=\"Debug\",DEBUG=-1,TRACE=-1,_MyType=\"Windows\",PLATFORM=\"AnyCPU\"" /reference:c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug+ /debug:full /out:obj\Debug\CardLib.dll /resource:obj\Debug\CardLib.Resources.resources /resource:obj\Debug\CardLib.Card.resources /resource:obj\Debug\CardLib.01C.png /resource:obj\Debug\CardLib.01D.png /resource:obj\Debug\CardLib.01H.png /resource:obj\Debug\CardLib.01S.png /resource:obj\Debug\CardLib.02C.png /resource:obj\Debug\CardLib.02D.png /resource:obj\Debug\CardLib.02H.png /resource:obj\Debug\CardLib.02S.png /resource:obj\Debug\CardLib.03C.png /resource:obj\Debug\CardLib.03D.png /resource:obj\Debug\CardLib.03H.png /resource:obj\Debug\CardLib.03S.png /resource:obj\Debug\CardLib.04C.png /resource:obj\Debug\CardLib.04D.png /resource:obj\Debug\CardLib.04H.png /resource:obj\Debug\CardLib.04S.png /resource:obj\Debug\CardLib.05C.png /resource:obj\Debug\CardLib.05D.png /resource:obj\Debug\CardLib.05H.png /resource:obj\Debug\CardLib.05S.png /resource:obj\Debug\CardLib.06C.png /resource:obj\Debug\CardLib.06D.png /resource:obj\Debug\CardLib.06H.png /resource:obj\Debug\CardLib.06S.png /resource:obj\Debug\CardLib.07C.png /resource:obj\Debug\CardLib.07D.png /resource:obj\Debug\CardLib.07H.png /resource:obj\Debug\CardLib.07S.png /resource:obj\Debug\CardLib.08C.png /resource:obj\Debug\CardLib.08D.png /resource:obj\Debug\CardLib.08H.png /resource:obj\Debug\CardLib.08S.png /resource:obj\Debug\CardLib.09C.png /resource:obj\Debug\CardLib.09D.png /resource:obj\Debug\CardLib.09H.png /resource:obj\Debug\CardLib.09S.png /resource:obj\Debug\CardLib.10C.png /resource:obj\Debug\CardLib.10D.png /resource:obj\Debug\CardLib.10H.png /resource:obj\Debug\CardLib.10S.png /resource:obj\Debug\CardLib.11C.png /resource:obj\Debug\CardLib.11D.png /resource:obj\Debug\CardLib.11H.png /resource:obj\Debug\CardLib.11S.png /resource:obj\Debug\CardLib.12C.png /resource:obj\Debug\CardLib.12D.png /resource:obj\Debug\CardLib.12H.png /resource:obj\Debug\CardLib.12S.png /resource:obj\Debug\CardLib.13C.png /resource:obj\Debug\CardLib.13D.png /resource:obj\Debug\CardLib.13H.png /resource:obj\Debug\CardLib.13S.png /target:library CardDeck.vb Card.Designer.vb Card.vb "My Project\AssemblyInfo.vb" "My Project\Application.Designer.vb" "My Project\Resources.Designer.vb" "My Project\Settings.Designer.vb"</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="AfterCompile" Message="Target &quot;AfterCompile&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="Compile" Message="Target &quot;Compile&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="GetTargetPath" Message="Target &quot;GetTargetPath&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="_CopyFilesMarkedCopyLocal" Message="Target &quot;_CopyFilesMarkedCopyLocal&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="Copy" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="GetCopyToOutputDirectoryItems" Message="Target &quot;GetCopyToOutputDirectoryItems&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="_CopySourceItemsToOutputDirectory" Message="Target &quot;_CopySourceItemsToOutputDirectory&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="_CheckForCompileOutputs" Message="Target &quot;_CheckForCompileOutputs&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="CopyFilesToOutputDirectory" Message="Target &quot;CopyFilesToOutputDirectory&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="Copy" Finished="12/2/2005 5:52:13 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\CardLib.dll" to "bin\Debug\CardLib.dll".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:13 PM" Name="Message" Finished="12/2/2005 5:52:13 PM">
+          <Message Importance="High">CardLib -&gt; C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.dll</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:13 PM" Name="Copy" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="Copy" Finished="12/2/2005 5:52:13 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\CardLib.pdb" to "bin\Debug\CardLib.pdb".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:13 PM" Name="Copy" Finished="12/2/2005 5:52:13 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\CardLib.xml" to "bin\Debug\CardLib.xml".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:13 PM" Name="Copy" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="Copy" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="PrepareForRun" Message="Target &quot;PrepareForRun&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="_CleanGetCurrentAndPriorFileWrites" Message="Target &quot;_CleanGetCurrentAndPriorFileWrites&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="ReadLinesFromFile" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="IncrementalClean" Message="Target &quot;IncrementalClean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="Delete" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="MakeDir" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="WriteLinesToFile" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="CoreBuild" Message="Target &quot;CoreBuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="AfterBuild" Message="Target &quot;AfterBuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="Build" Message="Target &quot;Build&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="AfterRebuild" Message="Target &quot;AfterRebuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="Rebuild" Message="Target &quot;Rebuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj" Message="Project &quot;DotNetFreeCell.vbproj&quot; (Rebuild target(s)):" Started="12/2/2005 5:52:13 PM" Finished="12/2/2005 5:52:14 PM">
+      <Target Started="12/2/2005 5:52:13 PM" Name="_CheckForInvalidConfigurationAndPlatform" Message="Target &quot;_CheckForInvalidConfigurationAndPlatform&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="Message" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="Message" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="BeforeRebuild" Message="Target &quot;BeforeRebuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="BeforeClean" Message="Target &quot;BeforeClean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="CleanReferencedProjects" Message="Target &quot;CleanReferencedProjects&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="CoreClean" Message="Target &quot;CoreClean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="ReadLinesFromFile" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="Delete" Finished="12/2/2005 5:52:13 PM">
+          <Message Importance="Normal">Deleting file "bin\Debug\DotNetFreeCell.exe".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\DotNetFreeCell.pdb".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\DotNetFreeCell.xml".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.dll".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.pdb".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.xml".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\ResolveAssemblyReference.cache".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.NORMAL05.CUR".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.Form1.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.FreeCellColumn.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.frmChooseGame.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.Resources.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.frmStatistics.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.vbproj.GenerateResource.Cache".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.exe".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.xml".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.pdb".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="MakeDir" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="WriteLinesToFile" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="CleanPublishFolder" Message="Target &quot;CleanPublishFolder&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="AfterClean" Message="Target &quot;AfterClean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="Clean" Message="Target &quot;Clean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="BeforeBuild" Message="Target &quot;BeforeBuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="BuildOnlySettings" Message="Target &quot;BuildOnlySettings&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateProperty" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="GetFrameworkPaths" Message="Target &quot;GetFrameworkPaths&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="GetFrameworkPath" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="GetFrameworkSDKPath" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="PrepareForBuild" Message="Target &quot;PrepareForBuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateProperty" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateProperty" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="MakeDir" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="BeforeResolveReferences" Message="Target &quot;BeforeResolveReferences&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="SplitProjectReferencesByType" Message="Target &quot;SplitProjectReferencesByType&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="AssignProjectConfiguration" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="_SplitProjectReferencesByFileExistence" Message="Target &quot;_SplitProjectReferencesByFileExistence&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="ResolveProjectReferences" Message="Target &quot;ResolveProjectReferences&quot; in project &quot;DotNetFreeCell.vbproj&quot;">
+        <Task Started="12/2/2005 5:52:13 PM" Name="MSBuild" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="MSBuild" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="GetRedistLists" Message="Target &quot;GetRedistLists&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="ResolveAssemblyReferences" Message="Target &quot;ResolveAssemblyReferences&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateProperty" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="ResolveAssemblyReference" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="AfterResolveReferences" Message="Target &quot;AfterResolveReferences&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="ResolveReferences" Message="Target &quot;ResolveReferences&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="AssignTargetPaths" Message="Target &quot;AssignTargetPaths&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="SplitResourcesByCulture" Message="Target &quot;SplitResourcesByCulture&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="AssignCulture" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="AssignCulture" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateItem" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="CreateManifestResourceNames" Message="Target &quot;CreateManifestResourceNames&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateVisualBasicManifestResourceName" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="CreateVisualBasicManifestResourceName" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="PrepareResourceNames" Message="Target &quot;PrepareResourceNames&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="_CopyNonResxEmbeddedResources" Message="Target &quot;_CopyNonResxEmbeddedResources&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="Copy" Finished="12/2/2005 5:52:13 PM">
+          <Message Importance="Normal">Copying file from "NORMAL05.CUR" to "obj\Debug\DotNetFreeCell.NORMAL05.CUR".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:13 PM" Name="MakeDir" Finished="12/2/2005 5:52:13 PM" />
+        <Task Started="12/2/2005 5:52:13 PM" Name="Copy" Finished="12/2/2005 5:52:13 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="BeforeResGen" Message="Target &quot;BeforeResGen&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="CoreResGen" Message="Target &quot;CoreResGen&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="GenerateResource" Finished="12/2/2005 5:52:13 PM">
+          <Message Importance="Normal">Processing resource file "Form1.resx" into "obj\Debug\DotNetFreeCell.Form1.resources".</Message>
+          <Message Importance="Normal">Processing resource file "FreeCellColumn.resx" into "obj\Debug\DotNetFreeCell.FreeCellColumn.resources".</Message>
+          <Message Importance="Normal">Processing resource file "frmChooseGame.resx" into "obj\Debug\DotNetFreeCell.frmChooseGame.resources".</Message>
+          <Message Importance="Normal">Processing resource file "My Project\Resources.resx" into "obj\Debug\DotNetFreeCell.Resources.resources".</Message>
+          <Message Importance="Normal">Processing resource file "frmStatistics.resx" into "obj\Debug\DotNetFreeCell.frmStatistics.resources".</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:52:13 PM" Name="AfterResGen" Message="Target &quot;AfterResGen&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="ResGen" Message="Target &quot;ResGen&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="PrepareRdlFiles" Message="Target &quot;PrepareRdlFiles&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="CompileRdlFiles" Message="Target &quot;CompileRdlFiles&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="PrepareResources" Message="Target &quot;PrepareResources&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="BeforeCompile" Message="Target &quot;BeforeCompile&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:13 PM" Name="CoreCompile" Message="Target &quot;CoreCompile&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:14 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:13 PM" Name="Vbc" Finished="12/2/2005 5:52:14 PM">
+          <Message Importance="High">c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Vbc.exe /noconfig /imports:Microsoft.VisualBasic,System,System.Collections,System.Collections.Generic,System.Drawing,System.Diagnostics,System.Windows.Forms /nowarn:42016,41999,42017,42018,42019,42032,42036,42020,42021,42022 /rootnamespace:DotNetFreeCell /doc:obj\Debug\DotNetFreeCell.xml /define:"CONFIG=\"Debug\",DEBUG=-1,TRACE=-1,_MyType=\"WindowsForms\",PLATFORM=\"AnyCPU\"" /reference:C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Deployment.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll /main:DotNetFreeCell.My.MyApplication /debug+ /debug:full /out:obj\Debug\DotNetFreeCell.exe /resource:obj\Debug\DotNetFreeCell.Form1.resources /resource:obj\Debug\DotNetFreeCell.FreeCellColumn.resources /resource:obj\Debug\DotNetFreeCell.frmChooseGame.resources /resource:obj\Debug\DotNetFreeCell.Resources.resources /resource:obj\Debug\DotNetFreeCell.frmStatistics.resources /resource:obj\Debug\DotNetFreeCell.NORMAL05.CUR /target:winexe /win32icon:Icon1.ico CompletedCell.Designer.vb CompletedCell.vb EmptyCell.Designer.vb EmptyCell.vb Form1.vb Form1.Designer.vb FreeCellColumn.Designer.vb FreeCellColumn.vb frmChooseGame.Designer.vb frmChooseGame.vb frmStatistics.Designer.vb frmStatistics.vb "My Project\AssemblyInfo.vb" "My Project\Application.Designer.vb" "My Project\Resources.Designer.vb" "My Project\Settings.Designer.vb" "My Project\ApplicationEvents.vb"</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:52:14 PM" Name="AfterCompile" Message="Target &quot;AfterCompile&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:14 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:14 PM" Name="Compile" Message="Target &quot;Compile&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:14 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:14 PM" Name="GetTargetPath" Message="Target &quot;GetTargetPath&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:14 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:14 PM" Name="_CopyFilesMarkedCopyLocal" Message="Target &quot;_CopyFilesMarkedCopyLocal&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:14 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:14 PM" Name="Copy" Finished="12/2/2005 5:52:14 PM">
+          <Message Importance="Normal">Copying file from "C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.dll" to "bin\Debug\CardLib.dll".</Message>
+          <Message Importance="Normal">Copying file from "C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.pdb" to "bin\Debug\CardLib.pdb".</Message>
+          <Message Importance="Normal">Copying file from "C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.xml" to "bin\Debug\CardLib.xml".</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:52:14 PM" Name="GetCopyToOutputDirectoryItems" Message="Target &quot;GetCopyToOutputDirectoryItems&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:14 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:14 PM" Name="MSBuild" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="CreateItem" Finished="12/2/2005 5:52:14 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:14 PM" Name="_CopySourceItemsToOutputDirectory" Message="Target &quot;_CopySourceItemsToOutputDirectory&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:14 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:14 PM" Name="_CheckForCompileOutputs" Message="Target &quot;_CheckForCompileOutputs&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:14 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:14 PM" Name="CreateItem" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="CreateItem" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="CreateItem" Finished="12/2/2005 5:52:14 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:14 PM" Name="CopyFilesToOutputDirectory" Message="Target &quot;CopyFilesToOutputDirectory&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:14 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:14 PM" Name="Copy" Finished="12/2/2005 5:52:14 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\DotNetFreeCell.exe" to "bin\Debug\DotNetFreeCell.exe".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:14 PM" Name="Message" Finished="12/2/2005 5:52:14 PM">
+          <Message Importance="High">DotNetFreeCell -&gt; C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\bin\Debug\DotNetFreeCell.exe</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:14 PM" Name="Copy" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="Copy" Finished="12/2/2005 5:52:14 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\DotNetFreeCell.pdb" to "bin\Debug\DotNetFreeCell.pdb".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:14 PM" Name="Copy" Finished="12/2/2005 5:52:14 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\DotNetFreeCell.xml" to "bin\Debug\DotNetFreeCell.xml".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:14 PM" Name="Copy" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="Copy" Finished="12/2/2005 5:52:14 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:14 PM" Name="PrepareForRun" Message="Target &quot;PrepareForRun&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:14 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:14 PM" Name="_CleanGetCurrentAndPriorFileWrites" Message="Target &quot;_CleanGetCurrentAndPriorFileWrites&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:14 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:14 PM" Name="ReadLinesFromFile" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="CreateItem" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="CreateItem" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:52:14 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:14 PM" Name="IncrementalClean" Message="Target &quot;IncrementalClean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:14 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:14 PM" Name="CreateItem" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="Delete" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="CreateItem" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="MakeDir" Finished="12/2/2005 5:52:14 PM" />
+        <Task Started="12/2/2005 5:52:14 PM" Name="WriteLinesToFile" Finished="12/2/2005 5:52:14 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:14 PM" Name="CoreBuild" Message="Target &quot;CoreBuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:14 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:14 PM" Name="AfterBuild" Message="Target &quot;AfterBuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:14 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:14 PM" Name="Build" Message="Target &quot;Build&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:14 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:14 PM" Name="AfterRebuild" Message="Target &quot;AfterRebuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:14 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:14 PM" Name="Rebuild" Message="Target &quot;Rebuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:14 PM" Succeeded="True" />
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" Message="Project &quot;CardLib.vbproj&quot; (GetTargetPath target(s)):" Started="12/2/2005 5:52:13 PM" Finished="12/2/2005 5:52:13 PM" />
+    <Project Name="C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" Message="Project &quot;CardLib.vbproj&quot; (GetNativeManifest target(s)):" Started="12/2/2005 5:52:13 PM" Finished="12/2/2005 5:52:13 PM">
+      <Target Started="12/2/2005 5:52:13 PM" Name="GetNativeManifest" Message="Target &quot;GetNativeManifest&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:13 PM" Succeeded="True" />
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" Message="Project &quot;CardLib.vbproj&quot; (GetCopyToOutputDirectoryItems target(s)):" Started="12/2/2005 5:52:14 PM" Finished="12/2/2005 5:52:14 PM" />
+    <Message>Build succeeded.</Message>
+  </Build>
+  <Build Started="12/2/2005 5:52:20 PM" Verbosity="Normal" Finished="12/2/2005 5:52:21 PM" Succeeded="True">
+    <Message>Build started.</Message>
+    <Project Name="C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.sln" Message="Project &quot;DotNetFreeCell.sln&quot; (Clean target(s)):" Started="12/2/2005 5:52:20 PM" Finished="12/2/2005 5:52:21 PM">
+      <Target Started="12/2/2005 5:52:20 PM" Name="ValidateSolutionConfiguration" Message="Target &quot;ValidateSolutionConfiguration&quot; in project &quot;DotNetFreeCell.sln&quot;" Finished="12/2/2005 5:52:20 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:20 PM" Name="Message" Finished="12/2/2005 5:52:20 PM">
+          <Message Importance="Normal">Building solution configuration "Debug|Any CPU".</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:52:20 PM" Name="Clean" Message="Target &quot;Clean&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="12/2/2005 5:52:20 PM" Name="CallTarget" Finished="12/2/2005 5:52:21 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:20 PM" Name="CardLib:Clean" Message="Target &quot;CardLib:Clean&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="12/2/2005 5:52:20 PM" Name="MSBuild" Finished="12/2/2005 5:52:20 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:20 PM" Name="DotNetFreeCell:Clean" Message="Target &quot;DotNetFreeCell:Clean&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="12/2/2005 5:52:20 PM" Name="MSBuild" Finished="12/2/2005 5:52:21 PM" />
+      </Target>
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" Message="Project &quot;CardLib.vbproj&quot; (Clean target(s)):" Started="12/2/2005 5:52:20 PM" Finished="12/2/2005 5:52:20 PM">
+      <Target Started="12/2/2005 5:52:20 PM" Name="_CheckForInvalidConfigurationAndPlatform" Message="Target &quot;_CheckForInvalidConfigurationAndPlatform&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:20 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:20 PM" Name="Message" Finished="12/2/2005 5:52:20 PM" />
+        <Task Started="12/2/2005 5:52:20 PM" Name="Message" Finished="12/2/2005 5:52:20 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:20 PM" Name="BeforeClean" Message="Target &quot;BeforeClean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:20 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:20 PM" Name="CleanReferencedProjects" Message="Target &quot;CleanReferencedProjects&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:20 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:20 PM" Name="CoreClean" Message="Target &quot;CoreClean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:20 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:20 PM" Name="ReadLinesFromFile" Finished="12/2/2005 5:52:20 PM" />
+        <Task Started="12/2/2005 5:52:20 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:20 PM" />
+        <Task Started="12/2/2005 5:52:20 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:20 PM" />
+        <Task Started="12/2/2005 5:52:20 PM" Name="Delete" Finished="12/2/2005 5:52:20 PM">
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.dll".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.pdb".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.xml".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.01C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.01D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.01H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.01S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.02C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.02D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.02H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.02S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.03C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.03D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.03H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.03S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.04C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.04D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.04H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.04S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.05C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.05D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.05H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.05S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.06C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.06D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.06H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.06S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.07C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.07D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.07H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.07S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.08C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.08D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.08H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.08S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.09C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.09D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.09H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.09S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.10C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.10D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.10H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.10S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.11C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.11D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.11H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.11S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.12C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.12D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.12H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.12S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.13C.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.13D.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.13H.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.13S.png".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.Resources.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.Card.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.vbproj.GenerateResource.Cache".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.dll".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.xml".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\CardLib.pdb".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:20 PM" Name="CreateItem" Finished="12/2/2005 5:52:20 PM" />
+        <Task Started="12/2/2005 5:52:20 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:52:20 PM" />
+        <Task Started="12/2/2005 5:52:20 PM" Name="MakeDir" Finished="12/2/2005 5:52:20 PM" />
+        <Task Started="12/2/2005 5:52:20 PM" Name="WriteLinesToFile" Finished="12/2/2005 5:52:20 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:20 PM" Name="CleanPublishFolder" Message="Target &quot;CleanPublishFolder&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:20 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:20 PM" Name="AfterClean" Message="Target &quot;AfterClean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:20 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:20 PM" Name="Clean" Message="Target &quot;Clean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:20 PM" Succeeded="True" />
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj" Message="Project &quot;DotNetFreeCell.vbproj&quot; (Clean target(s)):" Started="12/2/2005 5:52:20 PM" Finished="12/2/2005 5:52:21 PM">
+      <Target Started="12/2/2005 5:52:20 PM" Name="_CheckForInvalidConfigurationAndPlatform" Message="Target &quot;_CheckForInvalidConfigurationAndPlatform&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:20 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:20 PM" Name="Message" Finished="12/2/2005 5:52:20 PM" />
+        <Task Started="12/2/2005 5:52:20 PM" Name="Message" Finished="12/2/2005 5:52:20 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:20 PM" Name="BeforeClean" Message="Target &quot;BeforeClean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:20 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:20 PM" Name="CleanReferencedProjects" Message="Target &quot;CleanReferencedProjects&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:20 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:20 PM" Name="CoreClean" Message="Target &quot;CoreClean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:21 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:20 PM" Name="ReadLinesFromFile" Finished="12/2/2005 5:52:20 PM" />
+        <Task Started="12/2/2005 5:52:20 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:20 PM" />
+        <Task Started="12/2/2005 5:52:20 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:20 PM" />
+        <Task Started="12/2/2005 5:52:20 PM" Name="Delete" Finished="12/2/2005 5:52:21 PM">
+          <Message Importance="Normal">Deleting file "bin\Debug\DotNetFreeCell.exe".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\DotNetFreeCell.pdb".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\DotNetFreeCell.xml".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.dll".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.pdb".</Message>
+          <Message Importance="Normal">Deleting file "bin\Debug\CardLib.xml".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\ResolveAssemblyReference.cache".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.NORMAL05.CUR".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.Form1.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.FreeCellColumn.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.frmChooseGame.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.Resources.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.frmStatistics.resources".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.vbproj.GenerateResource.Cache".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.exe".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.xml".</Message>
+          <Message Importance="Normal">Deleting file "obj\Debug\DotNetFreeCell.pdb".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:21 PM" Name="CreateItem" Finished="12/2/2005 5:52:21 PM" />
+        <Task Started="12/2/2005 5:52:21 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:52:21 PM" />
+        <Task Started="12/2/2005 5:52:21 PM" Name="MakeDir" Finished="12/2/2005 5:52:21 PM" />
+        <Task Started="12/2/2005 5:52:21 PM" Name="WriteLinesToFile" Finished="12/2/2005 5:52:21 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:21 PM" Name="CleanPublishFolder" Message="Target &quot;CleanPublishFolder&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:21 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:21 PM" Name="AfterClean" Message="Target &quot;AfterClean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:21 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:21 PM" Name="Clean" Message="Target &quot;Clean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:21 PM" Succeeded="True" />
+    </Project>
+    <Message>Build succeeded.</Message>
+  </Build>
+  <Build Started="12/2/2005 5:52:27 PM" Verbosity="Normal" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+    <Message>Build started.</Message>
+    <Project Name="C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.sln" Message="Project &quot;DotNetFreeCell.sln&quot; (Rebuild target(s)):" Started="12/2/2005 5:52:27 PM" Finished="12/2/2005 5:52:28 PM">
+      <Target Started="12/2/2005 5:52:27 PM" Name="ValidateSolutionConfiguration" Message="Target &quot;ValidateSolutionConfiguration&quot; in project &quot;DotNetFreeCell.sln&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="Message" Finished="12/2/2005 5:52:27 PM">
+          <Message Importance="Normal">Building solution configuration "Debug|Any CPU".</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="Rebuild" Message="Target &quot;Rebuild&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="12/2/2005 5:52:27 PM" Name="CallTarget" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="CardLib:Rebuild" Message="Target &quot;CardLib:Rebuild&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="12/2/2005 5:52:27 PM" Name="MSBuild" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="DotNetFreeCell:Rebuild" Message="Target &quot;DotNetFreeCell:Rebuild&quot; in project &quot;DotNetFreeCell.sln&quot;">
+        <Task Started="12/2/2005 5:52:28 PM" Name="MSBuild" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" Message="Project &quot;CardLib.vbproj&quot; (Rebuild target(s)):" Started="12/2/2005 5:52:27 PM" Finished="12/2/2005 5:52:28 PM">
+      <Target Started="12/2/2005 5:52:27 PM" Name="_CheckForInvalidConfigurationAndPlatform" Message="Target &quot;_CheckForInvalidConfigurationAndPlatform&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="Message" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="Message" Finished="12/2/2005 5:52:27 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="BeforeRebuild" Message="Target &quot;BeforeRebuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="BeforeClean" Message="Target &quot;BeforeClean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="CleanReferencedProjects" Message="Target &quot;CleanReferencedProjects&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="CoreClean" Message="Target &quot;CoreClean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="ReadLinesFromFile" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="Delete" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateItem" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="MakeDir" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="WriteLinesToFile" Finished="12/2/2005 5:52:27 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="CleanPublishFolder" Message="Target &quot;CleanPublishFolder&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="AfterClean" Message="Target &quot;AfterClean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="Clean" Message="Target &quot;Clean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="BeforeBuild" Message="Target &quot;BeforeBuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="BuildOnlySettings" Message="Target &quot;BuildOnlySettings&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateProperty" Finished="12/2/2005 5:52:27 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="GetFrameworkPaths" Message="Target &quot;GetFrameworkPaths&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="GetFrameworkPath" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="GetFrameworkSDKPath" Finished="12/2/2005 5:52:27 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="PrepareForBuild" Message="Target &quot;PrepareForBuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateProperty" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateProperty" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateItem" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="MakeDir" Finished="12/2/2005 5:52:27 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="BeforeResolveReferences" Message="Target &quot;BeforeResolveReferences&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="GetRedistLists" Message="Target &quot;GetRedistLists&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateItem" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateItem" Finished="12/2/2005 5:52:27 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="ResolveAssemblyReferences" Message="Target &quot;ResolveAssemblyReferences&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateProperty" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="ResolveAssemblyReference" Finished="12/2/2005 5:52:27 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="AfterResolveReferences" Message="Target &quot;AfterResolveReferences&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="ResolveReferences" Message="Target &quot;ResolveReferences&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="AssignTargetPaths" Message="Target &quot;AssignTargetPaths&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:27 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="SplitResourcesByCulture" Message="Target &quot;SplitResourcesByCulture&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="AssignCulture" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="AssignCulture" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateItem" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateItem" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateItem" Finished="12/2/2005 5:52:27 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="CreateManifestResourceNames" Message="Target &quot;CreateManifestResourceNames&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateVisualBasicManifestResourceName" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateVisualBasicManifestResourceName" Finished="12/2/2005 5:52:27 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="PrepareResourceNames" Message="Target &quot;PrepareResourceNames&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="_CopyNonResxEmbeddedResources" Message="Target &quot;_CopyNonResxEmbeddedResources&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="Copy" Finished="12/2/2005 5:52:27 PM">
+          <Message Importance="Normal">Copying file from "Images\01C.png" to "obj\Debug\CardLib.01C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\01D.png" to "obj\Debug\CardLib.01D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\01H.png" to "obj\Debug\CardLib.01H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\01S.png" to "obj\Debug\CardLib.01S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\02C.png" to "obj\Debug\CardLib.02C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\02D.png" to "obj\Debug\CardLib.02D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\02H.png" to "obj\Debug\CardLib.02H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\02S.png" to "obj\Debug\CardLib.02S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\03C.png" to "obj\Debug\CardLib.03C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\03D.png" to "obj\Debug\CardLib.03D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\03H.png" to "obj\Debug\CardLib.03H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\03S.png" to "obj\Debug\CardLib.03S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\04C.png" to "obj\Debug\CardLib.04C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\04D.png" to "obj\Debug\CardLib.04D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\04H.png" to "obj\Debug\CardLib.04H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\04S.png" to "obj\Debug\CardLib.04S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\05C.png" to "obj\Debug\CardLib.05C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\05D.png" to "obj\Debug\CardLib.05D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\05H.png" to "obj\Debug\CardLib.05H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\05S.png" to "obj\Debug\CardLib.05S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\06C.png" to "obj\Debug\CardLib.06C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\06D.png" to "obj\Debug\CardLib.06D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\06H.png" to "obj\Debug\CardLib.06H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\06S.png" to "obj\Debug\CardLib.06S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\07C.png" to "obj\Debug\CardLib.07C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\07D.png" to "obj\Debug\CardLib.07D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\07H.png" to "obj\Debug\CardLib.07H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\07S.png" to "obj\Debug\CardLib.07S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\08C.png" to "obj\Debug\CardLib.08C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\08D.png" to "obj\Debug\CardLib.08D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\08H.png" to "obj\Debug\CardLib.08H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\08S.png" to "obj\Debug\CardLib.08S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\09C.png" to "obj\Debug\CardLib.09C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\09D.png" to "obj\Debug\CardLib.09D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\09H.png" to "obj\Debug\CardLib.09H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\09S.png" to "obj\Debug\CardLib.09S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\10C.png" to "obj\Debug\CardLib.10C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\10D.png" to "obj\Debug\CardLib.10D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\10H.png" to "obj\Debug\CardLib.10H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\10S.png" to "obj\Debug\CardLib.10S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\11C.png" to "obj\Debug\CardLib.11C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\11D.png" to "obj\Debug\CardLib.11D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\11H.png" to "obj\Debug\CardLib.11H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\11S.png" to "obj\Debug\CardLib.11S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\12C.png" to "obj\Debug\CardLib.12C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\12D.png" to "obj\Debug\CardLib.12D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\12H.png" to "obj\Debug\CardLib.12H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\12S.png" to "obj\Debug\CardLib.12S.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\13C.png" to "obj\Debug\CardLib.13C.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\13D.png" to "obj\Debug\CardLib.13D.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\13H.png" to "obj\Debug\CardLib.13H.png".</Message>
+          <Message Importance="Normal">Copying file from "Images\13S.png" to "obj\Debug\CardLib.13S.png".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:27 PM" Name="MakeDir" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="Copy" Finished="12/2/2005 5:52:27 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="BeforeResGen" Message="Target &quot;BeforeResGen&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="CoreResGen" Message="Target &quot;CoreResGen&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="GenerateResource" Finished="12/2/2005 5:52:27 PM">
+          <Message Importance="Normal">Processing resource file "My Project\Resources.resx" into "obj\Debug\CardLib.Resources.resources".</Message>
+          <Message Importance="Normal">Processing resource file "Card.resx" into "obj\Debug\CardLib.Card.resources".</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="AfterResGen" Message="Target &quot;AfterResGen&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="ResGen" Message="Target &quot;ResGen&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="PrepareRdlFiles" Message="Target &quot;PrepareRdlFiles&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="CompileRdlFiles" Message="Target &quot;CompileRdlFiles&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="PrepareResources" Message="Target &quot;PrepareResources&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="BeforeCompile" Message="Target &quot;BeforeCompile&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="CoreCompile" Message="Target &quot;CoreCompile&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="Vbc" Finished="12/2/2005 5:52:27 PM">
+          <Message Importance="High">c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Vbc.exe /noconfig /imports:Microsoft.VisualBasic,System,System.Collections,System.Collections.Generic,System.Data,System.Diagnostics /nowarn:42016,41999,42017,42018,42019,42032,42036,42020,42021,42022 /rootnamespace:CardLib /doc:obj\Debug\CardLib.xml /define:"CONFIG=\"Debug\",DEBUG=-1,TRACE=-1,_MyType=\"Windows\",PLATFORM=\"AnyCPU\"" /reference:c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll /debug+ /debug:full /out:obj\Debug\CardLib.dll /resource:obj\Debug\CardLib.Resources.resources /resource:obj\Debug\CardLib.Card.resources /resource:obj\Debug\CardLib.01C.png /resource:obj\Debug\CardLib.01D.png /resource:obj\Debug\CardLib.01H.png /resource:obj\Debug\CardLib.01S.png /resource:obj\Debug\CardLib.02C.png /resource:obj\Debug\CardLib.02D.png /resource:obj\Debug\CardLib.02H.png /resource:obj\Debug\CardLib.02S.png /resource:obj\Debug\CardLib.03C.png /resource:obj\Debug\CardLib.03D.png /resource:obj\Debug\CardLib.03H.png /resource:obj\Debug\CardLib.03S.png /resource:obj\Debug\CardLib.04C.png /resource:obj\Debug\CardLib.04D.png /resource:obj\Debug\CardLib.04H.png /resource:obj\Debug\CardLib.04S.png /resource:obj\Debug\CardLib.05C.png /resource:obj\Debug\CardLib.05D.png /resource:obj\Debug\CardLib.05H.png /resource:obj\Debug\CardLib.05S.png /resource:obj\Debug\CardLib.06C.png /resource:obj\Debug\CardLib.06D.png /resource:obj\Debug\CardLib.06H.png /resource:obj\Debug\CardLib.06S.png /resource:obj\Debug\CardLib.07C.png /resource:obj\Debug\CardLib.07D.png /resource:obj\Debug\CardLib.07H.png /resource:obj\Debug\CardLib.07S.png /resource:obj\Debug\CardLib.08C.png /resource:obj\Debug\CardLib.08D.png /resource:obj\Debug\CardLib.08H.png /resource:obj\Debug\CardLib.08S.png /resource:obj\Debug\CardLib.09C.png /resource:obj\Debug\CardLib.09D.png /resource:obj\Debug\CardLib.09H.png /resource:obj\Debug\CardLib.09S.png /resource:obj\Debug\CardLib.10C.png /resource:obj\Debug\CardLib.10D.png /resource:obj\Debug\CardLib.10H.png /resource:obj\Debug\CardLib.10S.png /resource:obj\Debug\CardLib.11C.png /resource:obj\Debug\CardLib.11D.png /resource:obj\Debug\CardLib.11H.png /resource:obj\Debug\CardLib.11S.png /resource:obj\Debug\CardLib.12C.png /resource:obj\Debug\CardLib.12D.png /resource:obj\Debug\CardLib.12H.png /resource:obj\Debug\CardLib.12S.png /resource:obj\Debug\CardLib.13C.png /resource:obj\Debug\CardLib.13D.png /resource:obj\Debug\CardLib.13H.png /resource:obj\Debug\CardLib.13S.png /target:library CardDeck.vb Card.Designer.vb Card.vb "My Project\AssemblyInfo.vb" "My Project\Application.Designer.vb" "My Project\Resources.Designer.vb" "My Project\Settings.Designer.vb"</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="AfterCompile" Message="Target &quot;AfterCompile&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="Compile" Message="Target &quot;Compile&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="GetTargetPath" Message="Target &quot;GetTargetPath&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="_CopyFilesMarkedCopyLocal" Message="Target &quot;_CopyFilesMarkedCopyLocal&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="Copy" Finished="12/2/2005 5:52:27 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="GetCopyToOutputDirectoryItems" Message="Target &quot;GetCopyToOutputDirectoryItems&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateItem" Finished="12/2/2005 5:52:27 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="_CopySourceItemsToOutputDirectory" Message="Target &quot;_CopySourceItemsToOutputDirectory&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="_CheckForCompileOutputs" Message="Target &quot;_CheckForCompileOutputs&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateItem" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateItem" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateItem" Finished="12/2/2005 5:52:27 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="CopyFilesToOutputDirectory" Message="Target &quot;CopyFilesToOutputDirectory&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="Copy" Finished="12/2/2005 5:52:27 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\CardLib.dll" to "bin\Debug\CardLib.dll".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:27 PM" Name="Message" Finished="12/2/2005 5:52:27 PM">
+          <Message Importance="High">CardLib -&gt; C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.dll</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:27 PM" Name="Copy" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="Copy" Finished="12/2/2005 5:52:27 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\CardLib.pdb" to "bin\Debug\CardLib.pdb".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:27 PM" Name="Copy" Finished="12/2/2005 5:52:27 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\CardLib.xml" to "bin\Debug\CardLib.xml".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:27 PM" Name="Copy" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="Copy" Finished="12/2/2005 5:52:27 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="PrepareForRun" Message="Target &quot;PrepareForRun&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="_CleanGetCurrentAndPriorFileWrites" Message="Target &quot;_CleanGetCurrentAndPriorFileWrites&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="ReadLinesFromFile" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateItem" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateItem" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:52:27 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="IncrementalClean" Message="Target &quot;IncrementalClean&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateItem" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="Delete" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="CreateItem" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="MakeDir" Finished="12/2/2005 5:52:27 PM" />
+        <Task Started="12/2/2005 5:52:27 PM" Name="WriteLinesToFile" Finished="12/2/2005 5:52:27 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:27 PM" Name="CoreBuild" Message="Target &quot;CoreBuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="AfterBuild" Message="Target &quot;AfterBuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:27 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:27 PM" Name="Build" Message="Target &quot;Build&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="AfterRebuild" Message="Target &quot;AfterRebuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="Rebuild" Message="Target &quot;Rebuild&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj" Message="Project &quot;DotNetFreeCell.vbproj&quot; (Rebuild target(s)):" Started="12/2/2005 5:52:28 PM" Finished="12/2/2005 5:52:28 PM">
+      <Target Started="12/2/2005 5:52:28 PM" Name="_CheckForInvalidConfigurationAndPlatform" Message="Target &quot;_CheckForInvalidConfigurationAndPlatform&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="Message" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="Message" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="BeforeRebuild" Message="Target &quot;BeforeRebuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="BeforeClean" Message="Target &quot;BeforeClean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="CleanReferencedProjects" Message="Target &quot;CleanReferencedProjects&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="CoreClean" Message="Target &quot;CoreClean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="ReadLinesFromFile" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="Delete" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="MakeDir" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="WriteLinesToFile" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="CleanPublishFolder" Message="Target &quot;CleanPublishFolder&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="AfterClean" Message="Target &quot;AfterClean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="Clean" Message="Target &quot;Clean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="BeforeBuild" Message="Target &quot;BeforeBuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="BuildOnlySettings" Message="Target &quot;BuildOnlySettings&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateProperty" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="GetFrameworkPaths" Message="Target &quot;GetFrameworkPaths&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="GetFrameworkPath" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="GetFrameworkSDKPath" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="PrepareForBuild" Message="Target &quot;PrepareForBuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateProperty" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateProperty" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="MakeDir" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="BeforeResolveReferences" Message="Target &quot;BeforeResolveReferences&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="SplitProjectReferencesByType" Message="Target &quot;SplitProjectReferencesByType&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="AssignProjectConfiguration" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="_SplitProjectReferencesByFileExistence" Message="Target &quot;_SplitProjectReferencesByFileExistence&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="ResolveProjectReferences" Message="Target &quot;ResolveProjectReferences&quot; in project &quot;DotNetFreeCell.vbproj&quot;">
+        <Task Started="12/2/2005 5:52:28 PM" Name="MSBuild" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="MSBuild" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="GetRedistLists" Message="Target &quot;GetRedistLists&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="ResolveAssemblyReferences" Message="Target &quot;ResolveAssemblyReferences&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateProperty" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="ResolveAssemblyReference" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="AfterResolveReferences" Message="Target &quot;AfterResolveReferences&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="ResolveReferences" Message="Target &quot;ResolveReferences&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="AssignTargetPaths" Message="Target &quot;AssignTargetPaths&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="SplitResourcesByCulture" Message="Target &quot;SplitResourcesByCulture&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="AssignCulture" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="AssignCulture" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="CreateManifestResourceNames" Message="Target &quot;CreateManifestResourceNames&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateVisualBasicManifestResourceName" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateVisualBasicManifestResourceName" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="PrepareResourceNames" Message="Target &quot;PrepareResourceNames&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="_CopyNonResxEmbeddedResources" Message="Target &quot;_CopyNonResxEmbeddedResources&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="Copy" Finished="12/2/2005 5:52:28 PM">
+          <Message Importance="Normal">Copying file from "NORMAL05.CUR" to "obj\Debug\DotNetFreeCell.NORMAL05.CUR".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:28 PM" Name="MakeDir" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="Copy" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="BeforeResGen" Message="Target &quot;BeforeResGen&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="CoreResGen" Message="Target &quot;CoreResGen&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="GenerateResource" Finished="12/2/2005 5:52:28 PM">
+          <Message Importance="Normal">Processing resource file "Form1.resx" into "obj\Debug\DotNetFreeCell.Form1.resources".</Message>
+          <Message Importance="Normal">Processing resource file "FreeCellColumn.resx" into "obj\Debug\DotNetFreeCell.FreeCellColumn.resources".</Message>
+          <Message Importance="Normal">Processing resource file "frmChooseGame.resx" into "obj\Debug\DotNetFreeCell.frmChooseGame.resources".</Message>
+          <Message Importance="Normal">Processing resource file "My Project\Resources.resx" into "obj\Debug\DotNetFreeCell.Resources.resources".</Message>
+          <Message Importance="Normal">Processing resource file "frmStatistics.resx" into "obj\Debug\DotNetFreeCell.frmStatistics.resources".</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="AfterResGen" Message="Target &quot;AfterResGen&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="ResGen" Message="Target &quot;ResGen&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="PrepareRdlFiles" Message="Target &quot;PrepareRdlFiles&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="CompileRdlFiles" Message="Target &quot;CompileRdlFiles&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="PrepareResources" Message="Target &quot;PrepareResources&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="BeforeCompile" Message="Target &quot;BeforeCompile&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="CoreCompile" Message="Target &quot;CoreCompile&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="Vbc" Finished="12/2/2005 5:52:28 PM">
+          <Message Importance="High">c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Vbc.exe /noconfig /imports:Microsoft.VisualBasic,System,System.Collections,System.Collections.Generic,System.Drawing,System.Diagnostics,System.Windows.Forms /nowarn:42016,41999,42017,42018,42019,42032,42036,42020,42021,42022 /rootnamespace:DotNetFreeCell /doc:obj\Debug\DotNetFreeCell.xml /define:"CONFIG=\"Debug\",DEBUG=-1,TRACE=-1,_MyType=\"WindowsForms\",PLATFORM=\"AnyCPU\"" /reference:C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Deployment.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll,c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll /main:DotNetFreeCell.My.MyApplication /debug+ /debug:full /out:obj\Debug\DotNetFreeCell.exe /resource:obj\Debug\DotNetFreeCell.Form1.resources /resource:obj\Debug\DotNetFreeCell.FreeCellColumn.resources /resource:obj\Debug\DotNetFreeCell.frmChooseGame.resources /resource:obj\Debug\DotNetFreeCell.Resources.resources /resource:obj\Debug\DotNetFreeCell.frmStatistics.resources /resource:obj\Debug\DotNetFreeCell.NORMAL05.CUR /target:winexe /win32icon:Icon1.ico CompletedCell.Designer.vb CompletedCell.vb EmptyCell.Designer.vb EmptyCell.vb Form1.vb Form1.Designer.vb FreeCellColumn.Designer.vb FreeCellColumn.vb frmChooseGame.Designer.vb frmChooseGame.vb frmStatistics.Designer.vb frmStatistics.vb "My Project\AssemblyInfo.vb" "My Project\Application.Designer.vb" "My Project\Resources.Designer.vb" "My Project\Settings.Designer.vb" "My Project\ApplicationEvents.vb"</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="AfterCompile" Message="Target &quot;AfterCompile&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="Compile" Message="Target &quot;Compile&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="GetTargetPath" Message="Target &quot;GetTargetPath&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="_CopyFilesMarkedCopyLocal" Message="Target &quot;_CopyFilesMarkedCopyLocal&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="Copy" Finished="12/2/2005 5:52:28 PM">
+          <Message Importance="Normal">Copying file from "C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.dll" to "bin\Debug\CardLib.dll".</Message>
+          <Message Importance="Normal">Copying file from "C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.pdb" to "bin\Debug\CardLib.pdb".</Message>
+          <Message Importance="Normal">Copying file from "C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.xml" to "bin\Debug\CardLib.xml".</Message>
+        </Task>
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="GetCopyToOutputDirectoryItems" Message="Target &quot;GetCopyToOutputDirectoryItems&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="MSBuild" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="AssignTargetPath" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="_CopySourceItemsToOutputDirectory" Message="Target &quot;_CopySourceItemsToOutputDirectory&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="_CheckForCompileOutputs" Message="Target &quot;_CheckForCompileOutputs&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="CopyFilesToOutputDirectory" Message="Target &quot;CopyFilesToOutputDirectory&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="Copy" Finished="12/2/2005 5:52:28 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\DotNetFreeCell.exe" to "bin\Debug\DotNetFreeCell.exe".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:28 PM" Name="Message" Finished="12/2/2005 5:52:28 PM">
+          <Message Importance="High">DotNetFreeCell -&gt; C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\bin\Debug\DotNetFreeCell.exe</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:28 PM" Name="Copy" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="Copy" Finished="12/2/2005 5:52:28 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\DotNetFreeCell.pdb" to "bin\Debug\DotNetFreeCell.pdb".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:28 PM" Name="Copy" Finished="12/2/2005 5:52:28 PM">
+          <Message Importance="Normal">Copying file from "obj\Debug\DotNetFreeCell.xml" to "bin\Debug\DotNetFreeCell.xml".</Message>
+        </Task>
+        <Task Started="12/2/2005 5:52:28 PM" Name="Copy" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="Copy" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="PrepareForRun" Message="Target &quot;PrepareForRun&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="_CleanGetCurrentAndPriorFileWrites" Message="Target &quot;_CleanGetCurrentAndPriorFileWrites&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="ReadLinesFromFile" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="IncrementalClean" Message="Target &quot;IncrementalClean&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="FindUnderPath" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="Delete" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="CreateItem" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="RemoveDuplicates" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="MakeDir" Finished="12/2/2005 5:52:28 PM" />
+        <Task Started="12/2/2005 5:52:28 PM" Name="WriteLinesToFile" Finished="12/2/2005 5:52:28 PM" />
+      </Target>
+      <Target Started="12/2/2005 5:52:28 PM" Name="CoreBuild" Message="Target &quot;CoreBuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="AfterBuild" Message="Target &quot;AfterBuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="Build" Message="Target &quot;Build&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="AfterRebuild" Message="Target &quot;AfterRebuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+      <Target Started="12/2/2005 5:52:28 PM" Name="Rebuild" Message="Target &quot;Rebuild&quot; in project &quot;DotNetFreeCell.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" Message="Project &quot;CardLib.vbproj&quot; (GetTargetPath target(s)):" Started="12/2/2005 5:52:28 PM" Finished="12/2/2005 5:52:28 PM" />
+    <Project Name="C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" Message="Project &quot;CardLib.vbproj&quot; (GetNativeManifest target(s)):" Started="12/2/2005 5:52:28 PM" Finished="12/2/2005 5:52:28 PM">
+      <Target Started="12/2/2005 5:52:28 PM" Name="GetNativeManifest" Message="Target &quot;GetNativeManifest&quot; in project &quot;CardLib.vbproj&quot;" Finished="12/2/2005 5:52:28 PM" Succeeded="True" />
+    </Project>
+    <Project Name="C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" Message="Project &quot;CardLib.vbproj&quot; (GetCopyToOutputDirectoryItems target(s)):" Started="12/2/2005 5:52:28 PM" Finished="12/2/2005 5:52:28 PM" />
+    <Message>Build succeeded.</Message>
+  </Build>
+  <Build Started="12/2/2005 5:52:33 PM" Verbosity="Normal" Finished="12/2/2005 5:52:33 PM" Succeeded="False">
+    <Message>Build started.</Message>
+    <Project Name="C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.sln" Message="Project &quot;DotNetFreeCell.sln&quot; (Compile target(s)):" Started="12/2/2005 5:52:33 PM" Finished="12/2/2005 5:52:33 PM">
+      <Target Started="12/2/2005 5:52:33 PM" Name="ValidateSolutionConfiguration" Message="Target &quot;ValidateSolutionConfiguration&quot; in project &quot;DotNetFreeCell.sln&quot;" Finished="12/2/2005 5:52:33 PM" Succeeded="True">
+        <Task Started="12/2/2005 5:52:33 PM" Name="Message" Finished="12/2/2005 5:52:33 PM">
+          <Message Importance="Normal">Building solution configuration "Debug|Any CPU".</Message>
+        </Task>
+      </Target>
+      <Error File="C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.sln" Code="MSB4057" Subcategory="" Hint="MSBuild.TargetDoesNotExist">
+        <Message>C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.sln : error MSB4057: The target "Compile" does not exist in the project.</Message>
+        <Location Line="0" ColumnNumber="0" />
+      </Error>
+    </Project>
+    <Message>Build FAILED.</Message>
+  </Build>
+</MSBuild>

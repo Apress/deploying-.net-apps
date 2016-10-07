@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8B742192-FE87-4859-90AB-BD38BF830F50}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>CardLib</RootNamespace>
+    <AssemblyName>CardLib</AssemblyName>
+    <MyType>Windows</MyType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>CardLib.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>CardLib.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CardDeck.vb" />
+    <Compile Include="Card.Designer.vb">
+      <DependentUpon>Card.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Card.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Images\01C.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Card.resx">
+      <DependentUpon>Card.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Images\01D.png" />
+    <EmbeddedResource Include="Images\01H.png" />
+    <EmbeddedResource Include="Images\01S.png" />
+    <EmbeddedResource Include="Images\02C.png" />
+    <EmbeddedResource Include="Images\02D.png" />
+    <EmbeddedResource Include="Images\02H.png" />
+    <EmbeddedResource Include="Images\02S.png" />
+    <EmbeddedResource Include="Images\03C.png" />
+    <EmbeddedResource Include="Images\03D.png" />
+    <EmbeddedResource Include="Images\03H.png" />
+    <EmbeddedResource Include="Images\03S.png" />
+    <EmbeddedResource Include="Images\04C.png" />
+    <EmbeddedResource Include="Images\04D.png" />
+    <EmbeddedResource Include="Images\04H.png" />
+    <EmbeddedResource Include="Images\04S.png" />
+    <EmbeddedResource Include="Images\05C.png" />
+    <EmbeddedResource Include="Images\05D.png" />
+    <EmbeddedResource Include="Images\05H.png" />
+    <EmbeddedResource Include="Images\05S.png" />
+    <EmbeddedResource Include="Images\06C.png" />
+    <EmbeddedResource Include="Images\06D.png" />
+    <EmbeddedResource Include="Images\06H.png" />
+    <EmbeddedResource Include="Images\06S.png" />
+    <EmbeddedResource Include="Images\07C.png" />
+    <EmbeddedResource Include="Images\07D.png" />
+    <EmbeddedResource Include="Images\07H.png" />
+    <EmbeddedResource Include="Images\07S.png" />
+    <EmbeddedResource Include="Images\08C.png" />
+    <EmbeddedResource Include="Images\08D.png" />
+    <EmbeddedResource Include="Images\08H.png" />
+    <EmbeddedResource Include="Images\08S.png" />
+    <EmbeddedResource Include="Images\09C.png" />
+    <EmbeddedResource Include="Images\09D.png" />
+    <EmbeddedResource Include="Images\09H.png" />
+    <EmbeddedResource Include="Images\09S.png" />
+    <EmbeddedResource Include="Images\10C.png" />
+    <EmbeddedResource Include="Images\10D.png" />
+    <EmbeddedResource Include="Images\10H.png" />
+    <EmbeddedResource Include="Images\10S.png" />
+    <EmbeddedResource Include="Images\11C.png" />
+    <EmbeddedResource Include="Images\11D.png" />
+    <EmbeddedResource Include="Images\11H.png" />
+    <EmbeddedResource Include="Images\11S.png" />
+    <EmbeddedResource Include="Images\12C.png" />
+    <EmbeddedResource Include="Images\12D.png" />
+    <EmbeddedResource Include="Images\12H.png" />
+    <EmbeddedResource Include="Images\12S.png" />
+    <EmbeddedResource Include="Images\13C.png" />
+    <EmbeddedResource Include="Images\13D.png" />
+    <EmbeddedResource Include="Images\13H.png" />
+    <EmbeddedResource Include="Images\13S.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon1.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.VisualBasic.targets" />
+</Project>

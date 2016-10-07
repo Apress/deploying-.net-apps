@@ -1,0 +1,27 @@
+#if($tableschema.HasPrimaryKeys)
+#set( $entity = "${tableschema.Alias}Entity" )
+<?xml version="1.0" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.0">
+	<class name="${namespace}.${entity}, DAO" table="${tableschema.Name}">
+
+		#if($tableschema.HasPrimaryKeys)
+			#set( $pk = $tableschema.GetPrimaryKey(0))
+
+			<id name="${pk.Alias}" column="${pk.Name}" type="${pk.NetType}">
+	
+			#if($pk.IsAutoIncrement)<generator class="identity"/>
+			#elseif($pk.NetType.ToLower() == "system.guid")<generator class="guid"/>
+			#else<generator class="assigned"/>
+			#end
+
+			</id>
+
+		#end
+
+		#foreach($column in $tableschema.SortedColumns.Values)
+		#if($column.Name != $pk.Name)<property name="${column.Alias}"/>#end
+
+		#end		
+	</class>
+</hibernate-mapping>
+#end

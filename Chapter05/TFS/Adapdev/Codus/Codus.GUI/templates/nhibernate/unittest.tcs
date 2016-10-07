@@ -1,0 +1,140 @@
+{
+	/// <summary>
+	/// Summary description for ShippersDAOTest.
+	/// </summary>
+	/// 
+	[TestFixture]
+	public class ${dao}Test
+	{
+		$dao dao = null;
+		int total = 0;
+
+		[TestFixtureSetUp]
+		public void TestFixtureSetup()
+		{
+			dao = new ${dao}();
+		}
+
+		[Test]
+		public void SelectAll()
+		{
+			ICollection c = dao.SelectAll();
+			Console.WriteLine("Total Records: " + c.Count);
+			if(c.Count > 0){
+				Assert.IsTrue(c.Count > 0, "No records returned.");
+				//foreach($entity e in c)
+				//{
+				//	Console.WriteLine(e.ToString());
+				//}
+			}
+		}
+
+		#if($tableschema.HasPrimaryKeys)
+
+		[Test]
+		public void SelectById()
+		{
+			IList l = dao.SelectAll();
+			if(l.Count > 0){
+				
+				$entity o = l[0] as $entity;
+				$entity o2 = dao.SelectById(o.${pk.Alias});
+
+				Console.WriteLine(o2);
+				Assert.AreEqual(o.${pk.Alias}, o.${pk.Alias});
+
+			}
+		}
+
+		#end
+
+		[Test]
+		public void Save()
+		{
+			// use a COM+ transaction so that nothing is actually written
+			// to the database
+			using(Adapdev.Transactions.TransactionScope transaction = new TransactionScope())
+			{
+				int count = dao.Count;
+
+				$entity test = this.GetTestObject();
+
+				dao.Save(test);
+			
+				Console.WriteLine("Inserted record: " + Environment.NewLine + test.ToString());
+
+				Assert.IsTrue(count == (dao.Count - 1), "Failed to insert record.");
+
+				dao.Delete(test);
+
+				Assert.IsTrue(count == dao.Count, "Failed to delete record.");
+			}
+
+		}
+
+		[Test]
+		public void GetCount()
+		{
+			int count = dao.Count;			
+			Console.WriteLine("Record count: " + count);
+			Assert.IsTrue(count > 0, "Table contains no records");
+		}
+		
+		[Test]
+		public void GetSessionFactory()
+		{
+			ISessionFactory factory = dao.ISessionFactory;
+			Assert.IsNotNull(factory, "ISessionFactory should not be null.");
+		}
+
+		[Test]
+		public void OpenSession()
+		{
+			ISession session = dao.ISessionFactory.OpenSession();
+			Assert.IsTrue(session.IsOpen, "ISession should be open.");
+			session.Close();
+		}				
+
+
+		#foreach($fk in $tableschema.ForeignKeys.Values)
+		#if($fk.IsActive)
+
+		[Test]
+		[Ignore("You must first enter a valid FK parameter for this test.")]
+		public void SelectAllBy${fk.Alias}()
+		{
+			// *************************************************
+			//
+			// Before this test can be run, you must replace the  
+			// === fill in === section with a valid parameter.
+			//
+			// *************************************************
+			
+			//ArrayList al = new ArrayList(dao.SelectAllBy${fk.Alias}(=== fill in ===));
+			//Assert.IsTrue(al.Count > 0, "No records were returned.");
+			//foreach($entity e in al)
+			//{
+			//	Console.WriteLine(e.ToString());
+			//}
+		}
+
+		#end
+		#end
+
+		private $entity GetTestObject(){
+
+			$entity o = new ${entity}();
+			#foreach($column in $tableschema.SortedColumns.Values)
+			#if(!$column.IsAutoIncrement)
+
+			o.${column.Alias} = $providerinfo.GetTestDefaultById( $databaseschema.DatabaseProviderType , $column.DataTypeId );
+			#end
+			#end
+
+			return o;
+
+		}
+
+
+	}
+}

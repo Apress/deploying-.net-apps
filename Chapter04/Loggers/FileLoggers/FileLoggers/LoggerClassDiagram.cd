@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Font Name="Tahoma" Size="8.25" />
+  <Class Name="FileLoggers.FileLoggerBase">
+    <Position X="2.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>FileLoggerBase.cs</FileName>
+      <HashCode>ACABCAAAAYAAAQQEAAAAABCAAAEAAQAAAgIAAEBIAAA=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="Microsoft.Build.Utilities.Logger" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="2.25" Y="0.687" />
+        <Point X="3.25" Y="0.687" />
+        <Point X="3.25" Y="1.5" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="FileLoggers.XmlLogger">
+    <Position X="4.25" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <FileName>XmlLoggers.cs</FileName>
+      <HashCode>IJQAIAQAoAEAAYAAEAAACQCTQAAARAAAAAAQABSADGI=</HashCode>
+    </TypeIdentifier>
+    <Compartments>
+      <Compartment Name="Private" Collapsed="true" />
+    </Compartments>
+    <InheritanceLine Type="FileLoggers.FileLoggerBase" ManuallyRouted="true" FixedFromPoint="true">
+      <Path>
+        <Point X="4" Y="2.663" />
+        <Point X="5.25" Y="2.663" />
+        <Point X="5.25" Y="3.25" />
+      </Path>
+    </InheritanceLine>
+  </Class>
+  <Class Name="Microsoft.Build.Utilities.Logger">
+    <Position X="0.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier />
+    <Lollipop Position="0.2" />
+  </Class>
+  <Enum Name="FileLoggers.BuildType">
+    <Position X="4.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <FileName>XmlLoggers.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAACCAAAAAAgAAAAEAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Enum>
+</ClassDiagram>

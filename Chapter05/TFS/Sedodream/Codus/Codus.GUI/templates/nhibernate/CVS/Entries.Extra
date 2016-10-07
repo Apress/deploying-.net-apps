@@ -1,0 +1,14 @@
+/configurator.tcs////*///
+/dao.tcs////*///
+/entity.tcs////*///
+/entitycollection.tcs////*///
+/entitydictionary.tcs////*///
+/entityenumerator.tcs////*///
+/hbm.xml////*///
+/hibernate.cfg.xml////*///
+/mockentity.tcs////*///
+/nant.build////*///
+/nunit.tcs////*///
+/runbuild.bat////*///
+/unittest.tcs////*///
+/zanebug.tcs////*///

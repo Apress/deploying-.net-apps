@@ -1,0 +1,7 @@
+#*<?xml version="1.0" encoding="utf-8"?>
+<config xmlns="http://tempuri.org/DynamicGUI.xsd">
+    <file name="${table}WebService.asmx" />
+</config>
+*#
+#set( $table = "${tableschema.Alias}" )
+<%@ WebService Language="c#" Codebehind="${table}WebService.cs" Class="${namespace}.WebServices.${table}WebService" %>

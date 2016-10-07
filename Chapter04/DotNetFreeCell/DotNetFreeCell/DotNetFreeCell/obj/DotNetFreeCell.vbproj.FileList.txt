@@ -1,0 +1,17 @@
+bin\Debug\DotNetFreeCell.exe
+bin\Debug\DotNetFreeCell.pdb
+bin\Debug\DotNetFreeCell.xml
+bin\Debug\CardLib.dll
+bin\Debug\CardLib.pdb
+bin\Debug\CardLib.xml
+obj\Debug\ResolveAssemblyReference.cache
+obj\Debug\DotNetFreeCell.NORMAL05.CUR
+obj\Debug\DotNetFreeCell.Form1.resources
+obj\Debug\DotNetFreeCell.FreeCellColumn.resources
+obj\Debug\DotNetFreeCell.frmChooseGame.resources
+obj\Debug\DotNetFreeCell.Resources.resources
+obj\Debug\DotNetFreeCell.frmStatistics.resources
+obj\Debug\DotNetFreeCell.vbproj.GenerateResource.Cache
+obj\Debug\DotNetFreeCell.exe
+obj\Debug\DotNetFreeCell.xml
+obj\Debug\DotNetFreeCell.pdb

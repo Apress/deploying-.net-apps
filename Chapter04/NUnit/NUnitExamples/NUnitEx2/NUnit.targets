@@ -1,0 +1,138 @@
+<!--
+    This is the targets file to include into a MSBuild project file to allow assemblies
+    to be tested by NUnit after a build.
+    This file provides the RunAllTests target to exeucte the test cases located in 
+    assemblies located under the $(OutputPath) assemblies.
+    This class also extends the Clean property to include the CleanNUnit target which will
+    remove all the files that this file generates.
+    A log file will be created when you test cases are run, it will be located in the
+    bin folder called either NUnit.log or NUnit.fail.log depending on wether the exeuction
+    passed or failed. The file is given a different name based on success/failure to facilitate
+    incremental building. If you project is up-to-date with regards to unit tests then
+    they will not be run against your project. To force another run you can run the CleanNUnit
+    target, then exeucte the RunAllTests target.
+-->
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <!--==============================================================================
+      Things related to the executing the test cases.
+  ===================================================================================-->
+  <ItemGroup>
+    <!--
+        This is the location of the NUnit MSBuild task and all of its dependencies.
+        This could come from an envrionment variable if desired
+    -->
+    <TaskBin Include="C:\MSBuild\TaskBin"/>
+
+    <!-- NUnit requires a directory to temporairly store files this is that directory -->
+    <NUnitCache Include="$(OutputPath)\cache\"/>
+    <!-- Name of the log file for successful builds -->
+    <NUnitLog Include="$(OutputPath)\NUnit.log"/>
+    <!-- Name of the log file for un-successful builds -->
+    <NUnitFailLog Include="$(OutputPath)\NUnit.fail.log"/>
+  </ItemGroup>
+
+  <PropertyGroup>
+    <!-- 
+      This is the list of targets that will be executed, in order, if an error occurs
+      during the course of the NUnit testing. You can extend this property in other project
+      files in a similar fashion that the CleanDependsOn is overridden below.
+    -->
+    <NUnitErrorHandlers>
+      HandleNUnitError
+    </NUnitErrorHandlers>
+  </PropertyGroup>
+
+  <!-- This tells MSBuild where it can locate the task code -->
+  <UsingTask AssemblyFile="@(TaskBin->'%(FullPath)')\MSBuildTasks.dll" TaskName="NUnitTask"/>
+
+  <!--
+      Run this target to execute the test cases
+  -->
+  <Target Name="RunAllTests"
+          DependsOnTargets="Build"
+          Inputs="@(IntermediateAssembly)"
+          Outputs="@(NUnitLog)">
+    
+    <MakeDir Directories="@(NUnitCache)" Condition="!Exists(@(NUnitCache))"/>
+
+    <Delete Files="@(NUnitFailLog);@(NUnitLog)"/>
+
+    <!-- 
+      This only works for debug mode. To support release mode then you need 2 CreateItems calls,
+      one for debug and one for release mode. You should use a condition to determine which assemblies
+      will be included in the testing.
+    -->
+    
+    <!-- Can't use the IntermediateAssembly directly because it will cause the tests to fail. -->
+ 
+    
+    <Message Text="Running unit tests in: @(TestAssemblies)"/>
+    <NUnitTask  Assemblies="@(TestAssemblies)"
+                CacheDirPath="@(NUnitCache->'%(FullPath)')"
+                LogFile="@(NUnitFailLog)"
+                ContinueAfterError="false"
+      >
+      <Output TaskParameter="NumFailedTests" PropertyName="NumNUnitFailures"/>
+      <Output TaskParameter="NumExecutedTests" PropertyName="NumExecutedTests"/>
+    </NUnitTask>
+
+    <!-- 
+      If the tests passed the move the file to the target output location that way we don't have
+      to run this target unless its old.
+      If it fails we purposefully don't move to the successful location because incremental building
+      will skip this target after failed tests.
+    -->
+    <Copy
+        SourceFiles="@(NUnitFailLog)"
+        DestinationFiles="@(NUnitLog)"
+        SkipUnchangedFiles="false"
+        Condition="'$(NumNUnitFailures)' == '0'"
+            />
+    <Delete Files="@(NUnitFailLog)"/>
+
+    <Message Text="NUnitLogFile: @(NUnitLog->'%(FullPath)')" Condition="'$(NumNUnitFailures)' == '0'"/>
+    <Message Text="NUnitLogFile: @(NUnitFailLog->'%(FullPath)')" Condition="'$(NumNUnitFailures)' != '0'"/>
+    <Message Text="Num executed tests: $(NumExecutedTests)"/>
+
+    <!-- If an error occurs during the process these targets will be called -->
+    <OnError ExecuteTargets="$(NUnitErrorTargets)"/>
+  </Target>
+
+  <!--==============================================================================
+      Things related to the Cleaning the project.
+  ===================================================================================-->
+  <PropertyGroup>
+    <!-- Extends the Clean depends on to include cleaning the NUnit generated files -->
+    <CleanDependsOn>
+      $(CleanDependsOn);
+      CleanNUnit
+    </CleanDependsOn>
+  </PropertyGroup>
+  <!--
+      Run this target to remove NUnit generated files
+  -->
+  <Target Name="CleanNUnit" Inputs="@(NUnitLog);@(NUnitFailLog);@(NUnitCache)" >
+    <Delete Files="@(NUnitLog)" Condition="Exists(@(NUnitLog))"/>
+    <Delete Files="@(NUnitFailLog)" Condition="Exists(@(NUnitFailLog))"/>
+    <RemoveDir Directories="@(NUnitCache)" Condition="Exists(@(NUnitCache))"/>
+    <OnError ExecuteTargets="HandleNUnitError"/>
+  </Target>
+  <!--==============================================================================
+      Things related to error handling.
+  ===================================================================================-->
+
+  <!--
+    Semi-colon seperated list of error handlers to be invoked when an error occurs
+    during the NUnit task exeuction. This would not be called when NUnit encounters
+    faile tests, but if there was an error with the actual NUnit task or target itself.
+    You can append to this list or completely override it.
+  -->
+  <PropertyGroup>
+    <NUnitErrorTargets>
+      HandleNUnitError;
+    </NUnitErrorTargets>
+  </PropertyGroup>
+  <Target Name="HandleNUnitError">
+    <Message Text="An NUnit error has occured!"/>
+  </Target>
+</Project>

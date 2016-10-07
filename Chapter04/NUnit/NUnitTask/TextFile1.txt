@@ -1,0 +1,38 @@
+<PropertyGroup>
+    <!-- Extends the Clean depends on to include cleaning the NUnit generated files -->
+    <CleanDependsOn>
+      $(CleanDependsOn);
+      CleanNUnit
+    </CleanDependsOn>
+</PropertyGroup>
+<!--
+    Run this target to remove NUnit generated files
+-->
+<Target Name="CleanNUnit">
+    <Delete Files="@(NUnitLog)" Condition="Exists(@(NUnitLog))"/>
+    <Delete Files="@(NUnitFailLog)" Condition="Exists(@(NUnitFailLog))"/>
+    <RemoveDir Directories="@(NUnitCache)" Condition="Exists(@(NUnitCache))"/>
+    <OnError />
+</Target>
+
+
+
+
+
+
+
+        private void LogMetaData(ITaskItem item)
+        {
+            StringBuilder sb = new StringBuilder();
+            foreach (string currentName in item.MetadataNames)
+            {
+                sb.Append("   [");
+                sb.Append(currentName);
+                sb.Append(",");
+                sb.Append(item.GetMetadata(currentName));
+                sb.Append("]\n");
+            }
+            sb.Append("TEST MD: " + item.GetMetadata("TEST") + (item.GetMetadata("TEST")==string.Empty));
+            Log.LogMessage("Metadata:\n" + sb.ToString(), null);
+
+        }

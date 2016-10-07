@@ -1,0 +1,15 @@
+using System;
+using System.Data;
+using Adapdev.Data;
+    
+namespace $namespace {
+    
+    public class ConnectionFactory {
+        
+        public static IDbConnection CreateConnection(){
+			IDbConnection connection = DbProviderFactory.CreateConnection(DbConstants.DatabaseProviderType);
+			connection.ConnectionString = DbConstants.ConnectionString;
+			return connection;        
+        }
+   }
+}

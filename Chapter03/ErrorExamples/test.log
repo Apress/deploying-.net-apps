@@ -1,0 +1,163 @@
+Build started 11/7/2005 1:33:33 AM.
+__________________________________________________
+Project "C:\MSBuild\MSBuildExamples\ErrorExamples\SimpleError.proj" (default targets):
+
+Initial Properties:
+ALLUSERSPROFILE                = C:\Documents and Settings\All Users
+APPDATA                        = C:\Documents and Settings\Ibrahim\Application Data
+CLIENTNAME                     = Console
+CommonProgramFiles             = C:\Program Files\Common Files
+COMPUTERNAME                   = SAYED-NOTEBOOK
+ComSpec                        = C:\WINDOWS\system32\cmd.exe
+DevEnvDir                      = c:\Program Files\Microsoft Visual Studio 8\Common7\IDE
+FP_NO_HOST_CHECK               = NO
+FrameworkDir                   = c:\WINDOWS\Microsoft.NET\Framework
+FrameworkSDKDir                = c:\Program Files\Microsoft Visual Studio 8\SDK\v2.0
+FrameworkVersion               = v2.0.50727
+GETMODEL                       = Satellite M45
+HOMEDRIVE                      = C:
+HOMEPATH                       = \Documents and Settings\Ibrahim
+INCLUDE                        = c:\Program Files\Microsoft Visual Studio 8\VC\ATLMFC\INCLUDE;c:\Program Files\Microsoft Visual Studio 8\VC\INCLUDE;c:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include;c:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\include;
+JAVA_HOME                      = "C:\Program Files\Java\jdk1.5.0_05"
+LIB                            = c:\Program Files\Microsoft Visual Studio 8\VC\ATLMFC\LIB;c:\Program Files\Microsoft Visual Studio 8\VC\LIB;c:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\lib;c:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\lib;
+LIBPATH                        = c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727;c:\Program Files\Microsoft Visual Studio 8\VC\ATLMFC\LIB
+LOGONSERVER                    = \\SAYED-NOTEBOOK
+MSBuildBinPath                 = c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727
+MSBuildExtensionsPath          = C:\Program Files\MSBuild
+MSBuildProjectDirectory        = C:\MSBuild\MSBuildExamples\ErrorExamples
+MSBuildProjectExtension        = .proj
+MSBuildProjectFile             = SimpleError.proj
+MSBuildProjectFullPath         = C:\MSBuild\MSBuildExamples\ErrorExamples\SimpleError.proj
+MSBuildProjectName             = SimpleError
+NUMBER_OF_PROCESSORS           = 1
+OS                             = Windows_NT
+Path                           = c:\Program Files\Microsoft Visual Studio 8\Common7\IDE;c:\Program Files\Microsoft Visual Studio 8\VC\BIN;c:\Program Files\Microsoft Visual Studio 8\Common7\Tools;c:\Program Files\Microsoft Visual Studio 8\Common7\Tools\bin;c:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\bin;c:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\bin;c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727;c:\Program Files\Microsoft Visual Studio 8\VC\VCPackages;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;c:\Program Files\Microsoft SQL Server\90\Tools\binn\
+PATHEXT                        = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH
+PROCESSOR_ARCHITECTURE         = x86
+PROCESSOR_IDENTIFIER           = x86 Family 6 Model 13 Stepping 8, GenuineIntel
+PROCESSOR_LEVEL                = 6
+PROCESSOR_REVISION             = 0d08
+ProgramFiles                   = C:\Program Files
+PROMPT                         = $P$G
+SESSIONNAME                    = Console
+SystemDrive                    = C:
+SystemRoot                     = C:\WINDOWS
+TEMP                           = C:\DOCUME~1\Ibrahim\LOCALS~1\Temp
+TMP                            = C:\DOCUME~1\Ibrahim\LOCALS~1\Temp
+USERDOMAIN                     = SAYED-NOTEBOOK
+USERNAME                       = Ibrahim
+USERPROFILE                    = C:\Documents and Settings\Ibrahim
+VCINSTALLDIR                   = c:\Program Files\Microsoft Visual Studio 8\VC
+VERNUM                         = PSM40U-01R001V
+VS80COMNTOOLS                  = c:\Program Files\Microsoft Visual Studio 8\Common7\Tools\
+VSINSTALLDIR                   = c:\Program Files\Microsoft Visual Studio 8
+windir                         = C:\WINDOWS
+
+Target "ThrowError" in file "C:\MSBuild\MSBuildExamples\ErrorExamples\SimpleError.proj":
+  Using "Error" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+  Task "Error"
+    C:\MSBuild\MSBuildExamples\ErrorExamples\SimpleError.proj(3,9): error : Error in ThrowError target
+  Done executing task "Error" -- FAILED.
+Done building target "ThrowError" in project "SimpleError.proj" -- FAILED.
+Target "MessageErrorHandler" in file "C:\MSBuild\MSBuildExamples\ErrorExamples\SimpleError.proj":
+  Using "Message" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+  Task "Message"
+    An error has occured, build will be halted
+  Done executing task "Message".
+Done building target "MessageErrorHandler" in project "SimpleError.proj".
+
+Done building project "SimpleError.proj" -- FAILED.
+
+Build FAILED.
+C:\MSBuild\MSBuildExamples\ErrorExamples\SimpleError.proj(3,9): error : Error in ThrowError target
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.04
+Build started 11/7/2005 10:25:48 PM.
+__________________________________________________
+Project "C:\MSBuild\MSBuildExamples\ErrorExamples\SimpleError.proj" (default targets):
+
+Initial Properties:
+ALLUSERSPROFILE                = C:\Documents and Settings\All Users
+APPDATA                        = C:\Documents and Settings\Ibrahim\Application Data
+CLIENTNAME                     = Console
+CommonProgramFiles             = C:\Program Files\Common Files
+COMPUTERNAME                   = SAYED-NOTEBOOK
+ComSpec                        = C:\WINDOWS\system32\cmd.exe
+DevEnvDir                      = c:\Program Files\Microsoft Visual Studio 8\Common7\IDE
+FP_NO_HOST_CHECK               = NO
+FrameworkDir                   = c:\WINDOWS\Microsoft.NET\Framework
+FrameworkSDKDir                = c:\Program Files\Microsoft Visual Studio 8\SDK\v2.0
+FrameworkVersion               = v2.0.50727
+GETMODEL                       = Satellite M45
+HOMEDRIVE                      = C:
+HOMEPATH                       = \Documents and Settings\Ibrahim
+INCLUDE                        = c:\Program Files\Microsoft Visual Studio 8\VC\ATLMFC\INCLUDE;c:\Program Files\Microsoft Visual Studio 8\VC\INCLUDE;c:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\include;c:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\include;
+JAVA_HOME                      = "C:\Program Files\Java\jdk1.5.0_05"
+LIB                            = c:\Program Files\Microsoft Visual Studio 8\VC\ATLMFC\LIB;c:\Program Files\Microsoft Visual Studio 8\VC\LIB;c:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\lib;c:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\lib;
+LIBPATH                        = c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727;c:\Program Files\Microsoft Visual Studio 8\VC\ATLMFC\LIB
+LOGONSERVER                    = \\SAYED-NOTEBOOK
+MSBuildBinPath                 = c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727
+MSBuildExtensionsPath          = C:\Program Files\MSBuild
+MSBuildProjectDirectory        = C:\MSBuild\MSBuildExamples\ErrorExamples
+MSBuildProjectExtension        = .proj
+MSBuildProjectFile             = SimpleError.proj
+MSBuildProjectFullPath         = C:\MSBuild\MSBuildExamples\ErrorExamples\SimpleError.proj
+MSBuildProjectName             = SimpleError
+NUMBER_OF_PROCESSORS           = 1
+OS                             = Windows_NT
+Path                           = c:\Program Files\Microsoft Visual Studio 8\Common7\IDE;c:\Program Files\Microsoft Visual Studio 8\VC\BIN;c:\Program Files\Microsoft Visual Studio 8\Common7\Tools;c:\Program Files\Microsoft Visual Studio 8\Common7\Tools\bin;c:\Program Files\Microsoft Visual Studio 8\VC\PlatformSDK\bin;c:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\bin;c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727;c:\Program Files\Microsoft Visual Studio 8\VC\VCPackages;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;c:\Program Files\Microsoft SQL Server\90\Tools\binn\
+PATHEXT                        = .COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH
+PROCESSOR_ARCHITECTURE         = x86
+PROCESSOR_IDENTIFIER           = x86 Family 6 Model 13 Stepping 8, GenuineIntel
+PROCESSOR_LEVEL                = 6
+PROCESSOR_REVISION             = 0d08
+ProgramFiles                   = C:\Program Files
+PROMPT                         = $P$G
+SESSIONNAME                    = Console
+SystemDrive                    = C:
+SystemRoot                     = C:\WINDOWS
+TEMP                           = C:\DOCUME~1\Ibrahim\LOCALS~1\Temp
+TMP                            = C:\DOCUME~1\Ibrahim\LOCALS~1\Temp
+USERDOMAIN                     = SAYED-NOTEBOOK
+USERNAME                       = Ibrahim
+USERPROFILE                    = C:\Documents and Settings\Ibrahim
+VCINSTALLDIR                   = c:\Program Files\Microsoft Visual Studio 8\VC
+VERNUM                         = PSM40U-01R001V
+VS80COMNTOOLS                  = c:\Program Files\Microsoft Visual Studio 8\Common7\Tools\
+VSINSTALLDIR                   = c:\Program Files\Microsoft Visual Studio 8
+windir                         = C:\WINDOWS
+
+Target "ThrowError" in file "C:\MSBuild\MSBuildExamples\ErrorExamples\SimpleError.proj":
+  Using "Error" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+  Task "Error"
+    C:\MSBuild\MSBuildExamples\ErrorExamples\SimpleError.proj(3,9): error : Error in ThrowError target
+  Done executing task "Error" -- FAILED.
+Done building target "ThrowError" in project "SimpleError.proj" -- FAILED.
+Target "MessageErrorHandler" in file "C:\MSBuild\MSBuildExamples\ErrorExamples\SimpleError.proj":
+  Using "Message" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+  Task "Message"
+    An error has occured, build will be halted
+  Done executing task "Message".
+Done building target "MessageErrorHandler" in project "SimpleError.proj".
+
+Done building project "SimpleError.proj" -- FAILED.
+
+Project Performance Summary:
+      681 ms  C:\MSBuild\MSBuildExamples\ErrorExamples\SimpleError.proj   1 calls
+
+Target Performance Summary:
+       10 ms  MessageErrorHandler                        1 calls
+      561 ms  ThrowError                                 1 calls
+
+Task Performance Summary:
+       10 ms  Message                                    1 calls
+      140 ms  Error                                      1 calls
+
+Build FAILED.
+C:\MSBuild\MSBuildExamples\ErrorExamples\SimpleError.proj(3,9): error : Error in ThrowError target
+    0 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.71

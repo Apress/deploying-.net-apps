@@ -1,0 +1,35 @@
+Build started 11/17/2005 9:42:31 PM.
+__________________________________________________
+Project "C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.sln" (default targets):
+
+Target ValidateSolutionConfiguration:
+    Building solution configuration "Debug|Any CPU".
+Target Build:
+    Target CardLib:
+        __________________________________________________
+        Project "C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.sln" is building "C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj" (default targets):
+
+        Target CoreResGen:
+            No resources are out of date with respect to their source files. Skipping resource generation.
+        Target CoreCompile:
+          Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+        Target CopyFilesToOutputDirectory:
+            CardLib -> C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.dll
+    Target DotNetFreeCell:
+        __________________________________________________
+        Project "C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.sln" is building "C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj" (default targets):
+
+        Target BeforeBuild:
+            C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj : warning 5: This is just a warning really
+            C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj(150,5): error errorCoDe: This is an ERROR!
+        Done building target "BeforeBuild" in project "DotNetFreeCell.vbproj" -- FAILED.
+
+        Done building project "DotNetFreeCell.vbproj" -- FAILED.
+
+Build FAILED.
+C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj : warning 5: This is just a warning really
+C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj(150,5): error errorCoDe: This is an ERROR!
+    1 Warning(s)
+    1 Error(s)
+
+Time Elapsed 00:00:00.21

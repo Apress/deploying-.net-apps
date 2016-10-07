@@ -1,0 +1,55 @@
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codus.GUI", "Codus.GUI\Codus.GUI.csproj", "{E354F034-D1C2-4CE3-9A43-172333B1233F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codus.GUI.Extensions", "Codus.GUI.Extensions\Codus.GUI.Extensions.csproj", "{FADD5CC9-A670-4726-BEBA-169C3806A71C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codus.Templates.Adapdev", "Codus.Templates.Adapdev\Codus.Templates.Adapdev.csproj", "{786B0905-23E4-4AB4-A34C-C5B87900FA8A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Codus.Templates.NHibernate", "Codus.Templates.NHibernate\Codus.Templates.NHibernate.csproj", "{088C772E-4564-4649-B562-F7FD52D2B6CF}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://sayed-ws2003:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Codus.GUI.Extensions\\Codus.GUI.Extensions.csproj
+		SccProjectName1 = Codus.GUI.Extensions
+		SccLocalPath1 = Codus.GUI.Extensions
+		SccProjectUniqueName2 = Codus.GUI\\Codus.GUI.csproj
+		SccProjectName2 = Codus.GUI
+		SccLocalPath2 = Codus.GUI
+		SccProjectUniqueName3 = Codus.Templates.Adapdev\\Codus.Templates.Adapdev.csproj
+		SccProjectName3 = Codus.Templates.Adapdev
+		SccLocalPath3 = Codus.Templates.Adapdev
+		SccProjectUniqueName4 = Codus.Templates.NHibernate\\Codus.Templates.NHibernate.csproj
+		SccProjectName4 = Codus.Templates.NHibernate
+		SccLocalPath4 = Codus.Templates.NHibernate
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E354F034-D1C2-4CE3-9A43-172333B1233F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E354F034-D1C2-4CE3-9A43-172333B1233F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E354F034-D1C2-4CE3-9A43-172333B1233F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E354F034-D1C2-4CE3-9A43-172333B1233F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FADD5CC9-A670-4726-BEBA-169C3806A71C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FADD5CC9-A670-4726-BEBA-169C3806A71C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FADD5CC9-A670-4726-BEBA-169C3806A71C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FADD5CC9-A670-4726-BEBA-169C3806A71C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{786B0905-23E4-4AB4-A34C-C5B87900FA8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{786B0905-23E4-4AB4-A34C-C5B87900FA8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{786B0905-23E4-4AB4-A34C-C5B87900FA8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{786B0905-23E4-4AB4-A34C-C5B87900FA8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{088C772E-4564-4649-B562-F7FD52D2B6CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{088C772E-4564-4649-B562-F7FD52D2B6CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{088C772E-4564-4649-B562-F7FD52D2B6CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{088C772E-4564-4649-B562-F7FD52D2B6CF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

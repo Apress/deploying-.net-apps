@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "DotNetFreeCell", "DotNetFreeCell\DotNetFreeCell.vbproj", "{9734FCCC-137F-47FB-B87B-90E1FF41E99B}"
+EndProject
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "CardLib", "..\CardLib\CardLib.vbproj", "{8B742192-FE87-4859-90AB-BD38BF830F50}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Bin", "Bin", "{3684925C-1C63-4B3B-94C4-948E218299EE}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.txt = Readme.txt
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://192.168.1.101:8080/
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = ..\\CardLib\\CardLib.vbproj
+		SccProjectName1 = ../CardLib
+		SccLocalPath1 = ..\\CardLib
+		SccProjectUniqueName2 = DotNetFreeCell\\DotNetFreeCell.vbproj
+		SccProjectName2 = DotNetFreeCell
+		SccLocalPath2 = DotNetFreeCell
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9734FCCC-137F-47FB-B87B-90E1FF41E99B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9734FCCC-137F-47FB-B87B-90E1FF41E99B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9734FCCC-137F-47FB-B87B-90E1FF41E99B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9734FCCC-137F-47FB-B87B-90E1FF41E99B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B742192-FE87-4859-90AB-BD38BF830F50}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B742192-FE87-4859-90AB-BD38BF830F50}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B742192-FE87-4859-90AB-BD38BF830F50}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B742192-FE87-4859-90AB-BD38BF830F50}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

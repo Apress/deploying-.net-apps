@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TemplateProjects xmlns="http://tempuri.org/TemplateProjects.xsd">
+	<Solutions>
+		<Solution name="DAO">
+			<Projects>
+				<Project name="DAO" type="csharpdll">
+					<ref assembly="${shared}\adapdev\Adapdev.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.Data.dll" />
+					<ref assembly="${shared}\log4net.dll" />
+					<ref assembly="${shared}\MySql.Data.dll" />
+				</Project>
+				<Project name="DAOTestsNUnit" type="csharpdll">
+					<ref assembly="${shared}\nunit220\nunit.framework.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.Data.dll" />
+					<ref assembly="${shared}\log4net.dll" />
+					<ref assembly="${shared}\MySql.Data.dll" />
+					<ref project="DAO" />
+				</Project>
+				<Project name="DAOTestsZanebug" type="csharpdll">
+					<ref assembly="${shared}\adapdev\Adapdev.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.Data.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.UnitTest.dll" />
+					<ref assembly="${shared}\log4net.dll" />
+					<ref assembly="${shared}\MySql.Data.dll" />
+					<ref project="DAO" />
+				</Project>
+				<Project name="WebServices" type="csharpwebservice">
+					<ref assembly="${shared}\adapdev\Adapdev.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.Data.dll" />
+					<ref assembly="${shared}\log4net.dll" />
+					<ref assembly="${shared}\MySql.Data.dll" />
+					<ref project="DAO" />
+				</Project>
+			</Projects>
+		</Solution>
+		<Solution name="NHibernate">
+			<Projects>
+				<Project name="DAO" type="csharpdll">
+					<ref assembly="${shared}\adapdev\Adapdev.dll" />
+					<ref assembly="${shared}\nhibernate\Castle.DynamicProxy.dll" />
+					<ref assembly="${shared}\nhibernate\HashCodeProvider.dll" />
+					<ref assembly="${shared}\nhibernate\Iesi.Collections.dll" />
+					<ref assembly="${shared}\nhibernate\log4net.dll" />
+					<ref assembly="${shared}\nhibernate\NHibernate.dll" />
+					<ref assembly="${shared}\nhibernate\NHibernate.DomainModel.dll" />
+					<ref assembly="${shared}\MySql.Data.dll" />
+				</Project>
+				<Project name="DAOTestsNUnit" type="csharpdll">
+					<ref assembly="${shared}\adapdev\Adapdev.dll" />
+					<ref assembly="${shared}\nhibernate\Castle.DynamicProxy.dll" />
+					<ref assembly="${shared}\nhibernate\HashCodeProvider.dll" />
+					<ref assembly="${shared}\nhibernate\Iesi.Collections.dll" />
+					<ref assembly="${shared}\nhibernate\log4net.dll" />
+					<ref assembly="${shared}\nhibernate\NHibernate.dll" />
+					<ref assembly="${shared}\nhibernate\NHibernate.DomainModel.dll" />
+					<ref assembly="${shared}\nunit220\nunit.framework.dll" />
+					<ref project="DAO"/>
+					<ref assembly="${shared}\MySql.Data.dll" />
+				</Project>
+				<Project name="DAOTestsZanebug" type="csharpdll">
+					<ref assembly="${shared}\adapdev\Adapdev.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.UnitTest.dll" />
+					<ref assembly="${shared}\nhibernate\Castle.DynamicProxy.dll" />
+					<ref assembly="${shared}\nhibernate\HashCodeProvider.dll" />
+					<ref assembly="${shared}\nhibernate\Iesi.Collections.dll" />
+					<ref assembly="${shared}\nhibernate\log4net.dll" />
+					<ref assembly="${shared}\nhibernate\NHibernate.dll" />
+					<ref assembly="${shared}\nhibernate\NHibernate.DomainModel.dll" />
+					<ref project="DAO" />
+					<ref assembly="${shared}\MySql.Data.dll" />
+				</Project>
+			</Projects>
+		</Solution>
+		<Solution name="DAOVB">
+			<Projects>
+				<Project name="DAO" type="vbdll">
+					<ref assembly="${shared}\adapdev\Adapdev.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.Data.dll" />
+					<ref assembly="${shared}\log4net.dll" />
+					<ref assembly="${shared}\MySql.Data.dll" />
+				</Project>
+				<Project name="DAOTestsNUnit" type="vbdll">
+					<ref assembly="${shared}\nunit220\nunit.framework.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.Data.dll" />
+					<ref assembly="${shared}\log4net.dll" />
+					<ref assembly="${shared}\MySql.Data.dll" />
+					<ref project="DAO" />
+				</Project>
+				<Project name="DAOTestsZanebug" type="vbdll">
+					<ref assembly="${shared}\adapdev\Adapdev.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.Data.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.UnitTest.dll" />
+					<ref assembly="${shared}\log4net.dll" />
+					<ref assembly="${shared}\MySql.Data.dll" />
+					<ref project="DAO" />
+				</Project>
+				<Project name="WebServices" type="vbwebservice">
+					<ref assembly="${shared}\adapdev\Adapdev.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.Data.dll" />
+					<ref assembly="${shared}\log4net.dll" />
+					<ref assembly="${shared}\MySql.Data.dll" />
+					<ref project="DAO" />
+				</Project>
+			</Projects>
+		</Solution>
+		<Solution name="Elementary">
+			<Projects>
+				<Project name="DAO" type="csharpdll">
+					<ref assembly="${shared}\adapdev\Adapdev.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.Data.dll" />
+					<ref assembly="${shared}\log4net.dll" />
+					<ref assembly="${shared}\MySql.Data.dll" />
+				</Project>
+				<Project name="DAOTestsNUnit" type="csharpdll">
+					<ref assembly="${shared}\nunit220\nunit.framework.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.Data.dll" />
+					<ref assembly="${shared}\log4net.dll" />
+					<ref assembly="${shared}\MySql.Data.dll" />
+					<ref project="DAO" />
+				</Project>
+				<Project name="DAOTestsZanebug" type="csharpdll">
+					<ref assembly="${shared}\adapdev\Adapdev.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.Data.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.UnitTest.dll" />
+					<ref assembly="${shared}\log4net.dll" />
+					<ref assembly="${shared}\MySql.Data.dll" />
+					<ref project="DAO" />
+				</Project>
+				<Project name="WebServices" type="csharpwebservice">
+					<ref assembly="${shared}\adapdev\Adapdev.dll" />
+					<ref assembly="${shared}\adapdev\Adapdev.Data.dll" />
+					<ref assembly="${shared}\log4net.dll" />
+					<ref assembly="${shared}\MySql.Data.dll" />
+					<ref project="DAO" />
+				</Project>
+			</Projects>
+		</Solution>
+	</Solutions>
+	<TemplateProject solution="DAO">
+		<Name>DAO Framework - C#</Name>
+		<Description>Generates the data access tier for a given database.</Description>
+		<Author>Adapdev.Technologies</Author>
+		<Version>v1.0</Version>
+		<Copyright>2005</Copyright>
+		<Editor assembly="templates\adapdev\Codus.Templates.Adapdev.dll" class="Codus.Templates.Adapdev.Editor" />
+		<Templates>
+			<Template type="nvelocity" templateFile="templates\adapdev\cs\nant.build" outputFileName="nant"
+				outputFileExtension="build" outputDirectory="" overWrite="true" project="">
+				<deps>
+					<dep key="generatenant" type="eq" value="true" />
+				</deps>
+			</Template>
+			<Template type="nvelocity" templateFile="templates\adapdev\cs\runbuild.bat" outputFileName="runbuild"
+				outputFileExtension="bat" outputDirectory="" overWrite="true" project="">
+				<deps>
+					<dep key="generatenant" type="eq" value="true" />
+				</deps>
+			</Template>
+			<Template type="nvelocitytable" templateFile="templates\adapdev\cs\storedprocedures.tsql"
+				outputFileName="codusprocedures" outputFileExtension="sql" outputDirectory="" overWrite="true"
+				project="">
+				<deps>
+					<dep key="sqltypesps" type="eq" value="true" />
+				</deps>
+			</Template>
+			<Template type="nvelocitytable" templateFile="templates\adapdev\cs\entity.tcs" outputFileName="${table}Entity"
+				outputFileExtension="cs" outputDirectory="src\Entities" className="${table}Entity" overWrite="false"
+				project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\cs\entitybase.tcs" outputFileName="${table}EntityBase"
+				outputFileExtension="cs" outputDirectory="src\Entities\Base" className="${table}EntityBase"
+				overWrite="true" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\cs\entitycollection.tcs" outputFileName="${table}EntityCollection"
+				outputFileExtension="cs" outputDirectory="src\Collections" className="${table}EntityCollection"
+				overWrite="true" project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\cs\entitydictionary.tcs" outputFileName="${table}EntityDictionary"
+				outputFileExtension="cs" outputDirectory="src\Collections" className="${table}EntityDictionary"
+				overWrite="true" project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\cs\entityenumerator.tcs" outputFileName="${table}EntityEnumerator"
+				outputFileExtension="cs" outputDirectory="src\Collections" className="${table}EntityEnumerator"
+				overWrite="true" project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\cs\abstractdao.tcs" outputFileName="${table}DAO"
+				outputFileExtension="cs" outputDirectory="src\DAO" className="${table}DAO" overWrite="false"
+				project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\cs\abstractdaobase.tcs" outputFileName="${table}DAOBase"
+				outputFileExtension="cs" outputDirectory="src\DAO\Base" className="${table}DAOBase" overWrite="true" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\cs\dbconstants.tcs" outputFileName="DbConstants"
+				outputFileExtension="cs" outputDirectory="src\DAO" className="DbConstants" overWrite="true"
+				project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\cs\connectionfactory.tcs"
+				outputFileName="ConnectionFactory" outputFileExtension="cs" outputDirectory="src\DAO"
+				className="ConnectionFactory" overWrite="true" project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\cs\zanebug.tcs" outputFileName="${table}DAOTest"
+				outputFileExtension="cs" outputDirectory="src\Tests.Zanebug" className="${table}DAOTest"
+				overWrite="true" project="DAOTestsZanebug">
+				<deps>
+					<dep key="generatezanebug" type="eq" value="true" />
+				</deps>
+			</Template>
+			<!-- For Testing
+            <Template type="nvelocitytable" templateFile="templates\adapdev\cs\development_nunit.tcs" outputFileName="${table}DAOTest" outputFileExtension="cs" outputDirectory="src\Tests.NUnit" className="${table}DAOTest" overWrite="true" project="DAOTestsNUnit">
+                <deps>
+                    <dep key="generatenunit" type="eq" value="true" />
+                </deps>
+            </Template>
+            -->
+			<Template type="nvelocitytable" templateFile="templates\adapdev\cs\nunit.tcs" outputFileName="${table}DAOTest"
+				outputFileExtension="cs" outputDirectory="src\Tests.NUnit" className="${table}DAOTest"
+				overWrite="true" project="DAOTestsNUnit">
+				<deps>
+					<dep key="generatenunit" type="eq" value="true" />
+				</deps>
+			</Template>
+			<Template type="nvelocitytable" templateFile="templates\adapdev\cs\mockentity.tcs" outputFileName="Mock${table}"
+				outputFileExtension="cs" outputDirectory="src\MockEntities" className="Mock${table}" overWrite="true"
+				project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\cs\webservice.tcs" outputFileName="${table}WebService"
+				outputFileExtension="cs" outputDirectory="src\WebServices" className="${table}WebService"
+				overWrite="true" project="WebServices">
+				<deps>
+					<dep key="generatewebservice" type="eq" value="true" />
+				</deps>
+			</Template>
+			<Template type="nvelocitytable" templateFile="templates\adapdev\cs\webservice.asmx.tcs" outputFileName="${table}WebService"
+				outputFileExtension="asmx" outputDirectory="src\WebServices" className="${table}WebService"
+				overWrite="true" project="WebServices">
+				<deps>
+					<dep key="generatewebservice" type="eq" value="true" />
+				</deps>
+			</Template>
+			<Template type="nvelocitytable" templateFile="templates\adapdev\cs\webservice.constants.tcs"
+				outputFileName="WebServiceConstants" outputFileExtension="cs" outputDirectory="src\WebServices"
+				className="WebServiceConstants" overWrite="true" project="WebServices">
+				<deps>
+					<dep key="generatewebservice" type="eq" value="true" />
+				</deps>
+			</Template>
+		</Templates>
+		<CustomCode>
+			<Code assembly="" class="" />
+		</CustomCode>
+	</TemplateProject>
+	<TemplateProject solution="DAOVB">
+		<Name>DAO Framework - VB.NET</Name>
+		<Description>Generates the data access tier for a given database.</Description>
+		<Author>Michael Brown (ivolved)</Author>
+		<Version>v1.0</Version>
+		<Copyright>2005</Copyright>
+		<Editor assembly="templates\adapdev\Codus.Templates.Adapdev.dll" class="Codus.Templates.Adapdev.Editor" />
+		<Templates>
+			<Template type="nvelocity" templateFile="templates\adapdev\vb\nant.build" outputFileName="nant"
+				outputFileExtension="build" outputDirectory="" overWrite="true" project="">
+				<deps>
+					<dep key="generatenant" type="eq" value="true" />
+				</deps>
+			</Template>
+			<Template type="nvelocity" templateFile="templates\adapdev\vb\runbuild.bat" outputFileName="runbuild"
+				outputFileExtension="bat" outputDirectory="" overWrite="true" project="">
+				<deps>
+					<dep key="generatenant" type="eq" value="true" />
+				</deps>
+			</Template>
+			<Template type="nvelocitytable" templateFile="templates\adapdev\vb\storedprocedures.tsql"
+				outputFileName="codusprocedures" outputFileExtension="sql" outputDirectory="" overWrite="true"
+				project="">
+				<deps>
+					<dep key="sqltypesps" type="eq" value="true" />
+				</deps>
+			</Template>
+			<Template type="nvelocitytable" templateFile="templates\adapdev\vb\entity.tcs" outputFileName="${table}Entity"
+				outputFileExtension="vb" outputDirectory="src\Entities" className="${table}Entity" overWrite="false"
+				project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\vb\entitybase.tcs" outputFileName="${table}EntityBase"
+				outputFileExtension="vb" outputDirectory="src\Entities\Base" className="${table}EntityBase"
+				overWrite="true" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\vb\entitycollection.tcs" outputFileName="${table}EntityCollection"
+				outputFileExtension="vb" outputDirectory="src\Collections" className="${table}EntityCollection"
+				overWrite="true" project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\vb\entitydictionary.tcs" outputFileName="${table}EntityDictionary"
+				outputFileExtension="vb" outputDirectory="src\Collections" className="${table}EntityDictionary"
+				overWrite="true" project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\vb\entityenumerator.tcs" outputFileName="${table}EntityEnumerator"
+				outputFileExtension="vb" outputDirectory="src\Collections" className="${table}EntityEnumerator"
+				overWrite="true" project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\vb\abstractdao.tcs" outputFileName="${table}DAO"
+				outputFileExtension="vb" outputDirectory="src\DAO" className="${table}DAO" overWrite="false"
+				project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\vb\abstractdaobase.tcs" outputFileName="${table}DAOBase"
+				outputFileExtension="vb" outputDirectory="src\DAO\Base" className="${table}DAOBase" overWrite="true" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\vb\dbconstants.tcs" outputFileName="DbConstants"
+				outputFileExtension="vb" outputDirectory="src\DAO" className="DbConstants" overWrite="true"
+				project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\vb\connectionfactory.tcs"
+				outputFileName="ConnectionFactory" outputFileExtension="vb" outputDirectory="src\DAO"
+				className="ConnectionFactory" overWrite="true" project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\adapdev\vb\zanebug.tcs" outputFileName="${table}DAOTest"
+				outputFileExtension="vb" outputDirectory="src\Tests.Zanebug" className="${table}DAOTest"
+				overWrite="true" project="DAOTestsZanebug">
+				<deps>
+					<dep key="generatezanebug" type="eq" value="true" />
+				</deps>
+			</Template>
+			<!-- For Testing
+            <Template type="nvelocitytable" templateFile="templates\adapdev\vb\development_nunit.tcs" outputFileName="${table}DAOTest" outputFileExtension="vb" outputDirectory="src\Tests.NUnit" className="${table}DAOTest" overWrite="true" project="DAOTestsNUnit">
+                <deps>
+                    <dep key="generatenunit" type="eq" value="true" />
+                </deps>
+            </Template>
+            -->
+			<Template type="nvelocitytable" templateFile="templates\adapdev\vb\nunit.tcs" outputFileName="${table}DAOTest"
+				outputFileExtension="vb" outputDirectory="src\Tests.NUnit" className="${table}DAOTest"
+				overWrite="true" project="DAOTestsNUnit">
+				<deps>
+					<dep key="generatenunit" type="eq" value="true" />
+				</deps>
+			</Template>
+			<Template type="nvelocitytable" templateFile="templates\adapdev\vb\mockentity.tcs" outputFileName="Mock${table}"
+				outputFileExtension="vb" outputDirectory="src\MockEntities" className="Mock${table}" overWrite="true"
+				project="DAO" />
+			<!--
+            <Template type="nvelocitytable" templateFile="templates\adapdev\vb\webservice.tcs" outputFileName="${table}WebService" outputFileExtension="vb" outputDirectory="src\WebServices" className="${table}WebService" overWrite="true" project="WebServices">
+                <deps>
+                    <dep key="generatewebservice" type="eq" value="true" />
+                </deps>
+            </Template>
+            <Template type="nvelocitytable" templateFile="templates\adapdev\vb\webservice.asmx.tcs" outputFileName="${table}WebService" outputFileExtension="asmx" outputDirectory="src\WebServices" className="${table}WebService" overWrite="true" project="WebServices">
+                <deps>
+                    <dep key="generatewebservice" type="eq" value="true" />
+                </deps>
+            </Template>
+            <Template type="nvelocitytable" templateFile="templates\adapdev\vb\webservice.constants.tcs" outputFileName="WebServiceConstants" outputFileExtension="vb" outputDirectory="src\WebServices" className="WebServiceConstants" overWrite="true" project="WebServices">
+                <deps>
+                    <dep key="generatewebservice" type="eq" value="true" />
+                </deps>
+            </Template>
+            -->
+		</Templates>
+		<CustomCode>
+			<Code assembly="" class="" />
+		</CustomCode>
+	</TemplateProject>
+	<TemplateProject solution="NHibernate">
+		<Name>NHibernate Framework - C#</Name>
+		<Description>Generates the data access tier for a given database.</Description>
+		<Author>Adapdev.Technologies</Author>
+		<Version>v1.0</Version>
+		<Copyright>2005</Copyright>
+		<Editor assembly="templates\nhibernate\Codus.Templates.NHibernate.dll" class="Codus.Templates.Adapdev.Editor" />
+		<Templates>
+			<Template type="nvelocitytable" templateFile="templates\nhibernate\configurator.tcs" outputFileName="Configurator"
+				outputFileExtension="cs" outputDirectory="src\DAO" className="Configurator" overWrite="true"
+				project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\nhibernate\entity.tcs" outputFileName="${table}Entity"
+				outputFileExtension="cs" outputDirectory="src\Entities" className="${table}Entity" overWrite="true"
+				project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\nhibernate\entitycollection.tcs" outputFileName="${table}EntityCollection"
+				outputFileExtension="cs" outputDirectory="src\Collections" className="${table}EntityCollection"
+				overWrite="true" project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\nhibernate\entitydictionary.tcs" outputFileName="${table}EntityDictionary"
+				outputFileExtension="cs" outputDirectory="src\Collections" className="${table}EntityDictionary"
+				overWrite="true" project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\nhibernate\entityenumerator.tcs" outputFileName="${table}EntityEnumerator"
+				outputFileExtension="cs" outputDirectory="src\Collections" className="${table}EntityEnumerator"
+				overWrite="true" project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\nhibernate\dao.tcs" outputFileName="${table}DAO"
+				outputFileExtension="cs" outputDirectory="src\DAO" className="${table}DAO" overWrite="true"
+				project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\nhibernate\hbm.xml" outputFileName="${table}.hbm"
+				outputFileExtension="xml" outputDirectory="src\Mappings" overWrite="true" project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\nhibernate\hibernate.cfg.xml" outputFileName="hibernate.cfg"
+				outputFileExtension="xml" outputDirectory="src\Mappings" overWrite="true" project="DAO" />
+			<Template type="nvelocity" templateFile="templates\nhibernate\nant.build" outputFileName="nant"
+				outputFileExtension="build" outputDirectory="" overWrite="true" project="">
+				<deps>
+					<dep key="generatenant" type="eq" value="true" />
+				</deps>
+			</Template>
+			<Template type="nvelocity" templateFile="templates\nhibernate\runbuild.bat" outputFileName="runbuild"
+				outputFileExtension="bat" outputDirectory="" overWrite="true" project="">
+				<deps>
+					<dep key="generatenant" type="eq" value="true" />
+				</deps>
+			</Template>
+			<Template type="nvelocitytable" templateFile="templates\nhibernate\zanebug.tcs" outputFileName="${table}DAOTest"
+				outputFileExtension="cs" outputDirectory="src\Tests.Zanebug" className="${table}DAOTest"
+				overWrite="true" project="DAOTestsZanebug">
+				<deps>
+					<dep key="generatezanebug" type="eq" value="true" />
+				</deps>
+			</Template>
+			<Template type="nvelocitytable" templateFile="templates\nhibernate\nunit.tcs" outputFileName="${table}DAOTest"
+				outputFileExtension="cs" outputDirectory="src\Tests.NUnit" className="${table}DAOTest"
+				overWrite="true" project="DAOTestsNUnit">
+				<deps>
+					<dep key="generatenunit" type="eq" value="true" />
+				</deps>
+			</Template>
+			<Template type="nvelocitytable" templateFile="templates\nhibernate\mockentity.tcs" outputFileName="Mock${table}"
+				outputFileExtension="cs" outputDirectory="src\MockEntities" className="Mock${table}" overWrite="true"
+				project="DAO" />
+		</Templates>
+		<CustomCode>
+			<Code assembly="" class="" />
+		</CustomCode>
+	</TemplateProject>
+	<TemplateProject solution="Elementary">
+		<Name>Elementary</Name>
+		<Description>Generates the data access tier for a given database.</Description>
+		<Author>Adapdev.Technologies</Author>
+		<Version>v1.0</Version>
+		<Copyright>2005</Copyright>
+		<Editor assembly="templates\adapdev\Codus.Templates.Adapdev.dll" class="Codus.Templates.Adapdev.Editor" />
+		<Templates>
+			<Template type="nvelocity" templateFile="templates\elementary\cs\nant.build" outputFileName="nant"
+				outputFileExtension="build" outputDirectory="" overWrite="true" project="">
+				<deps>
+					<dep key="generatenant" type="eq" value="true" />
+				</deps>
+			</Template>
+			<Template type="nvelocity" templateFile="templates\elementary\cs\runbuild.bat" outputFileName="runbuild"
+				outputFileExtension="bat" outputDirectory="" overWrite="true" project="">
+				<deps>
+					<dep key="generatenant" type="eq" value="true" />
+				</deps>
+			</Template>
+			<Template type="nvelocitytable" templateFile="templates\elementary\cs\Elementary.Mappings.xml"
+				outputFileName="Elementary.Mappings" outputFileExtension="xml" outputDirectory="src\Entities" overWrite="true"
+				project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\elementary\cs\entity.tcs" outputFileName="${table}Entity"
+				outputFileExtension="cs" outputDirectory="src\Entities" className="${table}Entity" overWrite="false"
+				project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\elementary\cs\entitybase.tcs" outputFileName="${table}EntityBase"
+				outputFileExtension="cs" outputDirectory="src\Entities\Base" className="${table}EntityBase"
+				overWrite="true" />
+			<Template type="nvelocitytable" templateFile="templates\elementary\cs\entitycollection.tcs"
+				outputFileName="${table}EntityCollection" outputFileExtension="cs" outputDirectory="src\Collections"
+				className="${table}EntityCollection" overWrite="true" project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\elementary\cs\entitydictionary.tcs"
+				outputFileName="${table}EntityDictionary" outputFileExtension="cs" outputDirectory="src\Collections"
+				className="${table}EntityDictionary" overWrite="true" project="DAO" />
+			<Template type="nvelocitytable" templateFile="templates\elementary\cs\entityenumerator.tcs"
+				outputFileName="${table}EntityEnumerator" outputFileExtension="cs" outputDirectory="src\Collections"
+				className="${table}EntityEnumerator" overWrite="true" project="DAO" />
+			<!-- For Testing
+            <Template type="nvelocitytable" templateFile="templates\elementary\cs\development_nunit.tcs" outputFileName="${table}DAOTest" outputFileExtension="cs" outputDirectory="src\Tests.NUnit" className="${table}DAOTest" overWrite="true" project="DAOTestsNUnit">
+                <deps>
+                    <dep key="generatenunit" type="eq" value="true" />
+                </deps>
+            </Template>
+			<Template type="nvelocitytable" templateFile="templates\elementary\cs\nunit.tcs" outputFileName="${table}DAOTest"
+				outputFileExtension="cs" outputDirectory="src\Tests.NUnit" className="${table}DAOTest"
+				overWrite="true" project="DAOTestsNUnit">
+				<deps>
+					<dep key="generatenunit" type="eq" value="true" />
+				</deps>
+			</Template>
+            -->
+			<Template type="nvelocitytable" templateFile="templates\elementary\cs\mockentity.tcs" outputFileName="Mock${table}"
+				outputFileExtension="cs" outputDirectory="src\MockEntities" className="Mock${table}" overWrite="true"
+				project="DAO" />
+		</Templates>
+		<CustomCode>
+			<Code assembly="" class="" />
+		</CustomCode>
+	</TemplateProject>
+</TemplateProjects>

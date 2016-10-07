@@ -1,0 +1,14 @@
+﻿<Project InitialTargets="ProjectWebInitial" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <WebURL>www.sedodream.com</WebURL>
+    </PropertyGroup>
+
+    <Target Name="ProjectWebDefault">
+        <Message Text="Default target for ProjectWeb.targets"/>
+    </Target>
+
+    <Target Name="ProjectWebInitial">
+        <Message Text="ProjectWebInitial target in ProjectWeb.targets"/>
+    </Target>
+    
+</Project>

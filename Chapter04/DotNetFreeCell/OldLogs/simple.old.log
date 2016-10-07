@@ -1,0 +1,589 @@
+Message: Overriding target "BeforeBuild" in project "c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Microsoft.Common.targets" with target "BeforeBuild" from project "C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj".
+BuildStartedBuild started.
+ProjectStartedProject "DotNetFreeCell.sln" (default targets):
+Message: Task "Error" skipped, due to false condition; (('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' != 'true')) was evaluated as (('<SolutionConfiguration><ProjectConfiguration Project="{9734FCCC-137F-47FB-B87B-90E1FF41E99B}">Debug|AnyCPU</ProjectConfiguration><ProjectConfiguration Project="{8B742192-FE87-4859-90AB-BD38BF830F50}">Debug|AnyCPU</ProjectConfiguration></SolutionConfiguration>' == '') and ('' != 'true')).
+Message: Task "Warning" skipped, due to false condition; (('$(CurrentSolutionConfigurationContents)' == '') and ('$(SkipInvalidConfigurations)' == 'true')) was evaluated as (('<SolutionConfiguration><ProjectConfiguration Project="{9734FCCC-137F-47FB-B87B-90E1FF41E99B}">Debug|AnyCPU</ProjectConfiguration><ProjectConfiguration Project="{8B742192-FE87-4859-90AB-BD38BF830F50}">Debug|AnyCPU</ProjectConfiguration></SolutionConfiguration>' == '') and ('' == 'true')).
+Message: Using "Message" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Building solution configuration "Debug|Any CPU".
+Message: Using "CallTarget" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Target "ValidateSolutionConfiguration" skipped. Previously built successfully.
+Message: Using "MSBuild" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Properties:
+Message:   Configuration=Debug
+Message:   Platform=AnyCPU
+Message:   BuildingSolutionFile=true
+Message:   CurrentSolutionConfigurationContents=<SolutionConfiguration><ProjectConfiguration Project="{9734FCCC-137F-47FB-B87B-90E1FF41E99B}">Debug|AnyCPU</ProjectConfiguration><ProjectConfiguration Project="{8B742192-FE87-4859-90AB-BD38BF830F50}">Debug|AnyCPU</ProjectConfiguration></SolutionConfiguration>
+Message:   SolutionDir=C:\MSBuild\DotNetFreeCell\DotNetFreeCell\
+Message:   SolutionExt=.sln
+Message:   SolutionFileName=DotNetFreeCell.sln
+Message:   SolutionName=DotNetFreeCell
+Message:   SolutionPath=C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.sln
+ProjectStartedProject "CardLib.vbproj" (default targets):
+Message: Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
+Message: Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
+Message: Configuration=Debug
+Message: Platform=AnyCPU
+Message: Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('bin\Debug\' != '' and !HasTrailingSlash('bin\Debug\')).
+Message: Using "CreateProperty" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Using "GetFrameworkPath" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Using "GetFrameworkSDKPath" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Found the .NET Framework SDK installed at "c:\Program Files\Microsoft Visual Studio 8\SDK\v2.0\".
+Message: Task "CreateProperty" skipped, due to false condition; ('$(AppConfig)'=='' and '%(RelativeDir)%(Filename)%(Extension)'=='App.Config') was evaluated as (''=='' and 'My Project\Application.myapp'=='App.Config').
+Message: Task "CreateProperty" skipped, due to false condition; ('$(AppConfig)'=='' and '%(RelativeDir)%(Filename)%(Extension)'=='App.Config') was evaluated as (''=='' and 'My Project\Settings.settings'=='App.Config').
+Message: Task "CreateProperty" skipped, due to false condition; ('$(AppConfig)'=='' and '%(RelativeDir)%(Filename)%(Extension)'=='App.Config') was evaluated as (''=='' and 'Icon1.ico'=='App.Config').
+Message: Task "CreateProperty" skipped, due to false condition; ('$(AppConfig)'=='' and '%(Filename)%(Extension)'=='App.Config') was evaluated as (''=='' and 'Application.myapp'=='App.Config').
+Message: Task "CreateProperty" skipped, due to false condition; ('$(AppConfig)'=='' and '%(Filename)%(Extension)'=='App.Config') was evaluated as (''=='' and 'Settings.settings'=='App.Config').
+Message: Task "CreateProperty" skipped, due to false condition; ('$(AppConfig)'=='' and '%(Filename)%(Extension)'=='App.Config') was evaluated as (''=='' and 'Icon1.ico'=='App.Config').
+Message: Using "CreateItem" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Using "MakeDir" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Target "PreBuildEvent" skipped, due to false condition; ('$(PreBuildEvent)'!='') was evaluated as (''!='').
+Message: Target "UnmanagedUnregistration" skipped, due to false condition; (Exists('@(_UnmanagedRegistrationCache)')) was evaluated as (Exists('obj\CardLib.vbproj.UnmanagedRegistration.cache')).
+Message: Target "SplitProjectReferencesByType" skipped, due to false condition; ('@(ProjectReference)'!='') was evaluated as (''!='').
+Message: Target "ResolveProjectReferences" skipped, due to false condition; ('@(NonVCProjectReference)'!='') was evaluated as (''!='').
+Message: Target "ResolveVCProjectReferences" skipped, due to false condition; ('@(VCProjectReference)'!='') was evaluated as (''!='').
+Message: Target "ResolveNativeReferences" skipped, due to false condition; ('@(NativeReference)'!='') was evaluated as (''!='').
+Message: Target "GetFrameworkPaths" skipped. Previously built successfully.
+Message: Target "GetFrameworkPaths" skipped. Previously built successfully.
+Message: Target "PrepareForBuild" skipped. Previously built successfully.
+Message: Task "CreateItem" skipped, due to false condition; ('$(AutoUnifyAssemblyReferences)'=='false') was evaluated as ('true'=='false').
+Message: Using "ResolveAssemblyReference" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Assemblies:
+Message:     System
+Message:     System.Data
+Message:     System.Drawing
+Message:     System.Windows.Forms
+Message:     System.Xml
+Message: AssemblyFiles:
+Message: CandidateAssemblyFiles:
+Message: TargetFrameworkDirectory:
+Message:     c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727
+Message: InstalledAssemblyTables:
+Message:     c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\RedistList\CrystalReportsList.xml
+Message:     c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\RedistList\FrameworkList.xml
+Message:     c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\RedistList\JSharpList.xml
+Message:     c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\RedistList\VSList.xml
+Message: SearchPaths:
+Message:     {CandidateAssemblyFiles}
+Message:     {HintPathFromItem}
+Message:     {TargetFrameworkDirectory}
+Message:     {Registry:Software\Microsoft\.NetFramework,v2.0,AssemblyFoldersEx}
+Message:     {AssemblyFolders}
+Message:     {GAC}
+Message:     {RawFileName}
+Message:     bin\Debug\
+Message: AllowedAssemblyExtensions:
+Message:     .exe
+Message:     .dll
+Message: AppConfigFile:
+Message:     
+Message: AutoUnify:
+Message:     True
+Message: TargetProcessorArchitecture:
+Message:     
+Message: StateFile:
+Message:     obj\Debug\ResolveAssemblyReference.cache
+Message: Primary reference "System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+Message:     Resolved file path is "c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll".
+Message:     Reference found at search path location "{TargetFrameworkDirectory}".
+Message:         For SearchPath "{TargetFrameworkDirectory}".
+Message:         Considered "c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.exe", but it didn't exist.
+Message:     This reference is not "CopyLocal" because it's a prerequisite file.
+Message: Primary reference "System.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+Message:     Resolved file path is "c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll".
+Message:     Reference found at search path location "{TargetFrameworkDirectory}".
+Message:         For SearchPath "{TargetFrameworkDirectory}".
+Message:         Considered "c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.exe", but it didn't exist.
+Message:     This reference is not "CopyLocal" because it's a prerequisite file.
+Message: Primary reference "System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+Message:     Resolved file path is "c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll".
+Message:     Reference found at search path location "{TargetFrameworkDirectory}".
+Message:         For SearchPath "{TargetFrameworkDirectory}".
+Message:         Considered "c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.exe", but it didn't exist.
+Message:     This reference is not "CopyLocal" because it's a prerequisite file.
+Message: Primary reference "System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089".
+Message:     Resolved file path is "c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll".
+Message:     Reference found at search path location "{TargetFrameworkDirectory}".
+Message:         For SearchPath "{TargetFrameworkDirectory}".
+Message:         Considered "c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.exe", but it didn't exist.
+Message:     This reference is not "CopyLocal" because it's a prerequisite file.
+Message: Primary reference "System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message:     Resolved file path is "c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll".
+Message:     Reference found at search path location "{TargetFrameworkDirectory}".
+Message:         For SearchPath "{TargetFrameworkDirectory}".
+Message:         Considered "c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.exe", but it didn't exist.
+Message:     This reference is not "CopyLocal" because it's a prerequisite file.
+Message: Target "ResolveComReferences" skipped, due to false condition; ('@(COMReference)'!='' or '@(COMFileReference)'!='') was evaluated as (''!='' or ''!='').
+Message: Using "AssignTargetPath" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Task "AssignTargetPath" skipped, due to false condition; ('%(Extension)' == '.manifest' and '@(BaseManifestWithTargetPath)' == '') was evaluated as ('.myapp' == '.manifest' and '' == '').
+Message: Task "AssignTargetPath" skipped, due to false condition; ('%(Extension)' == '.manifest' and '@(BaseManifestWithTargetPath)' == '') was evaluated as ('.settings' == '.manifest' and '' == '').
+Message: Target "AssignTargetPaths" skipped. Previously built successfully.
+Message: Task "CreateItem" skipped, due to false condition; ('%(Extension)'=='.licx') was evaluated as ('.resx'=='.licx').
+Message: Task "CreateItem" skipped, due to false condition; ('%(Extension)'=='.licx') was evaluated as ('.png'=='.licx').
+Message: Using "AssignCulture" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Culture of "" was assigned to file "My Project\Resources.resx".
+Message: Culture of "" was assigned to file "Card.resx".
+Message: Culture of "" was assigned to file "Images\01C.png".
+Message: Culture of "" was assigned to file "Images\01D.png".
+Message: Culture of "" was assigned to file "Images\01H.png".
+Message: Culture of "" was assigned to file "Images\01S.png".
+Message: Culture of "" was assigned to file "Images\02C.png".
+Message: Culture of "" was assigned to file "Images\02D.png".
+Message: Culture of "" was assigned to file "Images\02H.png".
+Message: Culture of "" was assigned to file "Images\02S.png".
+Message: Culture of "" was assigned to file "Images\03C.png".
+Message: Culture of "" was assigned to file "Images\03D.png".
+Message: Culture of "" was assigned to file "Images\03H.png".
+Message: Culture of "" was assigned to file "Images\03S.png".
+Message: Culture of "" was assigned to file "Images\04C.png".
+Message: Culture of "" was assigned to file "Images\04D.png".
+Message: Culture of "" was assigned to file "Images\04H.png".
+Message: Culture of "" was assigned to file "Images\04S.png".
+Message: Culture of "" was assigned to file "Images\05C.png".
+Message: Culture of "" was assigned to file "Images\05D.png".
+Message: Culture of "" was assigned to file "Images\05H.png".
+Message: Culture of "" was assigned to file "Images\05S.png".
+Message: Culture of "" was assigned to file "Images\06C.png".
+Message: Culture of "" was assigned to file "Images\06D.png".
+Message: Culture of "" was assigned to file "Images\06H.png".
+Message: Culture of "" was assigned to file "Images\06S.png".
+Message: Culture of "" was assigned to file "Images\07C.png".
+Message: Culture of "" was assigned to file "Images\07D.png".
+Message: Culture of "" was assigned to file "Images\07H.png".
+Message: Culture of "" was assigned to file "Images\07S.png".
+Message: Culture of "" was assigned to file "Images\08C.png".
+Message: Culture of "" was assigned to file "Images\08D.png".
+Message: Culture of "" was assigned to file "Images\08H.png".
+Message: Culture of "" was assigned to file "Images\08S.png".
+Message: Culture of "" was assigned to file "Images\09C.png".
+Message: Culture of "" was assigned to file "Images\09D.png".
+Message: Culture of "" was assigned to file "Images\09H.png".
+Message: Culture of "" was assigned to file "Images\09S.png".
+Message: Culture of "" was assigned to file "Images\10C.png".
+Message: Culture of "" was assigned to file "Images\10D.png".
+Message: Culture of "" was assigned to file "Images\10H.png".
+Message: Culture of "" was assigned to file "Images\10S.png".
+Message: Culture of "" was assigned to file "Images\11C.png".
+Message: Culture of "" was assigned to file "Images\11D.png".
+Message: Culture of "" was assigned to file "Images\11H.png".
+Message: Culture of "" was assigned to file "Images\11S.png".
+Message: Culture of "" was assigned to file "Images\12C.png".
+Message: Culture of "" was assigned to file "Images\12D.png".
+Message: Culture of "" was assigned to file "Images\12H.png".
+Message: Culture of "" was assigned to file "Images\12S.png".
+Message: Culture of "" was assigned to file "Images\13C.png".
+Message: Culture of "" was assigned to file "Images\13D.png".
+Message: Culture of "" was assigned to file "Images\13H.png".
+Message: Culture of "" was assigned to file "Images\13S.png".
+Message: Task "CreateItem" skipped, due to false condition; ('%(Extension)'=='.resx' or '%(Extension)'=='.restext') was evaluated as ('.png'=='.resx' or '.png'=='.restext').
+Message: Task "CreateItem" skipped, due to false condition; ('%(Extension)'!='.resx' and '%(Extension)'!='.restext') was evaluated as ('.resx'!='.resx' and '.resx'!='.restext').
+Message: Task "CreateItem" skipped, due to false condition; ('%(Extension)'=='.resx' or '%(Extension)'=='.restext') was evaluated as (''=='.resx' or ''=='.restext').
+Message: Using "CreateVisualBasicManifestResourceName" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Root namespace is 'CardLib'.
+Message: Resource file 'My Project\Resources.resx' doesn't depend on any other file.
+Message: Resource file 'My Project\Resources.resx' gets manifest resource name 'CardLib.Resources'.
+Message: Resource file 'Card.resx' depends on 'Card.vb'.
+Message: Resource file 'Card.resx' gets manifest resource name 'CardLib.Card'.
+Message: Task "CreateVisualBasicManifestResourceName" skipped, due to false condition; ('@(ResxWithCulture)'!='') was evaluated as (''!='').
+Message: Root namespace is 'CardLib'.
+Message: Resource file 'Images\01C.png' doesn't depend on any other file.
+Message: Resource file 'Images\01C.png' gets manifest resource name 'CardLib.01C.png'.
+Message: Resource file 'Images\01D.png' doesn't depend on any other file.
+Message: Resource file 'Images\01D.png' gets manifest resource name 'CardLib.01D.png'.
+Message: Resource file 'Images\01H.png' doesn't depend on any other file.
+Message: Resource file 'Images\01H.png' gets manifest resource name 'CardLib.01H.png'.
+Message: Resource file 'Images\01S.png' doesn't depend on any other file.
+Message: Resource file 'Images\01S.png' gets manifest resource name 'CardLib.01S.png'.
+Message: Resource file 'Images\02C.png' doesn't depend on any other file.
+Message: Resource file 'Images\02C.png' gets manifest resource name 'CardLib.02C.png'.
+Message: Resource file 'Images\02D.png' doesn't depend on any other file.
+Message: Resource file 'Images\02D.png' gets manifest resource name 'CardLib.02D.png'.
+Message: Resource file 'Images\02H.png' doesn't depend on any other file.
+Message: Resource file 'Images\02H.png' gets manifest resource name 'CardLib.02H.png'.
+Message: Resource file 'Images\02S.png' doesn't depend on any other file.
+Message: Resource file 'Images\02S.png' gets manifest resource name 'CardLib.02S.png'.
+Message: Resource file 'Images\03C.png' doesn't depend on any other file.
+Message: Resource file 'Images\03C.png' gets manifest resource name 'CardLib.03C.png'.
+Message: Resource file 'Images\03D.png' doesn't depend on any other file.
+Message: Resource file 'Images\03D.png' gets manifest resource name 'CardLib.03D.png'.
+Message: Resource file 'Images\03H.png' doesn't depend on any other file.
+Message: Resource file 'Images\03H.png' gets manifest resource name 'CardLib.03H.png'.
+Message: Resource file 'Images\03S.png' doesn't depend on any other file.
+Message: Resource file 'Images\03S.png' gets manifest resource name 'CardLib.03S.png'.
+Message: Resource file 'Images\04C.png' doesn't depend on any other file.
+Message: Resource file 'Images\04C.png' gets manifest resource name 'CardLib.04C.png'.
+Message: Resource file 'Images\04D.png' doesn't depend on any other file.
+Message: Resource file 'Images\04D.png' gets manifest resource name 'CardLib.04D.png'.
+Message: Resource file 'Images\04H.png' doesn't depend on any other file.
+Message: Resource file 'Images\04H.png' gets manifest resource name 'CardLib.04H.png'.
+Message: Resource file 'Images\04S.png' doesn't depend on any other file.
+Message: Resource file 'Images\04S.png' gets manifest resource name 'CardLib.04S.png'.
+Message: Resource file 'Images\05C.png' doesn't depend on any other file.
+Message: Resource file 'Images\05C.png' gets manifest resource name 'CardLib.05C.png'.
+Message: Resource file 'Images\05D.png' doesn't depend on any other file.
+Message: Resource file 'Images\05D.png' gets manifest resource name 'CardLib.05D.png'.
+Message: Resource file 'Images\05H.png' doesn't depend on any other file.
+Message: Resource file 'Images\05H.png' gets manifest resource name 'CardLib.05H.png'.
+Message: Resource file 'Images\05S.png' doesn't depend on any other file.
+Message: Resource file 'Images\05S.png' gets manifest resource name 'CardLib.05S.png'.
+Message: Resource file 'Images\06C.png' doesn't depend on any other file.
+Message: Resource file 'Images\06C.png' gets manifest resource name 'CardLib.06C.png'.
+Message: Resource file 'Images\06D.png' doesn't depend on any other file.
+Message: Resource file 'Images\06D.png' gets manifest resource name 'CardLib.06D.png'.
+Message: Resource file 'Images\06H.png' doesn't depend on any other file.
+Message: Resource file 'Images\06H.png' gets manifest resource name 'CardLib.06H.png'.
+Message: Resource file 'Images\06S.png' doesn't depend on any other file.
+Message: Resource file 'Images\06S.png' gets manifest resource name 'CardLib.06S.png'.
+Message: Resource file 'Images\07C.png' doesn't depend on any other file.
+Message: Resource file 'Images\07C.png' gets manifest resource name 'CardLib.07C.png'.
+Message: Resource file 'Images\07D.png' doesn't depend on any other file.
+Message: Resource file 'Images\07D.png' gets manifest resource name 'CardLib.07D.png'.
+Message: Resource file 'Images\07H.png' doesn't depend on any other file.
+Message: Resource file 'Images\07H.png' gets manifest resource name 'CardLib.07H.png'.
+Message: Resource file 'Images\07S.png' doesn't depend on any other file.
+Message: Resource file 'Images\07S.png' gets manifest resource name 'CardLib.07S.png'.
+Message: Resource file 'Images\08C.png' doesn't depend on any other file.
+Message: Resource file 'Images\08C.png' gets manifest resource name 'CardLib.08C.png'.
+Message: Resource file 'Images\08D.png' doesn't depend on any other file.
+Message: Resource file 'Images\08D.png' gets manifest resource name 'CardLib.08D.png'.
+Message: Resource file 'Images\08H.png' doesn't depend on any other file.
+Message: Resource file 'Images\08H.png' gets manifest resource name 'CardLib.08H.png'.
+Message: Resource file 'Images\08S.png' doesn't depend on any other file.
+Message: Resource file 'Images\08S.png' gets manifest resource name 'CardLib.08S.png'.
+Message: Resource file 'Images\09C.png' doesn't depend on any other file.
+Message: Resource file 'Images\09C.png' gets manifest resource name 'CardLib.09C.png'.
+Message: Resource file 'Images\09D.png' doesn't depend on any other file.
+Message: Resource file 'Images\09D.png' gets manifest resource name 'CardLib.09D.png'.
+Message: Resource file 'Images\09H.png' doesn't depend on any other file.
+Message: Resource file 'Images\09H.png' gets manifest resource name 'CardLib.09H.png'.
+Message: Resource file 'Images\09S.png' doesn't depend on any other file.
+Message: Resource file 'Images\09S.png' gets manifest resource name 'CardLib.09S.png'.
+Message: Resource file 'Images\10C.png' doesn't depend on any other file.
+Message: Resource file 'Images\10C.png' gets manifest resource name 'CardLib.10C.png'.
+Message: Resource file 'Images\10D.png' doesn't depend on any other file.
+Message: Resource file 'Images\10D.png' gets manifest resource name 'CardLib.10D.png'.
+Message: Resource file 'Images\10H.png' doesn't depend on any other file.
+Message: Resource file 'Images\10H.png' gets manifest resource name 'CardLib.10H.png'.
+Message: Resource file 'Images\10S.png' doesn't depend on any other file.
+Message: Resource file 'Images\10S.png' gets manifest resource name 'CardLib.10S.png'.
+Message: Resource file 'Images\11C.png' doesn't depend on any other file.
+Message: Resource file 'Images\11C.png' gets manifest resource name 'CardLib.11C.png'.
+Message: Resource file 'Images\11D.png' doesn't depend on any other file.
+Message: Resource file 'Images\11D.png' gets manifest resource name 'CardLib.11D.png'.
+Message: Resource file 'Images\11H.png' doesn't depend on any other file.
+Message: Resource file 'Images\11H.png' gets manifest resource name 'CardLib.11H.png'.
+Message: Resource file 'Images\11S.png' doesn't depend on any other file.
+Message: Resource file 'Images\11S.png' gets manifest resource name 'CardLib.11S.png'.
+Message: Resource file 'Images\12C.png' doesn't depend on any other file.
+Message: Resource file 'Images\12C.png' gets manifest resource name 'CardLib.12C.png'.
+Message: Resource file 'Images\12D.png' doesn't depend on any other file.
+Message: Resource file 'Images\12D.png' gets manifest resource name 'CardLib.12D.png'.
+Message: Resource file 'Images\12H.png' doesn't depend on any other file.
+Message: Resource file 'Images\12H.png' gets manifest resource name 'CardLib.12H.png'.
+Message: Resource file 'Images\12S.png' doesn't depend on any other file.
+Message: Resource file 'Images\12S.png' gets manifest resource name 'CardLib.12S.png'.
+Message: Resource file 'Images\13C.png' doesn't depend on any other file.
+Message: Resource file 'Images\13C.png' gets manifest resource name 'CardLib.13C.png'.
+Message: Resource file 'Images\13D.png' doesn't depend on any other file.
+Message: Resource file 'Images\13D.png' gets manifest resource name 'CardLib.13D.png'.
+Message: Resource file 'Images\13H.png' doesn't depend on any other file.
+Message: Resource file 'Images\13H.png' gets manifest resource name 'CardLib.13H.png'.
+Message: Resource file 'Images\13S.png' doesn't depend on any other file.
+Message: Resource file 'Images\13S.png' gets manifest resource name 'CardLib.13S.png'.
+Message: Task "CreateVisualBasicManifestResourceName" skipped, due to false condition; ('@(NonResxWithCulture)'!='') was evaluated as (''!='').
+Message: Using "Copy" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Did not copy from file "Images\01C.png" to file "obj\Debug\CardLib.01C.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\01D.png" to file "obj\Debug\CardLib.01D.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\01H.png" to file "obj\Debug\CardLib.01H.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\01S.png" to file "obj\Debug\CardLib.01S.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\02C.png" to file "obj\Debug\CardLib.02C.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\02D.png" to file "obj\Debug\CardLib.02D.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\02H.png" to file "obj\Debug\CardLib.02H.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\02S.png" to file "obj\Debug\CardLib.02S.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\03C.png" to file "obj\Debug\CardLib.03C.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\03D.png" to file "obj\Debug\CardLib.03D.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\03H.png" to file "obj\Debug\CardLib.03H.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\03S.png" to file "obj\Debug\CardLib.03S.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\04C.png" to file "obj\Debug\CardLib.04C.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\04D.png" to file "obj\Debug\CardLib.04D.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\04H.png" to file "obj\Debug\CardLib.04H.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\04S.png" to file "obj\Debug\CardLib.04S.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\05C.png" to file "obj\Debug\CardLib.05C.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\05D.png" to file "obj\Debug\CardLib.05D.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\05H.png" to file "obj\Debug\CardLib.05H.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\05S.png" to file "obj\Debug\CardLib.05S.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\06C.png" to file "obj\Debug\CardLib.06C.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\06D.png" to file "obj\Debug\CardLib.06D.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\06H.png" to file "obj\Debug\CardLib.06H.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\06S.png" to file "obj\Debug\CardLib.06S.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\07C.png" to file "obj\Debug\CardLib.07C.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\07D.png" to file "obj\Debug\CardLib.07D.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\07H.png" to file "obj\Debug\CardLib.07H.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\07S.png" to file "obj\Debug\CardLib.07S.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\08C.png" to file "obj\Debug\CardLib.08C.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\08D.png" to file "obj\Debug\CardLib.08D.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\08H.png" to file "obj\Debug\CardLib.08H.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\08S.png" to file "obj\Debug\CardLib.08S.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\09C.png" to file "obj\Debug\CardLib.09C.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\09D.png" to file "obj\Debug\CardLib.09D.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\09H.png" to file "obj\Debug\CardLib.09H.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\09S.png" to file "obj\Debug\CardLib.09S.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\10C.png" to file "obj\Debug\CardLib.10C.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\10D.png" to file "obj\Debug\CardLib.10D.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\10H.png" to file "obj\Debug\CardLib.10H.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\10S.png" to file "obj\Debug\CardLib.10S.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\11C.png" to file "obj\Debug\CardLib.11C.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\11D.png" to file "obj\Debug\CardLib.11D.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\11H.png" to file "obj\Debug\CardLib.11H.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\11S.png" to file "obj\Debug\CardLib.11S.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\12C.png" to file "obj\Debug\CardLib.12C.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\12D.png" to file "obj\Debug\CardLib.12D.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\12H.png" to file "obj\Debug\CardLib.12H.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\12S.png" to file "obj\Debug\CardLib.12S.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\13C.png" to file "obj\Debug\CardLib.13C.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\13D.png" to file "obj\Debug\CardLib.13D.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\13H.png" to file "obj\Debug\CardLib.13H.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "Images\13S.png" to file "obj\Debug\CardLib.13S.png" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Target "ResolveAssemblyReferences" skipped. Previously built successfully.
+Message: Target "SplitResourcesByCulture" skipped. Previously built successfully.
+Message: Using "GenerateResource" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: No resources are out of date with respect to their source files. Skipping resource generation.
+Message: Task "GenerateResource" skipped, due to false condition; ( '@(ResxWithCulture)' != '' ) was evaluated as ( '' != '' ).
+Message: Target "CompileLicxFiles" skipped, due to false condition; ('@(_LicxFile)'!='') was evaluated as (''!='').
+Message: Task "CreateItem" skipped, due to false condition; ('%(Extension)'=='.rdlc') was evaluated as ('.resx'=='.rdlc').
+Message: Task "CreateItem" skipped, due to false condition; ('%(Extension)'=='.rdlc') was evaluated as ('.png'=='.rdlc').
+Message: Target "RunRdlCompiler" skipped, due to false condition; ('@(RdlFile)'!='') was evaluated as (''!='').
+Message: Target "ResolveKeySource" skipped, due to false condition; ($(SignManifests) == 'true' or $(SignAssembly) == 'true') was evaluated as ( == 'true' or  == 'true').
+Message: Target "ResolveReferences" skipped. Previously built successfully.
+Message: Target "ResolveKeySource" skipped, due to false condition; ($(SignManifests) == 'true' or $(SignAssembly) == 'true') was evaluated as ( == 'true' or  == 'true').
+Message: Target "_TimeStampBeforeCompile" skipped, due to false condition; ('$(RunPostBuildEvent)'=='OnOutputUpdated') was evaluated as (''=='OnOutputUpdated').
+Message: Target "_ComputeNonExistentFileProperty" skipped, due to false condition; (
+            ('$(BuildingInsideVisualStudio)' == 'true')
+            and 
+            (
+                ('$(BuildingProject)' == 'false') 
+                or 
+                ('$(UseHostCompilerIfAvailable)' == 'true')
+            )
+            ) was evaluated as (
+            ('' == 'true')
+            and 
+            (
+                ('true' == 'false') 
+                or 
+                ('true' == 'true')
+            )
+            ).
+Message: Skipping target "CoreCompile" because all output files are up-to-date with respect to the input files.
+Message: Input files: obj\Debug\CardLib.04S.png;obj\Debug\CardLib.07C.png;c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Drawing.dll;obj\Debug\CardLib.10C.png;My Project\Settings.Designer.vb;obj\Debug\CardLib.02C.png;obj\Debug\CardLib.04H.png;obj\Debug\CardLib.01C.png;obj\Debug\CardLib.02D.png;obj\Debug\CardLib.06H.png;obj\Debug\CardLib.03C.png;obj\Debug\CardLib.11C.png;obj\Debug\CardLib.11D.png;obj\Debug\CardLib.09H.png;obj\Debug\CardLib.13S.png;obj\Debug\CardLib.05H.png;My Project\Application.Designer.vb;obj\Debug\CardLib.12H.png;obj\Debug\CardLib.Card.resources;Card.Designer.vb;obj\Debug\CardLib.02H.png;obj\Debug\CardLib.04C.png;obj\Debug\CardLib.08C.png;c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Windows.Forms.dll;obj\Debug\CardLib.11H.png;obj\Debug\CardLib.08S.png;obj\Debug\CardLib.08D.png;My Project\Resources.Designer.vb;obj\Debug\CardLib.Resources.resources;obj\Debug\CardLib.07D.png;c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Microsoft.VisualBasic.targets;obj\Debug\CardLib.01H.png;obj\Debug\CardLib.02S.png;obj\Debug\CardLib.10D.png;c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Microsoft.Common.targets;My Project\AssemblyInfo.vb;C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj.user;C:\MSBuild\DotNetFreeCell\CardLib\CardLib.vbproj;obj\Debug\CardLib.12C.png;obj\Debug\CardLib.10H.png;obj\Debug\CardLib.03D.png;obj\Debug\CardLib.07H.png;obj\Debug\CardLib.06S.png;obj\Debug\CardLib.05S.png;obj\Debug\CardLib.09S.png;CardDeck.vb;obj\Debug\CardLib.07S.png;c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Xml.dll;obj\Debug\CardLib.13H.png;obj\Debug\CardLib.09D.png;obj\Debug\CardLib.10S.png;obj\Debug\CardLib.03H.png;Card.vb;obj\Debug\CardLib.05D.png;obj\Debug\CardLib.13C.png;obj\Debug\CardLib.01S.png;obj\Debug\CardLib.08H.png;obj\Debug\CardLib.03S.png;obj\Debug\CardLib.11S.png;c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.dll;obj\Debug\CardLib.12D.png;c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\System.Data.dll;obj\Debug\CardLib.04D.png;obj\Debug\CardLib.13D.png;obj\Debug\CardLib.12S.png;obj\Debug\CardLib.06C.png;obj\Debug\CardLib.01D.png;obj\Debug\CardLib.06D.png;obj\Debug\CardLib.05C.png;obj\Debug\CardLib.09C.png
+Message: Output files: obj\Debug\CardLib.dll;obj\Debug\CardLib.xml
+Message: Target "_TimeStampAfterCompile" skipped, due to false condition; ('$(RunPostBuildEvent)'=='OnOutputUpdated') was evaluated as (''=='OnOutputUpdated').
+Message: Target "GenerateSerializationAssemblies" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+Message: Target "CreateSatelliteAssemblies" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' or '@(ManifestNonResxWithCultureOnDisk)'!='') was evaluated as (''!='' or ''!='').
+Message: Target "GenerateManifests" skipped, due to false condition; ('$(GenerateClickOnceManifests)'=='true' or '@(NativeReference)'!='' or '@(ResolvedIsolatedComModules)'!='') was evaluated as (''=='true' or ''!='' or ''!='').
+Message: Building target "GetTargetPath" completely.
+Message: No input files were specified.
+Message: Target "ComputeIntermediateSatelliteAssemblies" skipped, due to false condition; ('@(ManifestResourceWithCulture)'!='' or '@(ManifestNonResxWithCulture)'!='') was evaluated as (''!='' or ''!='').
+Message: Target "AssignTargetPaths" skipped. Previously built successfully.
+Message: Target "_SplitProjectReferencesByFileExistence" skipped, due to false condition; ('@(NonVCProjectReference)'!='') was evaluated as (''!='').
+Message: Task "MSBuild" skipped, due to false condition; ('@(_MSBuildProjectReferenceExistent)'!='') was evaluated as (''!='').
+Message: Task "CreateItem" skipped, due to false condition; ('%(_AllChildProjectItemsWithTargetPath.CopyToOutputDirectory)'=='Always' or '%(_AllChildProjectItemsWithTargetPath.CopyToOutputDirectory)'=='PreserveNewest') was evaluated as (''=='Always' or ''=='PreserveNewest').
+Message: Task "CreateItem" skipped, due to false condition; ('%(ContentWithTargetPath.CopyToOutputDirectory)'=='Always' or '%(ContentWithTargetPath.CopyToOutputDirectory)'=='PreserveNewest') was evaluated as (''=='Always' or ''=='PreserveNewest').
+Message: Task "CreateItem" skipped, due to false condition; ('%(_EmbeddedResourceWithTargetPath.CopyToOutputDirectory)'=='Always' or '%(_EmbeddedResourceWithTargetPath.CopyToOutputDirectory)'=='PreserveNewest') was evaluated as (''=='Always' or ''=='PreserveNewest').
+Message: Task "CreateItem" skipped, due to false condition; ('%(Compile.CopyToOutputDirectory)'=='Always' or '%(Compile.CopyToOutputDirectory)'=='PreserveNewest') was evaluated as (''=='Always' or ''=='PreserveNewest').
+Message: Task "CreateItem" skipped, due to false condition; ('%(_NoneWithTargetPath.CopyToOutputDirectory)'=='Always' or '%(_NoneWithTargetPath.CopyToOutputDirectory)'=='PreserveNewest') was evaluated as (''=='Always' or ''=='PreserveNewest').
+Message: Target "_CopyOutOfDateSourceItemsToOutputDirectory" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectory)' != '' ) was evaluated as ( '' != '' ).
+Message: Target "_CopyOutOfDateSourceItemsToOutputDirectoryAlways" skipped, due to false condition; ( '@(_SourceItemsToCopyToOutputDirectoryAlways)' != '' ) was evaluated as ( '' != '' ).
+Message: Target "_CopyAppConfigFile" skipped, due to false condition; ( '@(AppConfigWithTargetPath)' != '' ) was evaluated as ( '' != '' ).
+Message: Target "_CopyManifestFiles" skipped, due to false condition; ( '$(_DeploymentCopyApplicationManifest)'=='true' or '$(GenerateClickOnceManifests)'=='true' ) was evaluated as ( ''=='true' or ''=='true' ).
+Message: Task "CreateProperty" skipped, due to false condition; (!Exists('@(DocFileItem)')) was evaluated as (!Exists('obj\Debug\CardLib.xml')).
+Message: Task "CreateProperty" skipped, due to false condition; (!Exists('$(IntermediateOutputPath)$(TargetName).pdb')) was evaluated as (!Exists('obj\Debug\CardLib.pdb')).
+Message: Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+Message: Did not copy from file "obj\Debug\CardLib.dll" to file "bin\Debug\CardLib.dll" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: CardLib -> C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.dll
+Message: Task "Copy" skipped, due to false condition; ('$(_SGenDllCreated)'=='true') was evaluated as ('false'=='true').
+Message: Did not copy from file "obj\Debug\CardLib.pdb" to file "bin\Debug\CardLib.pdb" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Did not copy from file "obj\Debug\CardLib.xml" to file "bin\Debug\CardLib.xml" because the "SkipUnchangedFiles" parameter was set to "true" in the project and the files' sizes and timestamps match.
+Message: Target "UnmanagedRegistration" skipped, due to false condition; ('$(RegisterForComInterop)'=='true' and '$(OutputType)'=='library') was evaluated as (''=='true' and 'Library'=='library').
+Message: Target "_CheckForCompileOutputs" skipped. Previously built successfully.
+Message: Target "_SGenCheckForOutputs" skipped, due to false condition; ('$(_SGenGenerateSerializationAssembliesConfig)' == 'On' or ('@(WebReferenceUrl)'!='' and '$(_SGenGenerateSerializationAssembliesConfig)' == 'Auto')) was evaluated as ('Off' == 'On' or (''!='' and 'Off' == 'Auto')).
+Message: Using "ReadLinesFromFile" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Using "FindUnderPath" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Comparison path is "C:\MSBuild\DotNetFreeCell\CardLib".
+Message: Comparison path is "bin\Debug\".
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\ResolveAssemblyReference.cache" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.01C.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.01D.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.01H.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.01S.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.02C.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.02D.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.02H.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.02S.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.03C.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.03D.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.03H.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.03S.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.04C.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.04D.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.04H.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.04S.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.05C.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.05D.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.05H.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.05S.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.06C.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.06D.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.06H.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.06S.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.07C.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.07D.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.07H.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.07S.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.08C.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.08D.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.08H.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.08S.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.09C.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.09D.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.09H.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.09S.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.10C.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.10D.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.10H.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.10S.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.11C.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.11D.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.11H.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.11S.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.12C.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.12D.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.12H.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.12S.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.13C.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.13D.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.13H.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.13S.png" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.Resources.resources" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.Card.resources" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.vbproj.GenerateResource.Cache" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.dll" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.xml" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.pdb" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.dll" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.pdb" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.xml" is inside the comparison path.
+Message: Comparison path is "obj\Debug\".
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\ResolveAssemblyReference.cache" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.01C.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.01D.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.01H.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.01S.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.02C.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.02D.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.02H.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.02S.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.03C.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.03D.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.03H.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.03S.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.04C.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.04D.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.04H.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.04S.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.05C.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.05D.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.05H.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.05S.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.06C.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.06D.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.06H.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.06S.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.07C.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.07D.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.07H.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.07S.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.08C.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.08D.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.08H.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.08S.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.09C.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.09D.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.09H.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.09S.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.10C.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.10D.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.10H.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.10S.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.11C.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.11D.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.11H.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.11S.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.12C.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.12D.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.12H.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.12S.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.13C.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.13D.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.13H.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.13S.png" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.Resources.resources" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.Card.resources" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.vbproj.GenerateResource.Cache" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.dll" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.xml" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\obj\Debug\CardLib.pdb" is inside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.dll" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.pdb" is outside the comparison path.
+Message: Path "C:\MSBuild\DotNetFreeCell\CardLib\bin\Debug\CardLib.xml" is outside the comparison path.
+Message: Using "RemoveDuplicates" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Comparison path is "bin\Debug\".
+Message: Comparison path is "obj\Debug\".
+Message: Using "Delete" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Using "WriteLinesToFile" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Message: Target "PostBuildEvent" skipped, due to false condition; (
+            '$(PostBuildEvent)'!=''
+            and
+            (
+                '$(RunPostBuildEvent)'!='OnOutputUpdated'
+                or 
+                '$(_AssemblyTimestampBeforeCompile)'!='$(_AssemblyTimestampAfterCompile)'
+            )
+        ) was evaluated as (
+            ''!=''
+            and
+            (
+                ''!='OnOutputUpdated'
+                or 
+                ''!=''
+            )
+        ).
+Message: Building target "Build" completely.
+Message: No input files were specified.
+ProjectFinishedDone building project "CardLib.vbproj".
+Message: Task "MSBuild" skipped, due to false condition; ( ('$(Configuration)' == 'Release') and ('$(Platform)' == 'Any CPU') ) was evaluated as ( ('Debug' == 'Release') and ('Any CPU' == 'Any CPU') ).
+Message: Properties:
+Message:   Configuration=Debug
+Message:   Platform=AnyCPU
+Message:   BuildingSolutionFile=true
+Message:   CurrentSolutionConfigurationContents=<SolutionConfiguration><ProjectConfiguration Project="{9734FCCC-137F-47FB-B87B-90E1FF41E99B}">Debug|AnyCPU</ProjectConfiguration><ProjectConfiguration Project="{8B742192-FE87-4859-90AB-BD38BF830F50}">Debug|AnyCPU</ProjectConfiguration></SolutionConfiguration>
+Message:   SolutionDir=C:\MSBuild\DotNetFreeCell\DotNetFreeCell\
+Message:   SolutionExt=.sln
+Message:   SolutionFileName=DotNetFreeCell.sln
+Message:   SolutionName=DotNetFreeCell
+Message:   SolutionPath=C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.sln
+Message: Overriding target "BeforeBuild" in project "c:\WINDOWS\Microsoft.NET\Framework\v2.0.50727\Microsoft.Common.targets" with target "BeforeBuild" from project "C:\MSBuild\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell\DotNetFreeCell.vbproj".
+ProjectStartedProject "DotNetFreeCell.vbproj" (default targets):
+Message: Task "Error" skipped, due to false condition; ( '$(_InvalidConfigurationError)' == 'true' ) was evaluated as ( '' == 'true' ).
+Message: Task "Warning" skipped, due to false condition; ( '$(_InvalidConfigurationWarning)' == 'true' ) was evaluated as ( '' == 'true' ).
+Message: Configuration=Debug
+Message: Platform=AnyCPU
+Message: Task "Error" skipped, due to false condition; ('$(OutDir)' != '' and !HasTrailingSlash('$(OutDir)')) was evaluated as ('bin\Debug\' != '' and !HasTrailingSlash('bin\Debug\')).
+Message: Using "Warning" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+Warning: This is just a warning really
+Message: Using "Error" task from assembly "Microsoft.Build.Tasks, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a".
+ERROR: This is an ERROR!
+ProjectFinishedDone building project "DotNetFreeCell.vbproj" -- FAILED.
+Message: Target "ValidateSolutionConfiguration" skipped. Previously built successfully.
+Message: Target "CardLib" skipped. Previously built successfully.
+ProjectFinishedDone building project "DotNetFreeCell.sln" -- FAILED.
+BuildFinishedBuild FAILED.
